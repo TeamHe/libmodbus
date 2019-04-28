@@ -112,7 +112,9 @@ AC_C_INLINE
 
 # libtool
 AC_PROG_CXX
-
+AC_ENABLE_SHARED
+AC_ENABLE_STATIC
+AC_PROG_LIBTOOL(libtool)        #使用动态
 # Various types
 AC_TYPE_INT64_T
 AC_TYPE_SIZE_T

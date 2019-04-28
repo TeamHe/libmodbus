@@ -1196,7 +1196,7 @@ static void _modbus_rtu_free(modbus_t *ctx) {
     free(ctx);
 }
 
-const modbus_backend_t _modbus_rtu_backend = {
+modbus_backend_t _modbus_rtu_backend = {
     _MODBUS_BACKEND_TYPE_RTU,
     _MODBUS_RTU_HEADER_LENGTH,
     _MODBUS_RTU_CHECKSUM_LENGTH,

@@ -1,0 +1,1751 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing aclocal-1.15$/;"	m	language:Make
+ACLOCAL	doc/Makefile	/^ACLOCAL = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing aclocal-1.15$/;"	m	language:Make
+ACLOCAL	src/Makefile	/^ACLOCAL = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing aclocal-1.15$/;"	m	language:Make
+ACLOCAL	tests/Makefile	/^ACLOCAL = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing aclocal-1.15$/;"	m	language:Make
+ACLOCAL_AMFLAGS	Makefile	/^ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}$/;"	m	language:Make
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m	language:Make
+ACLOCAL_M4	doc/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m	language:Make
+ACLOCAL_M4	src/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m	language:Make
+ACLOCAL_M4	tests/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m	language:Make
+ADDRESS_END	tests/random-test-client.c	33;"	d	language:C	file:
+ADDRESS_START	tests/random-test-client.c	32;"	d	language:C	file:
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m	language:Make
+AMTAR	doc/Makefile	/^AMTAR = $${TAR-tar}$/;"	m	language:Make
+AMTAR	src/Makefile	/^AMTAR = $${TAR-tar}$/;"	m	language:Make
+AMTAR	tests/Makefile	/^AMTAR = $${TAR-tar}$/;"	m	language:Make
+AM_CFLAGS	src/Makefile	/^AM_CFLAGS = ${my_CFLAGS}$/;"	m	language:Make
+AM_CFLAGS	tests/Makefile	/^AM_CFLAGS = ${my_CFLAGS}$/;"	m	language:Make
+AM_CPPFLAGS	src/Makefile	/^AM_CPPFLAGS = \\$/;"	m	language:Make
+AM_CPPFLAGS	tests/Makefile	/^AM_CPPFLAGS = \\$/;"	m	language:Make
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m	language:Make
+AM_DEFAULT_VERBOSITY	doc/Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m	language:Make
+AM_DEFAULT_VERBOSITY	src/Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m	language:Make
+AM_DEFAULT_VERBOSITY	tests/Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m	language:Make
+AM_MAKEFLAGS	Makefile	/^AM_MAKEFLAGS = --no-print-directory$/;"	m	language:Make
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m	language:Make
+AM_RECURSIVE_TARGETS	tests/Makefile	/^AM_RECURSIVE_TARGETS = check recheck$/;"	m	language:Make
+AM_V_CC	src/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m	language:Make
+AM_V_CC	tests/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m	language:Make
+AM_V_CCLD	src/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m	language:Make
+AM_V_CCLD	tests/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m	language:Make
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m	language:Make
+AM_V_GEN	doc/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m	language:Make
+AM_V_GEN	src/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m	language:Make
+AM_V_GEN	tests/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m	language:Make
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m	language:Make
+AM_V_P	doc/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m	language:Make
+AM_V_P	src/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m	language:Make
+AM_V_P	tests/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m	language:Make
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m	language:Make
+AM_V_at	doc/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m	language:Make
+AM_V_at	src/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m	language:Make
+AM_V_at	tests/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m	language:Make
+AM_V_lt	src/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m	language:Make
+AM_V_lt	tests/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m	language:Make
+AR	Makefile	/^AR = ar$/;"	m	language:Make
+AR	doc/Makefile	/^AR = ar$/;"	m	language:Make
+AR	src/Makefile	/^AR = ar$/;"	m	language:Make
+AR	tests/Makefile	/^AR = ar$/;"	m	language:Make
+AS	Makefile	/^AS = as$/;"	m	language:Make
+AS	doc/Makefile	/^AS = as$/;"	m	language:Make
+AS	src/Makefile	/^AS = as$/;"	m	language:Make
+AS	tests/Makefile	/^AS = as$/;"	m	language:Make
+ASSERT_TRUE	tests/unit-test-client.c	34;"	d	language:C	file:
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoconf$/;"	m	language:Make
+AUTOCONF	doc/Makefile	/^AUTOCONF = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoconf$/;"	m	language:Make
+AUTOCONF	src/Makefile	/^AUTOCONF = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoconf$/;"	m	language:Make
+AUTOCONF	tests/Makefile	/^AUTOCONF = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoconf$/;"	m	language:Make
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoheader$/;"	m	language:Make
+AUTOHEADER	doc/Makefile	/^AUTOHEADER = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoheader$/;"	m	language:Make
+AUTOHEADER	src/Makefile	/^AUTOHEADER = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoheader$/;"	m	language:Make
+AUTOHEADER	tests/Makefile	/^AUTOHEADER = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing autoheader$/;"	m	language:Make
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing automake-1.15$/;"	m	language:Make
+AUTOMAKE	doc/Makefile	/^AUTOMAKE = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing automake-1.15$/;"	m	language:Make
+AUTOMAKE	src/Makefile	/^AUTOMAKE = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing automake-1.15$/;"	m	language:Make
+AUTOMAKE	tests/Makefile	/^AUTOMAKE = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing automake-1.15$/;"	m	language:Make
+AWK	Makefile	/^AWK = gawk$/;"	m	language:Make
+AWK	doc/Makefile	/^AWK = gawk$/;"	m	language:Make
+AWK	src/Makefile	/^AWK = gawk$/;"	m	language:Make
+AWK	tests/Makefile	/^AWK = gawk$/;"	m	language:Make
+BUG_REPORT	tests/unit-test-client.c	31;"	d	language:C	file:
+CC	Makefile	/^CC = gcc$/;"	m	language:Make
+CC	doc/Makefile	/^CC = gcc$/;"	m	language:Make
+CC	src/Makefile	/^CC = gcc$/;"	m	language:Make
+CC	tests/Makefile	/^CC = gcc$/;"	m	language:Make
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
+CCDEPMODE	doc/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
+CCDEPMODE	src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
+CCDEPMODE	tests/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
+CCLD	src/Makefile	/^CCLD = $(CC)$/;"	m	language:Make
+CCLD	tests/Makefile	/^CCLD = $(CC)$/;"	m	language:Make
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
+CFLAGS	doc/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
+CFLAGS	src/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
+CFLAGS	tests/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
+CLEANFILES	Makefile	/^CLEANFILES = libmodbus.pc$/;"	m	language:Make
+CLEANFILES	doc/Makefile	/^CLEANFILES = *.3 *.7 *.html$/;"	m	language:Make
+CLEANFILES	src/Makefile	/^CLEANFILES = *~$/;"	m	language:Make
+CLEANFILES	tests/Makefile	/^CLEANFILES = *~ *.log$/;"	m	language:Make
+COMPILE	src/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m	language:Make
+COMPILE	tests/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m	language:Make
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES = src\/win32\/modbus.dll.manifest libmodbus.pc$/;"	m	language:Make
+CONFIG_CLEAN_FILES	doc/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m	language:Make
+CONFIG_CLEAN_FILES	src/Makefile	/^CONFIG_CLEAN_FILES = modbus-version.h$/;"	m	language:Make
+CONFIG_CLEAN_FILES	tests/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m	language:Make
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m	language:Make
+CONFIG_CLEAN_VPATH_FILES	doc/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m	language:Make
+CONFIG_CLEAN_VPATH_FILES	src/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m	language:Make
+CONFIG_CLEAN_VPATH_FILES	tests/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m	language:Make
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h $(top_builddir)\/tests\/unit-test.h$/;"	m	language:Make
+CONFIG_HEADER	doc/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h \\$/;"	m	language:Make
+CONFIG_HEADER	src/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h \\$/;"	m	language:Make
+CONFIG_HEADER	tests/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h unit-test.h$/;"	m	language:Make
+CPP	Makefile	/^CPP = gcc -E$/;"	m	language:Make
+CPP	doc/Makefile	/^CPP = gcc -E$/;"	m	language:Make
+CPP	src/Makefile	/^CPP = gcc -E$/;"	m	language:Make
+CPP	tests/Makefile	/^CPP = gcc -E$/;"	m	language:Make
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m	language:Make
+CPPFLAGS	doc/Makefile	/^CPPFLAGS = $/;"	m	language:Make
+CPPFLAGS	src/Makefile	/^CPPFLAGS = $/;"	m	language:Make
+CPPFLAGS	tests/Makefile	/^CPPFLAGS = $/;"	m	language:Make
+CSCOPE	Makefile	/^CSCOPE = cscope$/;"	m	language:Make
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m	language:Make
+CTAGS	src/Makefile	/^CTAGS = ctags$/;"	m	language:Make
+CTAGS	tests/Makefile	/^CTAGS = ctags$/;"	m	language:Make
+CXX	Makefile	/^CXX = g++$/;"	m	language:Make
+CXX	doc/Makefile	/^CXX = g++$/;"	m	language:Make
+CXX	src/Makefile	/^CXX = g++$/;"	m	language:Make
+CXX	tests/Makefile	/^CXX = g++$/;"	m	language:Make
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m	language:Make
+CXXCPP	doc/Makefile	/^CXXCPP = g++ -E$/;"	m	language:Make
+CXXCPP	src/Makefile	/^CXXCPP = g++ -E$/;"	m	language:Make
+CXXCPP	tests/Makefile	/^CXXCPP = g++ -E$/;"	m	language:Make
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m	language:Make
+CXXDEPMODE	doc/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m	language:Make
+CXXDEPMODE	src/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m	language:Make
+CXXDEPMODE	tests/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m	language:Make
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m	language:Make
+CXXFLAGS	doc/Makefile	/^CXXFLAGS = -g -O2$/;"	m	language:Make
+CXXFLAGS	src/Makefile	/^CXXFLAGS = -g -O2$/;"	m	language:Make
+CXXFLAGS	tests/Makefile	/^CXXFLAGS = -g -O2$/;"	m	language:Make
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m	language:Make
+CYGPATH_W	doc/Makefile	/^CYGPATH_W = echo$/;"	m	language:Make
+CYGPATH_W	src/Makefile	/^CYGPATH_W = echo$/;"	m	language:Make
+CYGPATH_W	tests/Makefile	/^CYGPATH_W = echo$/;"	m	language:Make
+CreateProcess	build-aux/ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f	language:Sh
+CreateProcess	libtool	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f	language:Sh
+DATA	Makefile	/^DATA = $(dist_doc_DATA) $(pkgconfig_DATA)$/;"	m	language:Make
+DEFAULT_INCLUDES	src/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir) -I$(top_builddir)\/tests$/;"	m	language:Make
+DEFAULT_INCLUDES	tests/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m	language:Make
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m	language:Make
+DEFS	doc/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m	language:Make
+DEFS	src/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m	language:Make
+DEFS	tests/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m	language:Make
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m	language:Make
+DEPDIR	doc/Makefile	/^DEPDIR = .deps$/;"	m	language:Make
+DEPDIR	src/Makefile	/^DEPDIR = .deps$/;"	m	language:Make
+DEPDIR	tests/Makefile	/^DEPDIR = .deps$/;"	m	language:Make
+DISTCLEANFILES	src/Makefile	/^DISTCLEANFILES = modbus-version.h$/;"	m	language:Make
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m	language:Make
+DISTFILES	doc/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m	language:Make
+DISTFILES	src/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m	language:Make
+DISTFILES	tests/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m	language:Make
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m	language:Make
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(top_srcdir)\/configure \\$/;"	m	language:Make
+DIST_COMMON	doc/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m	language:Make
+DIST_COMMON	src/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(libmodbusinclude_HEADERS) \\$/;"	m	language:Make
+DIST_COMMON	tests/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m	language:Make
+DIST_SOURCES	Makefile	/^DIST_SOURCES =$/;"	m	language:Make
+DIST_SOURCES	doc/Makefile	/^DIST_SOURCES =$/;"	m	language:Make
+DIST_SOURCES	src/Makefile	/^DIST_SOURCES = $(libmodbus_la_SOURCES)$/;"	m	language:Make
+DIST_SOURCES	tests/Makefile	/^DIST_SOURCES = $(bandwidth_client_SOURCES) \\$/;"	m	language:Make
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = src doc tests$/;"	m	language:Make
+DIST_TARGETS	Makefile	/^DIST_TARGETS = dist-gzip$/;"	m	language:Make
+DLLTOOL	Makefile	/^DLLTOOL = false$/;"	m	language:Make
+DLLTOOL	doc/Makefile	/^DLLTOOL = false$/;"	m	language:Make
+DLLTOOL	src/Makefile	/^DLLTOOL = false$/;"	m	language:Make
+DLLTOOL	tests/Makefile	/^DLLTOOL = false$/;"	m	language:Make
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m	language:Make
+DSYMUTIL	doc/Makefile	/^DSYMUTIL = $/;"	m	language:Make
+DSYMUTIL	src/Makefile	/^DSYMUTIL = $/;"	m	language:Make
+DSYMUTIL	tests/Makefile	/^DSYMUTIL = $/;"	m	language:Make
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m	language:Make
+DUMPBIN	doc/Makefile	/^DUMPBIN = $/;"	m	language:Make
+DUMPBIN	src/Makefile	/^DUMPBIN = $/;"	m	language:Make
+DUMPBIN	tests/Makefile	/^DUMPBIN = $/;"	m	language:Make
+ECHO_C	Makefile	/^ECHO_C = $/;"	m	language:Make
+ECHO_C	doc/Makefile	/^ECHO_C = $/;"	m	language:Make
+ECHO_C	src/Makefile	/^ECHO_C = $/;"	m	language:Make
+ECHO_C	tests/Makefile	/^ECHO_C = $/;"	m	language:Make
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m	language:Make
+ECHO_N	doc/Makefile	/^ECHO_N = -n$/;"	m	language:Make
+ECHO_N	src/Makefile	/^ECHO_N = -n$/;"	m	language:Make
+ECHO_N	tests/Makefile	/^ECHO_N = -n$/;"	m	language:Make
+ECHO_T	Makefile	/^ECHO_T = $/;"	m	language:Make
+ECHO_T	doc/Makefile	/^ECHO_T = $/;"	m	language:Make
+ECHO_T	src/Makefile	/^ECHO_T = $/;"	m	language:Make
+ECHO_T	tests/Makefile	/^ECHO_T = $/;"	m	language:Make
+ECONNREFUSED	src/modbus-tcp.h	21;"	d	language:C++
+ECONNRESET	src/modbus-tcp.h	18;"	d	language:C++
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
+EGREP	doc/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
+EGREP	src/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
+EGREP	tests/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
+EINPROGRESS	src/modbus-tcp.h	30;"	d	language:C++
+EMBBADCRC	src/modbus.h	144;"	d	language:C++
+EMBBADDATA	src/modbus.h	145;"	d	language:C++
+EMBBADEXC	src/modbus.h	146;"	d	language:C++
+EMBBADSLAVE	src/modbus.h	149;"	d	language:C++
+EMBMDATA	src/modbus.h	148;"	d	language:C++
+EMBUNKEXC	src/modbus.h	147;"	d	language:C++
+EMBXACK	src/modbus.h	136;"	d	language:C++
+EMBXGPATH	src/modbus.h	140;"	d	language:C++
+EMBXGTAR	src/modbus.h	141;"	d	language:C++
+EMBXILADD	src/modbus.h	133;"	d	language:C++
+EMBXILFUN	src/modbus.h	132;"	d	language:C++
+EMBXILVAL	src/modbus.h	134;"	d	language:C++
+EMBXMEMPAR	src/modbus.h	139;"	d	language:C++
+EMBXNACK	src/modbus.h	138;"	d	language:C++
+EMBXSBUSY	src/modbus.h	137;"	d	language:C++
+EMBXSFAIL	src/modbus.h	135;"	d	language:C++
+ENOPROTOOPT	src/modbus-tcp.h	27;"	d	language:C++
+ENOTSUP	src/modbus-rtu-private.h	30;"	d	language:C++
+ETAGS	Makefile	/^ETAGS = etags$/;"	m	language:Make
+ETAGS	src/Makefile	/^ETAGS = etags$/;"	m	language:Make
+ETAGS	tests/Makefile	/^ETAGS = etags$/;"	m	language:Make
+ETIMEDOUT	src/modbus-tcp.h	24;"	d	language:C++
+EXCEPTION_RC	tests/unit-test-client.c	/^const int EXCEPTION_RC = 2;$/;"	v	language:C
+EXEEXT	Makefile	/^EXEEXT = $/;"	m	language:Make
+EXEEXT	doc/Makefile	/^EXEEXT = $/;"	m	language:Make
+EXEEXT	src/Makefile	/^EXEEXT = $/;"	m	language:Make
+EXEEXT	tests/Makefile	/^EXEEXT = $/;"	m	language:Make
+EXTRA_DIST	Makefile	/^EXTRA_DIST = libmodbus.pc.in$/;"	m	language:Make
+EXTRA_DIST	doc/Makefile	/^EXTRA_DIST = asciidoc.conf $(TXT3) $(TXT7)$/;"	m	language:Make
+EXTRA_DIST	src/Makefile	/^EXTRA_DIST = modbus-version.h.in$/;"	m	language:Make
+EXTRA_DIST	tests/Makefile	/^EXTRA_DIST = README.md unit-tests.sh$/;"	m	language:Make
+FALSE	src/modbus.h	45;"	d	language:C++
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
+FGREP	doc/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
+FGREP	src/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
+FGREP	tests/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
+GCC_VERSION	src/modbus-data.c	40;"	d	language:C	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
+GREP	doc/Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
+GREP	src/Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
+GREP	tests/Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m	language:Make
+G_MSEC_PER_SEC	tests/bandwidth-client.c	19;"	d	language:C	file:
+HAVE_ACCEPT4	config.h	5;"	d	language:C++
+HAVE_ARPA_INET_H	config.h	8;"	d	language:C++
+HAVE_BYTESWAP_H	config.h	11;"	d	language:C++
+HAVE_DECL_TIOCM_RTS	config.h	15;"	d	language:C++
+HAVE_DECL_TIOCSRS485	config.h	19;"	d	language:C++
+HAVE_DECL___CYGWIN__	config.h	23;"	d	language:C++
+HAVE_DLFCN_H	config.h	26;"	d	language:C++
+HAVE_ERRNO_H	config.h	29;"	d	language:C++
+HAVE_FCNTL_H	config.h	32;"	d	language:C++
+HAVE_GETADDRINFO	config.h	35;"	d	language:C++
+HAVE_GETTIMEOFDAY	config.h	38;"	d	language:C++
+HAVE_INET_NTOA	config.h	41;"	d	language:C++
+HAVE_INTTYPES_H	config.h	44;"	d	language:C++
+HAVE_INTTYPES_H	tests/unit-test.h	12;"	d	language:C++
+HAVE_LIMITS_H	config.h	47;"	d	language:C++
+HAVE_LINUX_SERIAL_H	config.h	50;"	d	language:C++
+HAVE_MEMORY_H	config.h	53;"	d	language:C++
+HAVE_NETDB_H	config.h	56;"	d	language:C++
+HAVE_NETINET_IN_H	config.h	59;"	d	language:C++
+HAVE_NETINET_TCP_H	config.h	62;"	d	language:C++
+HAVE_SELECT	config.h	65;"	d	language:C++
+HAVE_SOCKET	config.h	68;"	d	language:C++
+HAVE_STDINT_H	config.h	71;"	d	language:C++
+HAVE_STDINT_H	tests/unit-test.h	13;"	d	language:C++
+HAVE_STDLIB_H	config.h	74;"	d	language:C++
+HAVE_STRERROR	config.h	77;"	d	language:C++
+HAVE_STRINGS_H	config.h	80;"	d	language:C++
+HAVE_STRING_H	config.h	83;"	d	language:C++
+HAVE_SYS_IOCTL_H	config.h	89;"	d	language:C++
+HAVE_SYS_SOCKET_H	config.h	95;"	d	language:C++
+HAVE_SYS_STAT_H	config.h	98;"	d	language:C++
+HAVE_SYS_TIME_H	config.h	101;"	d	language:C++
+HAVE_SYS_TYPES_H	config.h	104;"	d	language:C++
+HAVE_TERMIOS_H	config.h	107;"	d	language:C++
+HAVE_TIME_H	config.h	110;"	d	language:C++
+HAVE_UNISTD_H	config.h	113;"	d	language:C++
+HEADERS	src/Makefile	/^HEADERS = $(libmodbusinclude_HEADERS)$/;"	m	language:Make
+HTML	doc/Makefile	/^HTML = $(TXT3:%.txt=%.html) $(TXT7:%.txt=%.html)$/;"	m	language:Make
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m	language:Make
+INSTALL	doc/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m	language:Make
+INSTALL	src/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m	language:Make
+INSTALL	tests/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m	language:Make
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m	language:Make
+INSTALL_DATA	doc/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m	language:Make
+INSTALL_DATA	src/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m	language:Make
+INSTALL_DATA	tests/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m	language:Make
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m	language:Make
+INSTALL_HEADER	doc/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m	language:Make
+INSTALL_HEADER	src/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m	language:Make
+INSTALL_HEADER	tests/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m	language:Make
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m	language:Make
+INSTALL_PROGRAM	doc/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m	language:Make
+INSTALL_PROGRAM	src/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m	language:Make
+INSTALL_PROGRAM	tests/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m	language:Make
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m	language:Make
+INSTALL_SCRIPT	doc/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m	language:Make
+INSTALL_SCRIPT	src/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m	language:Make
+INSTALL_SCRIPT	tests/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m	language:Make
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m	language:Make
+INSTALL_STRIP_PROGRAM	doc/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m	language:Make
+INSTALL_STRIP_PROGRAM	src/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m	language:Make
+INSTALL_STRIP_PROGRAM	tests/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m	language:Make
+INVALID_SERVER_ID	tests/unit-test.h	27;"	d	language:C++
+LD	Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
+LD	doc/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
+LD	src/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
+LD	tests/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m	language:Make
+LDFLAGS	doc/Makefile	/^LDFLAGS = $/;"	m	language:Make
+LDFLAGS	src/Makefile	/^LDFLAGS = $/;"	m	language:Make
+LDFLAGS	tests/Makefile	/^LDFLAGS = $/;"	m	language:Make
+LIBMODBUS_LT_VERSION_INFO	Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
+LIBMODBUS_LT_VERSION_INFO	doc/Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
+LIBMODBUS_LT_VERSION_INFO	src/Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
+LIBMODBUS_LT_VERSION_INFO	tests/Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
+LIBMODBUS_VERSION	Makefile	/^LIBMODBUS_VERSION = 3.1.4$/;"	m	language:Make
+LIBMODBUS_VERSION	doc/Makefile	/^LIBMODBUS_VERSION = 3.1.4$/;"	m	language:Make
+LIBMODBUS_VERSION	src/Makefile	/^LIBMODBUS_VERSION = 3.1.4$/;"	m	language:Make
+LIBMODBUS_VERSION	src/modbus-version.h	32;"	d	language:C++
+LIBMODBUS_VERSION	tests/Makefile	/^LIBMODBUS_VERSION = 3.1.4$/;"	m	language:Make
+LIBMODBUS_VERSION_CHECK	src/modbus-version.h	45;"	d	language:C++
+LIBMODBUS_VERSION_HEX	src/modbus-version.h	39;"	d	language:C++
+LIBMODBUS_VERSION_MAJOR	Makefile	/^LIBMODBUS_VERSION_MAJOR = 3$/;"	m	language:Make
+LIBMODBUS_VERSION_MAJOR	doc/Makefile	/^LIBMODBUS_VERSION_MAJOR = 3$/;"	m	language:Make
+LIBMODBUS_VERSION_MAJOR	src/Makefile	/^LIBMODBUS_VERSION_MAJOR = 3$/;"	m	language:Make
+LIBMODBUS_VERSION_MAJOR	src/modbus-version.h	23;"	d	language:C++
+LIBMODBUS_VERSION_MAJOR	tests/Makefile	/^LIBMODBUS_VERSION_MAJOR = 3$/;"	m	language:Make
+LIBMODBUS_VERSION_MICRO	Makefile	/^LIBMODBUS_VERSION_MICRO = 4$/;"	m	language:Make
+LIBMODBUS_VERSION_MICRO	doc/Makefile	/^LIBMODBUS_VERSION_MICRO = 4$/;"	m	language:Make
+LIBMODBUS_VERSION_MICRO	src/Makefile	/^LIBMODBUS_VERSION_MICRO = 4$/;"	m	language:Make
+LIBMODBUS_VERSION_MICRO	src/modbus-version.h	29;"	d	language:C++
+LIBMODBUS_VERSION_MICRO	tests/Makefile	/^LIBMODBUS_VERSION_MICRO = 4$/;"	m	language:Make
+LIBMODBUS_VERSION_MINOR	Makefile	/^LIBMODBUS_VERSION_MINOR = 1$/;"	m	language:Make
+LIBMODBUS_VERSION_MINOR	doc/Makefile	/^LIBMODBUS_VERSION_MINOR = 1$/;"	m	language:Make
+LIBMODBUS_VERSION_MINOR	src/Makefile	/^LIBMODBUS_VERSION_MINOR = 1$/;"	m	language:Make
+LIBMODBUS_VERSION_MINOR	src/modbus-version.h	26;"	d	language:C++
+LIBMODBUS_VERSION_MINOR	tests/Makefile	/^LIBMODBUS_VERSION_MINOR = 1$/;"	m	language:Make
+LIBMODBUS_VERSION_STRING	src/modbus-version.h	36;"	d	language:C++
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m	language:Make
+LIBOBJS	doc/Makefile	/^LIBOBJS = $/;"	m	language:Make
+LIBOBJS	src/Makefile	/^LIBOBJS = $/;"	m	language:Make
+LIBOBJS	tests/Makefile	/^LIBOBJS = $/;"	m	language:Make
+LIBS	Makefile	/^LIBS = $/;"	m	language:Make
+LIBS	doc/Makefile	/^LIBS = $/;"	m	language:Make
+LIBS	src/Makefile	/^LIBS = $/;"	m	language:Make
+LIBS	tests/Makefile	/^LIBS = $/;"	m	language:Make
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m	language:Make
+LIBTOOL	doc/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m	language:Make
+LIBTOOL	src/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m	language:Make
+LIBTOOL	tests/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m	language:Make
+LINK	src/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
+LINK	tests/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
+LIPO	Makefile	/^LIPO = $/;"	m	language:Make
+LIPO	doc/Makefile	/^LIPO = $/;"	m	language:Make
+LIPO	src/Makefile	/^LIPO = $/;"	m	language:Make
+LIPO	tests/Makefile	/^LIPO = $/;"	m	language:Make
+LN_S	Makefile	/^LN_S = ln -s$/;"	m	language:Make
+LN_S	doc/Makefile	/^LN_S = ln -s$/;"	m	language:Make
+LN_S	src/Makefile	/^LN_S = ln -s$/;"	m	language:Make
+LN_S	tests/Makefile	/^LN_S = ln -s$/;"	m	language:Make
+LOG_COMPILE	tests/Makefile	/^LOG_COMPILE = $(LOG_COMPILER) $(AM_LOG_FLAGS) $(LOG_FLAGS)$/;"	m	language:Make
+LOG_DRIVER	tests/Makefile	/^LOG_DRIVER = $(SHELL) $(top_srcdir)\/build-aux\/test-driver$/;"	m	language:Make
+LOOP	tests/random-test-client.c	30;"	d	language:C	file:
+LTCOMPILE	src/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
+LTCOMPILE	tests/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m	language:Make
+LTLIBOBJS	doc/Makefile	/^LTLIBOBJS = $/;"	m	language:Make
+LTLIBOBJS	src/Makefile	/^LTLIBOBJS = $/;"	m	language:Make
+LTLIBOBJS	tests/Makefile	/^LTLIBOBJS = $/;"	m	language:Make
+LTLIBRARIES	src/Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m	language:Make
+LT_OBJDIR	config.h	119;"	d	language:C++
+LT_SYS_LIBRARY_PATH	Makefile	/^LT_SYS_LIBRARY_PATH = $/;"	m	language:Make
+LT_SYS_LIBRARY_PATH	doc/Makefile	/^LT_SYS_LIBRARY_PATH = $/;"	m	language:Make
+LT_SYS_LIBRARY_PATH	src/Makefile	/^LT_SYS_LIBRARY_PATH = $/;"	m	language:Make
+LT_SYS_LIBRARY_PATH	tests/Makefile	/^LT_SYS_LIBRARY_PATH = $/;"	m	language:Make
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing makeinfo$/;"	m	language:Make
+MAKEINFO	doc/Makefile	/^MAKEINFO = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing makeinfo$/;"	m	language:Make
+MAKEINFO	src/Makefile	/^MAKEINFO = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing makeinfo$/;"	m	language:Make
+MAKEINFO	tests/Makefile	/^MAKEINFO = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/missing makeinfo$/;"	m	language:Make
+MAN3	doc/Makefile	/^MAN3 = $(TXT3:%.txt=%.3)$/;"	m	language:Make
+MAN7	doc/Makefile	/^MAN7 = $(TXT7:%.txt=%.7)$/;"	m	language:Make
+MANIFEST_TOOL	Makefile	/^MANIFEST_TOOL = :$/;"	m	language:Make
+MANIFEST_TOOL	doc/Makefile	/^MANIFEST_TOOL = :$/;"	m	language:Make
+MANIFEST_TOOL	src/Makefile	/^MANIFEST_TOOL = :$/;"	m	language:Make
+MANIFEST_TOOL	tests/Makefile	/^MANIFEST_TOOL = :$/;"	m	language:Make
+MANS	doc/Makefile	/^MANS = $(man3_MANS) $(man7_MANS)$/;"	m	language:Make
+MAX_MESSAGE_LENGTH	src/modbus.c	35;"	d	language:C	file:
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
+MKDIR_P	doc/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
+MKDIR_P	src/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
+MKDIR_P	tests/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
+MODBUS_API	src/modbus.h	26;"	d	language:C++
+MODBUS_API	src/modbus.h	28;"	d	language:C++
+MODBUS_API	src/modbus.h	31;"	d	language:C++
+MODBUS_BEGIN_DECLS	src/modbus.h	35;"	d	language:C++
+MODBUS_BEGIN_DECLS	src/modbus.h	38;"	d	language:C++
+MODBUS_BROADCAST_ADDRESS	src/modbus.h	74;"	d	language:C++
+MODBUS_END_DECLS	src/modbus.h	36;"	d	language:C++
+MODBUS_END_DECLS	src/modbus.h	39;"	d	language:C++
+MODBUS_ENOBASE	src/modbus.h	114;"	d	language:C++
+MODBUS_ERROR_RECOVERY_LINK	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_LINK          = (1<<1),$/;"	e	language:C++	enum:__anon6
+MODBUS_ERROR_RECOVERY_NONE	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_NONE          = 0,$/;"	e	language:C++	enum:__anon6
+MODBUS_ERROR_RECOVERY_PROTOCOL	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_PROTOCOL      = (1<<2)$/;"	e	language:C++	enum:__anon6
+MODBUS_EXCEPTION_ACKNOWLEDGE	src/modbus.h	/^    MODBUS_EXCEPTION_ACKNOWLEDGE,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_GATEWAY_PATH	src/modbus.h	/^    MODBUS_EXCEPTION_GATEWAY_PATH,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_GATEWAY_TARGET	src/modbus.h	/^    MODBUS_EXCEPTION_GATEWAY_TARGET,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_ILLEGAL_DATA_ADDRESS	src/modbus.h	/^    MODBUS_EXCEPTION_ILLEGAL_DATA_ADDRESS,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_ILLEGAL_DATA_VALUE	src/modbus.h	/^    MODBUS_EXCEPTION_ILLEGAL_DATA_VALUE,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_ILLEGAL_FUNCTION	src/modbus.h	/^    MODBUS_EXCEPTION_ILLEGAL_FUNCTION = 0x01,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_MAX	src/modbus.h	/^    MODBUS_EXCEPTION_MAX$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_MEMORY_PARITY	src/modbus.h	/^    MODBUS_EXCEPTION_MEMORY_PARITY,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_NEGATIVE_ACKNOWLEDGE	src/modbus.h	/^    MODBUS_EXCEPTION_NEGATIVE_ACKNOWLEDGE,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_NOT_DEFINED	src/modbus.h	/^    MODBUS_EXCEPTION_NOT_DEFINED,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_SLAVE_OR_SERVER_BUSY	src/modbus.h	/^    MODBUS_EXCEPTION_SLAVE_OR_SERVER_BUSY,$/;"	e	language:C++	enum:__anon5
+MODBUS_EXCEPTION_SLAVE_OR_SERVER_FAILURE	src/modbus.h	/^    MODBUS_EXCEPTION_SLAVE_OR_SERVER_FAILURE,$/;"	e	language:C++	enum:__anon5
+MODBUS_FC_MASK_WRITE_REGISTER	src/modbus.h	71;"	d	language:C++
+MODBUS_FC_READ_COILS	src/modbus.h	61;"	d	language:C++
+MODBUS_FC_READ_DISCRETE_INPUTS	src/modbus.h	62;"	d	language:C++
+MODBUS_FC_READ_EXCEPTION_STATUS	src/modbus.h	67;"	d	language:C++
+MODBUS_FC_READ_HOLDING_REGISTERS	src/modbus.h	63;"	d	language:C++
+MODBUS_FC_READ_INPUT_REGISTERS	src/modbus.h	64;"	d	language:C++
+MODBUS_FC_REPORT_SLAVE_ID	src/modbus.h	70;"	d	language:C++
+MODBUS_FC_WRITE_AND_READ_REGISTERS	src/modbus.h	72;"	d	language:C++
+MODBUS_FC_WRITE_MULTIPLE_COILS	src/modbus.h	68;"	d	language:C++
+MODBUS_FC_WRITE_MULTIPLE_REGISTERS	src/modbus.h	69;"	d	language:C++
+MODBUS_FC_WRITE_SINGLE_COIL	src/modbus.h	65;"	d	language:C++
+MODBUS_FC_WRITE_SINGLE_REGISTER	src/modbus.h	66;"	d	language:C++
+MODBUS_GET_HIGH_BYTE	src/modbus.h	245;"	d	language:C++
+MODBUS_GET_INT16_FROM_INT8	src/modbus.h	253;"	d	language:C++
+MODBUS_GET_INT32_FROM_INT16	src/modbus.h	252;"	d	language:C++
+MODBUS_GET_INT64_FROM_INT16	src/modbus.h	247;"	d	language:C++
+MODBUS_GET_LOW_BYTE	src/modbus.h	246;"	d	language:C++
+MODBUS_H	src/modbus.h	8;"	d	language:C++
+MODBUS_MAX_ADU_LENGTH	src/modbus.h	111;"	d	language:C++
+MODBUS_MAX_PDU_LENGTH	src/modbus.h	101;"	d	language:C++
+MODBUS_MAX_READ_BITS	src/modbus.h	81;"	d	language:C++
+MODBUS_MAX_READ_REGISTERS	src/modbus.h	91;"	d	language:C++
+MODBUS_MAX_WRITE_BITS	src/modbus.h	82;"	d	language:C++
+MODBUS_MAX_WRITE_REGISTERS	src/modbus.h	92;"	d	language:C++
+MODBUS_MAX_WR_READ_REGISTERS	src/modbus.h	94;"	d	language:C++
+MODBUS_MAX_WR_WRITE_REGISTERS	src/modbus.h	93;"	d	language:C++
+MODBUS_PRIVATE_H	src/modbus-private.h	8;"	d	language:C++
+MODBUS_RTU_H	src/modbus-rtu.h	8;"	d	language:C++
+MODBUS_RTU_MAX_ADU_LENGTH	src/modbus-rtu.h	17;"	d	language:C++
+MODBUS_RTU_PRIVATE_H	src/modbus-rtu-private.h	8;"	d	language:C++
+MODBUS_RTU_RS232	src/modbus-rtu.h	22;"	d	language:C++
+MODBUS_RTU_RS485	src/modbus-rtu.h	23;"	d	language:C++
+MODBUS_RTU_RTS_DOWN	src/modbus-rtu.h	30;"	d	language:C++
+MODBUS_RTU_RTS_NONE	src/modbus-rtu.h	28;"	d	language:C++
+MODBUS_RTU_RTS_UP	src/modbus-rtu.h	29;"	d	language:C++
+MODBUS_SET_INT16_TO_INT8	src/modbus.h	254;"	d	language:C++
+MODBUS_SET_INT32_TO_INT16	src/modbus.h	259;"	d	language:C++
+MODBUS_SET_INT64_TO_INT16	src/modbus.h	264;"	d	language:C++
+MODBUS_TCP_DEFAULT_PORT	src/modbus-tcp.h	34;"	d	language:C++
+MODBUS_TCP_H	src/modbus-tcp.h	8;"	d	language:C++
+MODBUS_TCP_MAX_ADU_LENGTH	src/modbus-tcp.h	40;"	d	language:C++
+MODBUS_TCP_PRIVATE_H	src/modbus-tcp-private.h	8;"	d	language:C++
+MODBUS_TCP_SLAVE	src/modbus-tcp.h	35;"	d	language:C++
+MODBUS_VERSION_H	src/modbus-version.h	20;"	d	language:C++
+MSG_CONFIRMATION	src/modbus-private.h	/^    MSG_CONFIRMATION$/;"	e	language:C++	enum:__anon9
+MSG_DONTWAIT	src/modbus-tcp.c	53;"	d	language:C	file:
+MSG_INDICATION	src/modbus-private.h	/^    MSG_INDICATION,$/;"	e	language:C++	enum:__anon9
+MSG_LENGTH_UNDEFINED	src/modbus.c	27;"	d	language:C	file:
+MSG_NOSIGNAL	src/modbus-tcp.c	49;"	d	language:C	file:
+MSG_NOSIGNAL	tests/unit-test-server.c	21;"	d	language:C	file:
+NB_CONNECTION	tests/bandwidth-server-many-up.c	25;"	d	language:C	file:
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m	language:Make
+NM	doc/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m	language:Make
+NM	src/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m	language:Make
+NM	tests/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m	language:Make
+NMEDIT	Makefile	/^NMEDIT = $/;"	m	language:Make
+NMEDIT	doc/Makefile	/^NMEDIT = $/;"	m	language:Make
+NMEDIT	src/Makefile	/^NMEDIT = $/;"	m	language:Make
+NMEDIT	tests/Makefile	/^NMEDIT = $/;"	m	language:Make
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m	language:Make
+NORMAL_INSTALL	doc/Makefile	/^NORMAL_INSTALL = :$/;"	m	language:Make
+NORMAL_INSTALL	src/Makefile	/^NORMAL_INSTALL = :$/;"	m	language:Make
+NORMAL_INSTALL	tests/Makefile	/^NORMAL_INSTALL = :$/;"	m	language:Make
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m	language:Make
+NORMAL_UNINSTALL	doc/Makefile	/^NORMAL_UNINSTALL = :$/;"	m	language:Make
+NORMAL_UNINSTALL	src/Makefile	/^NORMAL_UNINSTALL = :$/;"	m	language:Make
+NORMAL_UNINSTALL	tests/Makefile	/^NORMAL_UNINSTALL = :$/;"	m	language:Make
+NROFF	doc/Makefile	/^NROFF = nroff$/;"	m	language:Make
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m	language:Make
+OBJDUMP	doc/Makefile	/^OBJDUMP = objdump$/;"	m	language:Make
+OBJDUMP	src/Makefile	/^OBJDUMP = objdump$/;"	m	language:Make
+OBJDUMP	tests/Makefile	/^OBJDUMP = objdump$/;"	m	language:Make
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m	language:Make
+OBJEXT	doc/Makefile	/^OBJEXT = o$/;"	m	language:Make
+OBJEXT	src/Makefile	/^OBJEXT = o$/;"	m	language:Make
+OBJEXT	tests/Makefile	/^OBJEXT = o$/;"	m	language:Make
+OFF	src/modbus.h	53;"	d	language:C++
+ON	src/modbus.h	57;"	d	language:C++
+OS_BSD	src/modbus-tcp.c	37;"	d	language:C	file:
+OS_WIN32	src/modbus-tcp.c	8;"	d	language:C	file:
+OTOOL	Makefile	/^OTOOL = $/;"	m	language:Make
+OTOOL	doc/Makefile	/^OTOOL = $/;"	m	language:Make
+OTOOL	src/Makefile	/^OTOOL = $/;"	m	language:Make
+OTOOL	tests/Makefile	/^OTOOL = $/;"	m	language:Make
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m	language:Make
+OTOOL64	doc/Makefile	/^OTOOL64 = $/;"	m	language:Make
+OTOOL64	src/Makefile	/^OTOOL64 = $/;"	m	language:Make
+OTOOL64	tests/Makefile	/^OTOOL64 = $/;"	m	language:Make
+PACKAGE	Makefile	/^PACKAGE = libmodbus$/;"	m	language:Make
+PACKAGE	config.h	122;"	d	language:C++
+PACKAGE	doc/Makefile	/^PACKAGE = libmodbus$/;"	m	language:Make
+PACKAGE	src/Makefile	/^PACKAGE = libmodbus$/;"	m	language:Make
+PACKAGE	tests/Makefile	/^PACKAGE = libmodbus$/;"	m	language:Make
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = https:\/\/github.com\/stephane\/libmodbus\/issues$/;"	m	language:Make
+PACKAGE_BUGREPORT	config.h	125;"	d	language:C++
+PACKAGE_BUGREPORT	doc/Makefile	/^PACKAGE_BUGREPORT = https:\/\/github.com\/stephane\/libmodbus\/issues$/;"	m	language:Make
+PACKAGE_BUGREPORT	src/Makefile	/^PACKAGE_BUGREPORT = https:\/\/github.com\/stephane\/libmodbus\/issues$/;"	m	language:Make
+PACKAGE_BUGREPORT	tests/Makefile	/^PACKAGE_BUGREPORT = https:\/\/github.com\/stephane\/libmodbus\/issues$/;"	m	language:Make
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = libmodbus$/;"	m	language:Make
+PACKAGE_NAME	config.h	128;"	d	language:C++
+PACKAGE_NAME	doc/Makefile	/^PACKAGE_NAME = libmodbus$/;"	m	language:Make
+PACKAGE_NAME	src/Makefile	/^PACKAGE_NAME = libmodbus$/;"	m	language:Make
+PACKAGE_NAME	tests/Makefile	/^PACKAGE_NAME = libmodbus$/;"	m	language:Make
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = libmodbus 3.1.4$/;"	m	language:Make
+PACKAGE_STRING	config.h	131;"	d	language:C++
+PACKAGE_STRING	doc/Makefile	/^PACKAGE_STRING = libmodbus 3.1.4$/;"	m	language:Make
+PACKAGE_STRING	src/Makefile	/^PACKAGE_STRING = libmodbus 3.1.4$/;"	m	language:Make
+PACKAGE_STRING	tests/Makefile	/^PACKAGE_STRING = libmodbus 3.1.4$/;"	m	language:Make
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = libmodbus$/;"	m	language:Make
+PACKAGE_TARNAME	config.h	134;"	d	language:C++
+PACKAGE_TARNAME	doc/Makefile	/^PACKAGE_TARNAME = libmodbus$/;"	m	language:Make
+PACKAGE_TARNAME	src/Makefile	/^PACKAGE_TARNAME = libmodbus$/;"	m	language:Make
+PACKAGE_TARNAME	tests/Makefile	/^PACKAGE_TARNAME = libmodbus$/;"	m	language:Make
+PACKAGE_URL	Makefile	/^PACKAGE_URL = http:\/\/libmodbus.org\/$/;"	m	language:Make
+PACKAGE_URL	config.h	137;"	d	language:C++
+PACKAGE_URL	doc/Makefile	/^PACKAGE_URL = http:\/\/libmodbus.org\/$/;"	m	language:Make
+PACKAGE_URL	src/Makefile	/^PACKAGE_URL = http:\/\/libmodbus.org\/$/;"	m	language:Make
+PACKAGE_URL	tests/Makefile	/^PACKAGE_URL = http:\/\/libmodbus.org\/$/;"	m	language:Make
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 3.1.4$/;"	m	language:Make
+PACKAGE_VERSION	config.h	140;"	d	language:C++
+PACKAGE_VERSION	doc/Makefile	/^PACKAGE_VERSION = 3.1.4$/;"	m	language:Make
+PACKAGE_VERSION	src/Makefile	/^PACKAGE_VERSION = 3.1.4$/;"	m	language:Make
+PACKAGE_VERSION	tests/Makefile	/^PACKAGE_VERSION = 3.1.4$/;"	m	language:Make
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m	language:Make
+PATH_SEPARATOR	doc/Makefile	/^PATH_SEPARATOR = :$/;"	m	language:Make
+PATH_SEPARATOR	src/Makefile	/^PATH_SEPARATOR = :$/;"	m	language:Make
+PATH_SEPARATOR	tests/Makefile	/^PATH_SEPARATOR = :$/;"	m	language:Make
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m	language:Make
+POST_INSTALL	doc/Makefile	/^POST_INSTALL = :$/;"	m	language:Make
+POST_INSTALL	src/Makefile	/^POST_INSTALL = :$/;"	m	language:Make
+POST_INSTALL	tests/Makefile	/^POST_INSTALL = :$/;"	m	language:Make
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m	language:Make
+POST_UNINSTALL	doc/Makefile	/^POST_UNINSTALL = :$/;"	m	language:Make
+POST_UNINSTALL	src/Makefile	/^POST_UNINSTALL = :$/;"	m	language:Make
+POST_UNINSTALL	tests/Makefile	/^POST_UNINSTALL = :$/;"	m	language:Make
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m	language:Make
+PRE_INSTALL	doc/Makefile	/^PRE_INSTALL = :$/;"	m	language:Make
+PRE_INSTALL	src/Makefile	/^PRE_INSTALL = :$/;"	m	language:Make
+PRE_INSTALL	tests/Makefile	/^PRE_INSTALL = :$/;"	m	language:Make
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m	language:Make
+PRE_UNINSTALL	doc/Makefile	/^PRE_UNINSTALL = :$/;"	m	language:Make
+PRE_UNINSTALL	src/Makefile	/^PRE_UNINSTALL = :$/;"	m	language:Make
+PRE_UNINSTALL	tests/Makefile	/^PRE_UNINSTALL = :$/;"	m	language:Make
+PROGRAMS	tests/Makefile	/^PROGRAMS = $(noinst_PROGRAMS)$/;"	m	language:Make
+PY_BUF_SIZE	src/modbus-rtu-private.h	34;"	d	language:C++
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m	language:Make
+RANLIB	doc/Makefile	/^RANLIB = ranlib$/;"	m	language:Make
+RANLIB	src/Makefile	/^RANLIB = ranlib$/;"	m	language:Make
+RANLIB	tests/Makefile	/^RANLIB = ranlib$/;"	m	language:Make
+RECHECK_LOGS	tests/Makefile	/^RECHECK_LOGS = $(TEST_LOGS)$/;"	m	language:Make
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m	language:Make
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m	language:Make
+RTU	tests/bandwidth-client.c	/^    RTU$/;"	e	language:C	enum:__anon3	file:
+RTU	tests/bandwidth-server-one.c	/^    RTU$/;"	e	language:C	enum:__anon4	file:
+RTU	tests/unit-test-client.c	/^    RTU$/;"	e	language:C	enum:__anon1	file:
+RTU	tests/unit-test-server.c	/^    RTU$/;"	e	language:C	enum:__anon2	file:
+SCRIPTS	tests/Makefile	/^SCRIPTS = $(noinst_SCRIPTS)$/;"	m	language:Make
+SED	Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
+SED	doc/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
+SED	src/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
+SED	tests/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
+SERVER_ID	tests/random-test-client.c	31;"	d	language:C	file:
+SERVER_ID	tests/unit-test.h	26;"	d	language:C++
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m	language:Make
+SET_MAKE	doc/Makefile	/^SET_MAKE = $/;"	m	language:Make
+SET_MAKE	src/Makefile	/^SET_MAKE = $/;"	m	language:Make
+SET_MAKE	tests/Makefile	/^SET_MAKE = $/;"	m	language:Make
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m	language:Make
+SHELL	doc/Makefile	/^SHELL = \/bin\/bash$/;"	m	language:Make
+SHELL	src/Makefile	/^SHELL = \/bin\/bash$/;"	m	language:Make
+SHELL	tests/Makefile	/^SHELL = \/bin\/bash$/;"	m	language:Make
+SHUT_RDWR	src/modbus-tcp.c	30;"	d	language:C	file:
+SOURCES	Makefile	/^SOURCES =$/;"	m	language:Make
+SOURCES	doc/Makefile	/^SOURCES =$/;"	m	language:Make
+SOURCES	src/Makefile	/^SOURCES = $(libmodbus_la_SOURCES)$/;"	m	language:Make
+SOURCES	tests/Makefile	/^SOURCES = $(bandwidth_client_SOURCES) \\$/;"	m	language:Make
+STDC_HEADERS	config.h	143;"	d	language:C++
+STRIP	Makefile	/^STRIP = strip$/;"	m	language:Make
+STRIP	doc/Makefile	/^STRIP = strip$/;"	m	language:Make
+STRIP	src/Makefile	/^STRIP = strip$/;"	m	language:Make
+STRIP	tests/Makefile	/^STRIP = strip$/;"	m	language:Make
+SUBDIRS	Makefile	/^SUBDIRS = src doc $(am__append_1)$/;"	m	language:Make
+TCP	tests/bandwidth-client.c	/^    TCP,$/;"	e	language:C	enum:__anon3	file:
+TCP	tests/bandwidth-server-one.c	/^    TCP,$/;"	e	language:C	enum:__anon4	file:
+TCP	tests/unit-test-client.c	/^    TCP,$/;"	e	language:C	enum:__anon1	file:
+TCP	tests/unit-test-server.c	/^    TCP,$/;"	e	language:C	enum:__anon2	file:
+TCP_PI	tests/unit-test-client.c	/^    TCP_PI,$/;"	e	language:C	enum:__anon1	file:
+TCP_PI	tests/unit-test-server.c	/^    TCP_PI,$/;"	e	language:C	enum:__anon2	file:
+TESTS	tests/Makefile	/^TESTS = .\/unit-tests.sh$/;"	m	language:Make
+TEST_EXTENSIONS	tests/Makefile	/^TEST_EXTENSIONS =  .test$/;"	m	language:Make
+TEST_LOGS	tests/Makefile	/^TEST_LOGS = $(am__test_logs2:.test.log=.log)$/;"	m	language:Make
+TEST_LOG_COMPILE	tests/Makefile	/^TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \\$/;"	m	language:Make
+TEST_LOG_DRIVER	tests/Makefile	/^TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)\/build-aux\/test-driver$/;"	m	language:Make
+TEST_SUITE_LOG	tests/Makefile	/^TEST_SUITE_LOG = test-suite.log$/;"	m	language:Make
+TRUE	src/modbus.h	49;"	d	language:C++
+TXT3	doc/Makefile	/^TXT3 = \\$/;"	m	language:Make
+TXT7	doc/Makefile	/^TXT7 = libmodbus.txt$/;"	m	language:Make
+UT_BITS_ADDRESS	tests/unit-test.h	/^const uint16_t UT_BITS_ADDRESS = 0x130;$/;"	v	language:C++
+UT_BITS_NB	tests/unit-test.h	/^const uint16_t UT_BITS_NB = 0x25;$/;"	v	language:C++
+UT_BITS_TAB	tests/unit-test.h	/^const uint8_t UT_BITS_TAB[] = { 0xCD, 0x6B, 0xB2, 0x0E, 0x1B };$/;"	v	language:C++
+UT_INPUT_BITS_ADDRESS	tests/unit-test.h	/^const uint16_t UT_INPUT_BITS_ADDRESS = 0x1C4;$/;"	v	language:C++
+UT_INPUT_BITS_NB	tests/unit-test.h	/^const uint16_t UT_INPUT_BITS_NB = 0x16;$/;"	v	language:C++
+UT_INPUT_BITS_TAB	tests/unit-test.h	/^const uint8_t UT_INPUT_BITS_TAB[] = { 0xAC, 0xDB, 0x35 };$/;"	v	language:C++
+UT_INPUT_REGISTERS_ADDRESS	tests/unit-test.h	/^const uint16_t UT_INPUT_REGISTERS_ADDRESS = 0x108;$/;"	v	language:C++
+UT_INPUT_REGISTERS_NB	tests/unit-test.h	/^const uint16_t UT_INPUT_REGISTERS_NB = 0x1;$/;"	v	language:C++
+UT_INPUT_REGISTERS_TAB	tests/unit-test.h	/^const uint16_t UT_INPUT_REGISTERS_TAB[] = { 0x000A };$/;"	v	language:C++
+UT_IREAL_ABCD	tests/unit-test.h	/^const uint32_t UT_IREAL_ABCD = 0x0020F147;$/;"	v	language:C++
+UT_IREAL_BADC	tests/unit-test.h	/^const uint32_t UT_IREAL_BADC = 0x200047F1;$/;"	v	language:C++
+UT_IREAL_CDAB	tests/unit-test.h	/^const uint32_t UT_IREAL_CDAB = 0xF1470020;$/;"	v	language:C++
+UT_IREAL_DCBA	tests/unit-test.h	/^const uint32_t UT_IREAL_DCBA = 0x47F12000;$/;"	v	language:C++
+UT_REAL	tests/unit-test.h	/^const float UT_REAL = 123456.00;$/;"	v	language:C++
+UT_REGISTERS_ADDRESS	tests/unit-test.h	/^const uint16_t UT_REGISTERS_ADDRESS = 0x160;$/;"	v	language:C++
+UT_REGISTERS_ADDRESS_BYTE_SLEEP_5_MS	tests/unit-test.h	/^const uint16_t UT_REGISTERS_ADDRESS_BYTE_SLEEP_5_MS = 0x173;$/;"	v	language:C++
+UT_REGISTERS_ADDRESS_INVALID_TID_OR_SLAVE	tests/unit-test.h	/^const uint16_t UT_REGISTERS_ADDRESS_INVALID_TID_OR_SLAVE = 0x171;$/;"	v	language:C++
+UT_REGISTERS_ADDRESS_SLEEP_500_MS	tests/unit-test.h	/^const uint16_t UT_REGISTERS_ADDRESS_SLEEP_500_MS = 0x172;$/;"	v	language:C++
+UT_REGISTERS_ADDRESS_SPECIAL	tests/unit-test.h	/^const uint16_t UT_REGISTERS_ADDRESS_SPECIAL = 0x170;$/;"	v	language:C++
+UT_REGISTERS_NB	tests/unit-test.h	/^const uint16_t UT_REGISTERS_NB = 0x3;$/;"	v	language:C++
+UT_REGISTERS_NB_MAX	tests/unit-test.h	/^const uint16_t UT_REGISTERS_NB_MAX = 0x20;$/;"	v	language:C++
+UT_REGISTERS_NB_SPECIAL	tests/unit-test.h	/^const uint16_t UT_REGISTERS_NB_SPECIAL = 0x2;$/;"	v	language:C++
+UT_REGISTERS_TAB	tests/unit-test.h	/^const uint16_t UT_REGISTERS_TAB[] = { 0x022B, 0x0001, 0x0064 };$/;"	v	language:C++
+VERSION	Makefile	/^VERSION = 3.1.4$/;"	m	language:Make
+VERSION	config.h	168;"	d	language:C++
+VERSION	doc/Makefile	/^VERSION = 3.1.4$/;"	m	language:Make
+VERSION	src/Makefile	/^VERSION = 3.1.4$/;"	m	language:Make
+VERSION	tests/Makefile	/^VERSION = 3.1.4$/;"	m	language:Make
+WINVER	config.h	171;"	d	language:C++
+WINVER	src/modbus-tcp.c	12;"	d	language:C	file:
+_ALL_SOURCE	config.h	147;"	d	language:C++
+_BYTE_TIMEOUT	src/modbus-private.h	40;"	d	language:C++
+_DARWIN_USE_64_BIT_INODE	config.h	175;"	d	language:C++
+_FILE_OFFSET_BITS	config.h	179;"	d	language:C++
+_GNU_SOURCE	config.h	151;"	d	language:C++
+_MIN_REQ_LENGTH	src/modbus-private.h	32;"	d	language:C++
+_MODBUS_BACKEND_TYPE_RTU	src/modbus-private.h	/^    _MODBUS_BACKEND_TYPE_RTU=0,$/;"	e	language:C++	enum:__anon8
+_MODBUS_BACKEND_TYPE_TCP	src/modbus-private.h	/^    _MODBUS_BACKEND_TYPE_TCP$/;"	e	language:C++	enum:__anon8
+_MODBUS_EXCEPTION_RSP_LENGTH	src/modbus-private.h	36;"	d	language:C++
+_MODBUS_RTU_CHECKSUM_LENGTH	src/modbus-rtu-private.h	26;"	d	language:C++
+_MODBUS_RTU_HEADER_LENGTH	src/modbus-rtu-private.h	22;"	d	language:C++
+_MODBUS_RTU_PRESET_REQ_LENGTH	src/modbus-rtu-private.h	23;"	d	language:C++
+_MODBUS_RTU_PRESET_RSP_LENGTH	src/modbus-rtu-private.h	24;"	d	language:C++
+_MODBUS_TCP_CHECKSUM_LENGTH	src/modbus-tcp-private.h	14;"	d	language:C++
+_MODBUS_TCP_HEADER_LENGTH	src/modbus-tcp-private.h	10;"	d	language:C++
+_MODBUS_TCP_PI_NODE_LENGTH	src/modbus-tcp-private.h	30;"	d	language:C++
+_MODBUS_TCP_PI_SERVICE_LENGTH	src/modbus-tcp-private.h	31;"	d	language:C++
+_MODBUS_TCP_PRESET_REQ_LENGTH	src/modbus-tcp-private.h	11;"	d	language:C++
+_MODBUS_TCP_PRESET_RSP_LENGTH	src/modbus-tcp-private.h	12;"	d	language:C++
+_POSIX_PTHREAD_SEMANTICS	config.h	155;"	d	language:C++
+_REPORT_SLAVE_ID	src/modbus-private.h	34;"	d	language:C++
+_RESPONSE_TIMEOUT	src/modbus-private.h	39;"	d	language:C++
+_STEP_DATA	src/modbus.c	/^    _STEP_DATA$/;"	e	language:C	enum:__anon7	file:
+_STEP_FUNCTION	src/modbus.c	/^    _STEP_FUNCTION,$/;"	e	language:C	enum:__anon7	file:
+_STEP_META	src/modbus.c	/^    _STEP_META,$/;"	e	language:C	enum:__anon7	file:
+_TANDEM_SOURCE	config.h	159;"	d	language:C++
+_UNIT_TEST_H_	tests/unit-test.h	9;"	d	language:C++
+__EXTENSIONS__	config.h	163;"	d	language:C++
+_connect	src/modbus-tcp.c	/^static int _connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen,$/;"	f	language:C	file:	signature:(int sockfd, const struct sockaddr *addr, socklen_t addrlen, const struct timeval *ro_tv)
+_error_print	src/modbus.c	/^void _error_print(modbus_t *ctx, const char *context)$/;"	f	language:C	signature:(modbus_t *ctx, const char *context)
+_modbus	src/modbus-private.h	/^struct _modbus {$/;"	s	language:C++
+_modbus_backend	src/modbus-private.h	/^typedef struct _modbus_backend {$/;"	s	language:C++
+_modbus_init_common	src/modbus.c	/^void _modbus_init_common(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+_modbus_mapping_t	src/modbus.h	/^typedef struct _modbus_mapping_t {$/;"	s	language:C++
+_modbus_receive_msg	src/modbus.c	/^int _modbus_receive_msg(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)
+_modbus_rtu	src/modbus-rtu-private.h	/^typedef struct _modbus_rtu {$/;"	s	language:C++
+_modbus_rtu_backend	src/modbus-rtu.c	/^modbus_backend_t _modbus_rtu_backend = {$/;"	v	language:C
+_modbus_rtu_build_request_basis	src/modbus-rtu.c	/^static int _modbus_rtu_build_request_basis(modbus_t *ctx, int function,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint8_t *req)
+_modbus_rtu_build_response_basis	src/modbus-rtu.c	/^static int _modbus_rtu_build_response_basis(sft_t *sft, uint8_t *rsp)$/;"	f	language:C	file:	signature:(sft_t *sft, uint8_t *rsp)
+_modbus_rtu_check_integrity	src/modbus-rtu.c	/^static int _modbus_rtu_check_integrity(modbus_t *ctx, uint8_t *msg,$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *msg, const int msg_length)
+_modbus_rtu_close	src/modbus-rtu.c	/^static void _modbus_rtu_close(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_rtu_connect	src/modbus-rtu.c	/^static int _modbus_rtu_connect(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_rtu_flush	src/modbus-rtu.c	/^static int _modbus_rtu_flush(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_rtu_free	src/modbus-rtu.c	/^static void _modbus_rtu_free(modbus_t *ctx) {$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_rtu_ioctl_rts	src/modbus-rtu.c	/^static void _modbus_rtu_ioctl_rts(modbus_t *ctx, int on)$/;"	f	language:C	file:	signature:(modbus_t *ctx, int on)
+_modbus_rtu_pre_check_confirmation	src/modbus-rtu.c	/^static int _modbus_rtu_pre_check_confirmation(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	file:	signature:(modbus_t *ctx, const uint8_t *req, const uint8_t *rsp, int rsp_length)
+_modbus_rtu_prepare_response_tid	src/modbus-rtu.c	/^static int _modbus_rtu_prepare_response_tid(const uint8_t *req, int *req_length)$/;"	f	language:C	file:	signature:(const uint8_t *req, int *req_length)
+_modbus_rtu_receive	src/modbus-rtu.c	/^static int _modbus_rtu_receive(modbus_t *ctx, uint8_t *req)$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req)
+_modbus_rtu_recv	src/modbus-rtu.c	/^static ssize_t _modbus_rtu_recv(modbus_t *ctx, uint8_t *rsp, int rsp_length)$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *rsp, int rsp_length)
+_modbus_rtu_select	src/modbus-rtu.c	/^static int _modbus_rtu_select(modbus_t *ctx, fd_set *rset,$/;"	f	language:C	file:	signature:(modbus_t *ctx, fd_set *rset, struct timeval *tv, int length_to_read)
+_modbus_rtu_send	src/modbus-rtu.c	/^static ssize_t _modbus_rtu_send(modbus_t *ctx, const uint8_t *req, int req_length)$/;"	f	language:C	file:	signature:(modbus_t *ctx, const uint8_t *req, int req_length)
+_modbus_rtu_send_msg_pre	src/modbus-rtu.c	/^static int _modbus_rtu_send_msg_pre(uint8_t *req, int req_length)$/;"	f	language:C	file:	signature:(uint8_t *req, int req_length)
+_modbus_set_slave	src/modbus-rtu.c	/^static int _modbus_set_slave(modbus_t *ctx, int slave)$/;"	f	language:C	file:	signature:(modbus_t *ctx, int slave)
+_modbus_set_slave	src/modbus-tcp.c	/^static int _modbus_set_slave(modbus_t *ctx, int slave)$/;"	f	language:C	file:	signature:(modbus_t *ctx, int slave)
+_modbus_tcp	src/modbus-tcp-private.h	/^typedef struct _modbus_tcp {$/;"	s	language:C++
+_modbus_tcp_backend	src/modbus-tcp.c	/^ modbus_backend_t _modbus_tcp_backend = {$/;"	v	language:C
+_modbus_tcp_build_request_basis	src/modbus-tcp.c	/^static int _modbus_tcp_build_request_basis(modbus_t *ctx, int function,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint8_t *req)
+_modbus_tcp_build_response_basis	src/modbus-tcp.c	/^static int _modbus_tcp_build_response_basis(sft_t *sft, uint8_t *rsp)$/;"	f	language:C	file:	signature:(sft_t *sft, uint8_t *rsp)
+_modbus_tcp_check_integrity	src/modbus-tcp.c	/^static int _modbus_tcp_check_integrity(modbus_t *ctx, uint8_t *msg, const int msg_length)$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *msg, const int msg_length)
+_modbus_tcp_close	src/modbus-tcp.c	/^static void _modbus_tcp_close(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_tcp_connect	src/modbus-tcp.c	/^static int _modbus_tcp_connect(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_tcp_flush	src/modbus-tcp.c	/^static int _modbus_tcp_flush(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_tcp_free	src/modbus-tcp.c	/^static void _modbus_tcp_free(modbus_t *ctx) {$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_tcp_init_win32	src/modbus-tcp.c	/^static int _modbus_tcp_init_win32(void)$/;"	f	language:C	file:	signature:(void)
+_modbus_tcp_pi	src/modbus-tcp-private.h	/^typedef struct _modbus_tcp_pi {$/;"	s	language:C++
+_modbus_tcp_pi_backend	src/modbus-tcp.c	/^ modbus_backend_t _modbus_tcp_pi_backend = {$/;"	v	language:C
+_modbus_tcp_pi_connect	src/modbus-tcp.c	/^static int _modbus_tcp_pi_connect(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_modbus_tcp_pre_check_confirmation	src/modbus-tcp.c	/^static int _modbus_tcp_pre_check_confirmation(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	file:	signature:(modbus_t *ctx, const uint8_t *req, const uint8_t *rsp, int rsp_length)
+_modbus_tcp_prepare_response_tid	src/modbus-tcp.c	/^static int _modbus_tcp_prepare_response_tid(const uint8_t *req, int *req_length)$/;"	f	language:C	file:	signature:(const uint8_t *req, int *req_length)
+_modbus_tcp_receive	src/modbus-tcp.c	/^static int _modbus_tcp_receive(modbus_t *ctx, uint8_t *req) {$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req)
+_modbus_tcp_recv	src/modbus-tcp.c	/^static ssize_t _modbus_tcp_recv(modbus_t *ctx, uint8_t *rsp, int rsp_length) {$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *rsp, int rsp_length)
+_modbus_tcp_select	src/modbus-tcp.c	/^static int _modbus_tcp_select(modbus_t *ctx, fd_set *rset, struct timeval *tv, int length_to_read)$/;"	f	language:C	file:	signature:(modbus_t *ctx, fd_set *rset, struct timeval *tv, int length_to_read)
+_modbus_tcp_send	src/modbus-tcp.c	/^static ssize_t _modbus_tcp_send(modbus_t *ctx, const uint8_t *req, int req_length)$/;"	f	language:C	file:	signature:(modbus_t *ctx, const uint8_t *req, int req_length)
+_modbus_tcp_send_msg_pre	src/modbus-tcp.c	/^static int _modbus_tcp_send_msg_pre(uint8_t *req, int req_length)$/;"	f	language:C	file:	signature:(uint8_t *req, int req_length)
+_modbus_tcp_set_ipv4_options	src/modbus-tcp.c	/^static int _modbus_tcp_set_ipv4_options(int s)$/;"	f	language:C	file:	signature:(int s)
+_sft	src/modbus-private.h	/^typedef struct _sft {$/;"	s	language:C++
+_sleep_response_timeout	src/modbus.c	/^static void _sleep_response_timeout(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
+_step_t	src/modbus.c	/^} _step_t;$/;"	t	language:C	typeref:enum:__anon7	file:
+abs_builddir	Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_builddir	doc/Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/doc$/;"	m	language:Make
+abs_builddir	src/Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/src$/;"	m	language:Make
+abs_builddir	tests/Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/tests$/;"	m	language:Make
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_srcdir	doc/Makefile	/^abs_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/doc$/;"	m	language:Make
+abs_srcdir	src/Makefile	/^abs_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/src$/;"	m	language:Make
+abs_srcdir	tests/Makefile	/^abs_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/tests$/;"	m	language:Make
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_builddir	doc/Makefile	/^abs_top_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_builddir	src/Makefile	/^abs_top_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_builddir	tests/Makefile	/^abs_top_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_srcdir	doc/Makefile	/^abs_top_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_srcdir	src/Makefile	/^abs_top_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+abs_top_srcdir	tests/Makefile	/^abs_top_srcdir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
+ac_ct_AR	Makefile	/^ac_ct_AR = ar$/;"	m	language:Make
+ac_ct_AR	doc/Makefile	/^ac_ct_AR = ar$/;"	m	language:Make
+ac_ct_AR	src/Makefile	/^ac_ct_AR = ar$/;"	m	language:Make
+ac_ct_AR	tests/Makefile	/^ac_ct_AR = ar$/;"	m	language:Make
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m	language:Make
+ac_ct_CC	doc/Makefile	/^ac_ct_CC = gcc$/;"	m	language:Make
+ac_ct_CC	src/Makefile	/^ac_ct_CC = gcc$/;"	m	language:Make
+ac_ct_CC	tests/Makefile	/^ac_ct_CC = gcc$/;"	m	language:Make
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m	language:Make
+ac_ct_CXX	doc/Makefile	/^ac_ct_CXX = g++$/;"	m	language:Make
+ac_ct_CXX	src/Makefile	/^ac_ct_CXX = g++$/;"	m	language:Make
+ac_ct_CXX	tests/Makefile	/^ac_ct_CXX = g++$/;"	m	language:Make
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m	language:Make
+ac_ct_DUMPBIN	doc/Makefile	/^ac_ct_DUMPBIN = $/;"	m	language:Make
+ac_ct_DUMPBIN	src/Makefile	/^ac_ct_DUMPBIN = $/;"	m	language:Make
+ac_ct_DUMPBIN	tests/Makefile	/^ac_ct_DUMPBIN = $/;"	m	language:Make
+ac_fn_c_check_decl	configure	/^ac_fn_c_check_decl ()$/;"	f	language:Sh
+ac_fn_c_check_func	configure	/^ac_fn_c_check_func ()$/;"	f	language:Sh
+ac_fn_c_check_header_compile	configure	/^ac_fn_c_check_header_compile ()$/;"	f	language:Sh
+ac_fn_c_check_header_mongrel	configure	/^ac_fn_c_check_header_mongrel ()$/;"	f	language:Sh
+ac_fn_c_check_type	configure	/^ac_fn_c_check_type ()$/;"	f	language:Sh
+ac_fn_c_find_intX_t	configure	/^ac_fn_c_find_intX_t ()$/;"	f	language:Sh
+ac_fn_c_find_uintX_t	configure	/^ac_fn_c_find_uintX_t ()$/;"	f	language:Sh
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f	language:Sh
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f	language:Sh
+ac_fn_c_try_link	configure	/^ac_fn_c_try_link ()$/;"	f	language:Sh
+ac_fn_c_try_run	configure	/^ac_fn_c_try_run ()$/;"	f	language:Sh
+ac_fn_cxx_try_compile	configure	/^ac_fn_cxx_try_compile ()$/;"	f	language:Sh
+ac_fn_cxx_try_cpp	configure	/^ac_fn_cxx_try_cpp ()$/;"	f	language:Sh
+ac_fn_cxx_try_link	configure	/^ac_fn_cxx_try_link ()$/;"	f	language:Sh
+ac_libmodbus_have_asciidoc	Makefile	/^ac_libmodbus_have_asciidoc = no$/;"	m	language:Make
+ac_libmodbus_have_asciidoc	doc/Makefile	/^ac_libmodbus_have_asciidoc = no$/;"	m	language:Make
+ac_libmodbus_have_asciidoc	src/Makefile	/^ac_libmodbus_have_asciidoc = no$/;"	m	language:Make
+ac_libmodbus_have_asciidoc	tests/Makefile	/^ac_libmodbus_have_asciidoc = no$/;"	m	language:Make
+ac_libmodbus_have_xmlto	Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
+ac_libmodbus_have_xmlto	doc/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
+ac_libmodbus_have_xmlto	src/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
+ac_libmodbus_have_xmlto	tests/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
+aix_post_process_depfile	build-aux/depcomp	/^aix_post_process_depfile ()$/;"	f	language:Sh
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m	language:Make
+am__DIST_COMMON	Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/config.h.in \\$/;"	m	language:Make
+am__DIST_COMMON	doc/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in$/;"	m	language:Make
+am__DIST_COMMON	src/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/modbus-version.h.in \\$/;"	m	language:Make
+am__DIST_COMMON	tests/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/unit-test.h.in \\$/;"	m	language:Make
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m	language:Make
+am__aclocal_m4_deps	doc/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m	language:Make
+am__aclocal_m4_deps	src/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m	language:Make
+am__aclocal_m4_deps	tests/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m	language:Make
+am__append_1	Makefile	/^am__append_1 = tests$/;"	m	language:Make
+am__base_list	Makefile	/^am__base_list = \\$/;"	m	language:Make
+am__base_list	doc/Makefile	/^am__base_list = \\$/;"	m	language:Make
+am__base_list	src/Makefile	/^am__base_list = \\$/;"	m	language:Make
+am__base_list	tests/Makefile	/^am__base_list = \\$/;"	m	language:Make
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m	language:Make
+am__can_run_installinfo	doc/Makefile	/^am__can_run_installinfo = \\$/;"	m	language:Make
+am__can_run_installinfo	src/Makefile	/^am__can_run_installinfo = \\$/;"	m	language:Make
+am__can_run_installinfo	tests/Makefile	/^am__can_run_installinfo = \\$/;"	m	language:Make
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m	language:Make
+am__cd	doc/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m	language:Make
+am__cd	src/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m	language:Make
+am__cd	tests/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m	language:Make
+am__check_pre	tests/Makefile	/^am__check_pre = \\$/;"	m	language:Make
+am__common_driver_flags	tests/Makefile	/^am__common_driver_flags = \\$/;"	m	language:Make
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m	language:Make
+am__configure_deps	doc/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m	language:Make
+am__configure_deps	src/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m	language:Make
+am__configure_deps	tests/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m	language:Make
+am__copy_in_global_log_rx	tests/Makefile	/^am__copy_in_global_log_rx = ^[ 	]*:copy-in-global-log:[ 	]*$/;"	m	language:Make
+am__create_global_log	tests/Makefile	/^am__create_global_log = $(AWK) ' \\$/;"	m	language:Make
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m	language:Make
+am__define_uniq_tagged_files	src/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m	language:Make
+am__define_uniq_tagged_files	tests/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m	language:Make
+am__depfiles_maybe	src/Makefile	/^am__depfiles_maybe = depfiles$/;"	m	language:Make
+am__depfiles_maybe	tests/Makefile	/^am__depfiles_maybe = depfiles$/;"	m	language:Make
+am__distuninstallcheck_listfiles	Makefile	/^am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \\$/;"	m	language:Make
+am__global_test_result_rx	tests/Makefile	/^am__global_test_result_rx = ^[ 	]*:global-test-result:[ 	]*$/;"	m	language:Make
+am__include	Makefile	/^am__include = include$/;"	m	language:Make
+am__include	doc/Makefile	/^am__include = include$/;"	m	language:Make
+am__include	src/Makefile	/^am__include = include$/;"	m	language:Make
+am__include	tests/Makefile	/^am__include = include$/;"	m	language:Make
+am__install_max	Makefile	/^am__install_max = 40$/;"	m	language:Make
+am__install_max	doc/Makefile	/^am__install_max = 40$/;"	m	language:Make
+am__install_max	src/Makefile	/^am__install_max = 40$/;"	m	language:Make
+am__install_max	tests/Makefile	/^am__install_max = 40$/;"	m	language:Make
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(docdir)" "$(DESTDIR)$(pkgconfigdir)"$/;"	m	language:Make
+am__installdirs	doc/Makefile	/^am__installdirs = "$(DESTDIR)$(man3dir)" "$(DESTDIR)$(man7dir)"$/;"	m	language:Make
+am__installdirs	src/Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" \\$/;"	m	language:Make
+am__is_gnu_make	Makefile	/^am__is_gnu_make = { \\$/;"	m	language:Make
+am__is_gnu_make	doc/Makefile	/^am__is_gnu_make = { \\$/;"	m	language:Make
+am__is_gnu_make	src/Makefile	/^am__is_gnu_make = { \\$/;"	m	language:Make
+am__is_gnu_make	tests/Makefile	/^am__is_gnu_make = { \\$/;"	m	language:Make
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m	language:Make
+am__leading_dot	doc/Makefile	/^am__leading_dot = .$/;"	m	language:Make
+am__leading_dot	src/Makefile	/^am__leading_dot = .$/;"	m	language:Make
+am__leading_dot	tests/Makefile	/^am__leading_dot = .$/;"	m	language:Make
+am__list_recheck_tests	tests/Makefile	/^am__list_recheck_tests = $(AWK) '{ \\$/;"	m	language:Make
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_dryrun	doc/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_dryrun	src/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_dryrun	tests/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_keepgoing	doc/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_keepgoing	src/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_keepgoing	tests/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m	language:Make
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m	language:Make
+am__make_running_with_option	doc/Makefile	/^am__make_running_with_option = \\$/;"	m	language:Make
+am__make_running_with_option	src/Makefile	/^am__make_running_with_option = \\$/;"	m	language:Make
+am__make_running_with_option	tests/Makefile	/^am__make_running_with_option = \\$/;"	m	language:Make
+am__mv	src/Makefile	/^am__mv = mv -f$/;"	m	language:Make
+am__mv	tests/Makefile	/^am__mv = mv -f$/;"	m	language:Make
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m	language:Make
+am__nobase_list	doc/Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m	language:Make
+am__nobase_list	src/Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m	language:Make
+am__nobase_list	tests/Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m	language:Make
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m	language:Make
+am__nobase_strip	doc/Makefile	/^am__nobase_strip = \\$/;"	m	language:Make
+am__nobase_strip	src/Makefile	/^am__nobase_strip = \\$/;"	m	language:Make
+am__nobase_strip	tests/Makefile	/^am__nobase_strip = \\$/;"	m	language:Make
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m	language:Make
+am__nobase_strip_setup	doc/Makefile	/^am__nobase_strip_setup = \\$/;"	m	language:Make
+am__nobase_strip_setup	src/Makefile	/^am__nobase_strip_setup = \\$/;"	m	language:Make
+am__nobase_strip_setup	tests/Makefile	/^am__nobase_strip_setup = \\$/;"	m	language:Make
+am__post_remove_distdir	Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m	language:Make
+am__quote	Makefile	/^am__quote = $/;"	m	language:Make
+am__quote	doc/Makefile	/^am__quote = $/;"	m	language:Make
+am__quote	src/Makefile	/^am__quote = $/;"	m	language:Make
+am__quote	tests/Makefile	/^am__quote = $/;"	m	language:Make
+am__recheck_rx	tests/Makefile	/^am__recheck_rx = ^[ 	]*:recheck:[ 	]*$/;"	m	language:Make
+am__recursive_targets	Makefile	/^am__recursive_targets = \\$/;"	m	language:Make
+am__relativize	Makefile	/^am__relativize = \\$/;"	m	language:Make
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m	language:Make
+am__rst_title	tests/Makefile	/^am__rst_title = { sed 's\/.*\/   &   \/;h;s\/.\/=\/g;p;x;s\/ *$$\/\/;p;g' && echo; }$/;"	m	language:Make
+am__set_TESTS_bases	tests/Makefile	/^am__set_TESTS_bases = \\$/;"	m	language:Make
+am__set_b	tests/Makefile	/^am__set_b = \\$/;"	m	language:Make
+am__sh_e_setup	tests/Makefile	/^am__sh_e_setup = case $$- in *e*) set +e;; esac$/;"	m	language:Make
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m	language:Make
+am__strip_dir	doc/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m	language:Make
+am__strip_dir	src/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m	language:Make
+am__strip_dir	tests/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m	language:Make
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \\$/;"	m	language:Make
+am__tagged_files	doc/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m	language:Make
+am__tagged_files	src/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m	language:Make
+am__tagged_files	tests/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \\$/;"	m	language:Make
+am__tar	Makefile	/^am__tar = tar --format=posix -chf - "$$tardir"$/;"	m	language:Make
+am__tar	doc/Makefile	/^am__tar = tar --format=posix -chf - "$$tardir"$/;"	m	language:Make
+am__tar	src/Makefile	/^am__tar = tar --format=posix -chf - "$$tardir"$/;"	m	language:Make
+am__tar	tests/Makefile	/^am__tar = tar --format=posix -chf - "$$tardir"$/;"	m	language:Make
+am__test_logs1	tests/Makefile	/^am__test_logs1 = $(TESTS:=.log)$/;"	m	language:Make
+am__test_logs2	tests/Makefile	/^am__test_logs2 = $(am__test_logs1:.log=.log)$/;"	m	language:Make
+am__tty_colors	tests/Makefile	/^am__tty_colors = { \\$/;"	m	language:Make
+am__tty_colors_dummy	tests/Makefile	/^am__tty_colors_dummy = \\$/;"	m	language:Make
+am__uninstall_files_from_dir	Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m	language:Make
+am__uninstall_files_from_dir	doc/Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m	language:Make
+am__uninstall_files_from_dir	src/Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m	language:Make
+am__uninstall_files_from_dir	tests/Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m	language:Make
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m	language:Make
+am__uniquify_input	src/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m	language:Make
+am__uniquify_input	tests/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m	language:Make
+am__untar	Makefile	/^am__untar = tar -xf -$/;"	m	language:Make
+am__untar	doc/Makefile	/^am__untar = tar -xf -$/;"	m	language:Make
+am__untar	src/Makefile	/^am__untar = tar -xf -$/;"	m	language:Make
+am__untar	tests/Makefile	/^am__untar = tar -xf -$/;"	m	language:Make
+am__v_CCLD_	src/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_CCLD_	tests/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_CCLD_0	src/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m	language:Make
+am__v_CCLD_0	tests/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m	language:Make
+am__v_CCLD_1	src/Makefile	/^am__v_CCLD_1 = $/;"	m	language:Make
+am__v_CCLD_1	tests/Makefile	/^am__v_CCLD_1 = $/;"	m	language:Make
+am__v_CC_	src/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_CC_	tests/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_CC_0	src/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m	language:Make
+am__v_CC_0	tests/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m	language:Make
+am__v_CC_1	src/Makefile	/^am__v_CC_1 = $/;"	m	language:Make
+am__v_CC_1	tests/Makefile	/^am__v_CC_1 = $/;"	m	language:Make
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_GEN_	doc/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_GEN_	src/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_GEN_	tests/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m	language:Make
+am__v_GEN_0	doc/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m	language:Make
+am__v_GEN_0	src/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m	language:Make
+am__v_GEN_0	tests/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m	language:Make
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m	language:Make
+am__v_GEN_1	doc/Makefile	/^am__v_GEN_1 = $/;"	m	language:Make
+am__v_GEN_1	src/Makefile	/^am__v_GEN_1 = $/;"	m	language:Make
+am__v_GEN_1	tests/Makefile	/^am__v_GEN_1 = $/;"	m	language:Make
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_P_	doc/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_P_	src/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_P_	tests/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m	language:Make
+am__v_P_0	doc/Makefile	/^am__v_P_0 = false$/;"	m	language:Make
+am__v_P_0	src/Makefile	/^am__v_P_0 = false$/;"	m	language:Make
+am__v_P_0	tests/Makefile	/^am__v_P_0 = false$/;"	m	language:Make
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m	language:Make
+am__v_P_1	doc/Makefile	/^am__v_P_1 = :$/;"	m	language:Make
+am__v_P_1	src/Makefile	/^am__v_P_1 = :$/;"	m	language:Make
+am__v_P_1	tests/Makefile	/^am__v_P_1 = :$/;"	m	language:Make
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_at_	doc/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_at_	src/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_at_	tests/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m	language:Make
+am__v_at_0	doc/Makefile	/^am__v_at_0 = @$/;"	m	language:Make
+am__v_at_0	src/Makefile	/^am__v_at_0 = @$/;"	m	language:Make
+am__v_at_0	tests/Makefile	/^am__v_at_0 = @$/;"	m	language:Make
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m	language:Make
+am__v_at_1	doc/Makefile	/^am__v_at_1 = $/;"	m	language:Make
+am__v_at_1	src/Makefile	/^am__v_at_1 = $/;"	m	language:Make
+am__v_at_1	tests/Makefile	/^am__v_at_1 = $/;"	m	language:Make
+am__v_lt_	src/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_lt_	tests/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m	language:Make
+am__v_lt_0	src/Makefile	/^am__v_lt_0 = --silent$/;"	m	language:Make
+am__v_lt_0	tests/Makefile	/^am__v_lt_0 = --silent$/;"	m	language:Make
+am__v_lt_1	src/Makefile	/^am__v_lt_1 = $/;"	m	language:Make
+am__v_lt_1	tests/Makefile	/^am__v_lt_1 = $/;"	m	language:Make
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m	language:Make
+am__vpath_adj	doc/Makefile	/^am__vpath_adj = case $$p in \\$/;"	m	language:Make
+am__vpath_adj	src/Makefile	/^am__vpath_adj = case $$p in \\$/;"	m	language:Make
+am__vpath_adj	tests/Makefile	/^am__vpath_adj = case $$p in \\$/;"	m	language:Make
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m	language:Make
+am__vpath_adj_setup	doc/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m	language:Make
+am__vpath_adj_setup	src/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m	language:Make
+am__vpath_adj_setup	tests/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m	language:Make
+am_bandwidth_client_OBJECTS	tests/Makefile	/^am_bandwidth_client_OBJECTS = bandwidth-client.$(OBJEXT)$/;"	m	language:Make
+am_bandwidth_server_many_up_OBJECTS	tests/Makefile	/^am_bandwidth_server_many_up_OBJECTS =  \\$/;"	m	language:Make
+am_bandwidth_server_one_OBJECTS	tests/Makefile	/^am_bandwidth_server_one_OBJECTS = bandwidth-server-one.$(OBJEXT)$/;"	m	language:Make
+am_libmodbus_la_OBJECTS	src/Makefile	/^am_libmodbus_la_OBJECTS = modbus.lo modbus-data.lo modbus-rtu.lo \\$/;"	m	language:Make
+am_random_test_client_OBJECTS	tests/Makefile	/^am_random_test_client_OBJECTS = random-test-client.$(OBJEXT)$/;"	m	language:Make
+am_random_test_server_OBJECTS	tests/Makefile	/^am_random_test_server_OBJECTS = random-test-server.$(OBJEXT)$/;"	m	language:Make
+am_unit_test_client_OBJECTS	tests/Makefile	/^am_unit_test_client_OBJECTS = unit-test-client.$(OBJEXT)$/;"	m	language:Make
+am_unit_test_server_OBJECTS	tests/Makefile	/^am_unit_test_server_OBJECTS = unit-test-server.$(OBJEXT)$/;"	m	language:Make
+am_version_OBJECTS	tests/Makefile	/^am_version_OBJECTS = version.$(OBJEXT)$/;"	m	language:Make
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f	language:Sh
+as_fn_append	configure	/^  as_fn_append ()$/;"	f	language:Sh
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f	language:Sh
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f	language:Sh
+as_fn_error	config.status	/^as_fn_error ()$/;"	f	language:Sh
+as_fn_error	configure	/^as_fn_error ()$/;"	f	language:Sh
+as_fn_executable_p	config.status	/^as_fn_executable_p ()$/;"	f	language:Sh
+as_fn_executable_p	configure	/^as_fn_executable_p ()$/;"	f	language:Sh
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f	language:Sh
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f	language:Sh
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f	language:Sh
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f	language:Sh
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f	language:Sh
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f	language:Sh
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f	language:Sh
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f	language:Sh
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f	language:Sh
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f	language:Sh
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f	language:Sh
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f	language:Sh
+backend	src/modbus-private.h	/^    modbus_backend_t *backend;$/;"	m	language:C++	struct:_modbus
+backend_data	src/modbus-private.h	/^    void *backend_data;$/;"	m	language:C++	struct:_modbus
+backend_type	src/modbus-private.h	/^    unsigned int backend_type;$/;"	m	language:C++	struct:_modbus_backend
+bandwidth_client_DEPENDENCIES	tests/Makefile	/^bandwidth_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_client_LDADD	tests/Makefile	/^bandwidth_client_LDADD = $(common_ldflags)$/;"	m	language:Make
+bandwidth_client_OBJECTS	tests/Makefile	/^bandwidth_client_OBJECTS = $(am_bandwidth_client_OBJECTS)$/;"	m	language:Make
+bandwidth_client_SOURCES	tests/Makefile	/^bandwidth_client_SOURCES = bandwidth-client.c$/;"	m	language:Make
+bandwidth_server_many_up_DEPENDENCIES	tests/Makefile	/^bandwidth_server_many_up_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_many_up_LDADD	tests/Makefile	/^bandwidth_server_many_up_LDADD = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_many_up_OBJECTS	tests/Makefile	/^bandwidth_server_many_up_OBJECTS =  \\$/;"	m	language:Make
+bandwidth_server_many_up_SOURCES	tests/Makefile	/^bandwidth_server_many_up_SOURCES = bandwidth-server-many-up.c$/;"	m	language:Make
+bandwidth_server_one_DEPENDENCIES	tests/Makefile	/^bandwidth_server_one_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_one_LDADD	tests/Makefile	/^bandwidth_server_one_LDADD = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_one_OBJECTS	tests/Makefile	/^bandwidth_server_one_OBJECTS = $(am_bandwidth_server_one_OBJECTS)$/;"	m	language:Make
+bandwidth_server_one_SOURCES	tests/Makefile	/^bandwidth_server_one_SOURCES = bandwidth-server-one.c$/;"	m	language:Make
+base	src/modbus-glib.c	/^	GSource base;$/;"	m	language:C	struct:fd_source	file:
+baseName	src/win32/configure.js	/^var baseName = "modbus";$/;"	v	language:JavaScript
+baud	src/modbus-rtu-private.h	/^    int baud;$/;"	m	language:C++	struct:_modbus_rtu
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m	language:Make
+bindir	doc/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m	language:Make
+bindir	src/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m	language:Make
+bindir	tests/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m	language:Make
+bswap_16	src/modbus-data.c	/^static inline uint16_t bswap_16(uint16_t x)$/;"	f	language:C	file:	signature:(uint16_t x)
+bswap_16	src/modbus-data.c	34;"	d	language:C	file:
+bswap_16	src/modbus-data.c	47;"	d	language:C	file:
+bswap_16	src/modbus-data.c	48;"	d	language:C	file:
+bswap_16	src/modbus-data.c	54;"	d	language:C	file:
+bswap_32	src/modbus-data.c	/^static inline uint32_t bswap_32(uint32_t x)$/;"	f	language:C	file:	signature:(uint32_t x)
+bswap_32	src/modbus-data.c	35;"	d	language:C	file:
+bswap_32	src/modbus-data.c	43;"	d	language:C	file:
+bswap_32	src/modbus-data.c	44;"	d	language:C	file:
+bswap_32	src/modbus-data.c	53;"	d	language:C	file:
+bswap_64	src/modbus-data.c	36;"	d	language:C	file:
+buf	src/modbus-rtu-private.h	/^    uint8_t buf[PY_BUF_SIZE];$/;"	m	language:C++	struct:win32_ser
+build	Makefile	/^build = i686-pc-linux-gnu$/;"	m	language:Make
+build	doc/Makefile	/^build = i686-pc-linux-gnu$/;"	m	language:Make
+build	src/Makefile	/^build = i686-pc-linux-gnu$/;"	m	language:Make
+build	tests/Makefile	/^build = i686-pc-linux-gnu$/;"	m	language:Make
+build_alias	Makefile	/^build_alias = $/;"	m	language:Make
+build_alias	doc/Makefile	/^build_alias = $/;"	m	language:Make
+build_alias	src/Makefile	/^build_alias = $/;"	m	language:Make
+build_alias	tests/Makefile	/^build_alias = $/;"	m	language:Make
+build_cpu	Makefile	/^build_cpu = i686$/;"	m	language:Make
+build_cpu	doc/Makefile	/^build_cpu = i686$/;"	m	language:Make
+build_cpu	src/Makefile	/^build_cpu = i686$/;"	m	language:Make
+build_cpu	tests/Makefile	/^build_cpu = i686$/;"	m	language:Make
+build_os	Makefile	/^build_os = linux-gnu$/;"	m	language:Make
+build_os	doc/Makefile	/^build_os = linux-gnu$/;"	m	language:Make
+build_os	src/Makefile	/^build_os = linux-gnu$/;"	m	language:Make
+build_os	tests/Makefile	/^build_os = linux-gnu$/;"	m	language:Make
+build_request_basis	src/modbus-private.h	/^    int (*build_request_basis) (modbus_t *ctx, int function, int addr,$/;"	m	language:C++	struct:_modbus_backend
+build_response_basis	src/modbus-private.h	/^    int (*build_response_basis) (sft_t *sft, uint8_t *rsp);$/;"	m	language:C++	struct:_modbus_backend
+build_triplet	Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+build_triplet	doc/Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+build_triplet	src/Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+build_triplet	tests/Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+build_vendor	Makefile	/^build_vendor = pc$/;"	m	language:Make
+build_vendor	doc/Makefile	/^build_vendor = pc$/;"	m	language:Make
+build_vendor	src/Makefile	/^build_vendor = pc$/;"	m	language:Make
+build_vendor	tests/Makefile	/^build_vendor = pc$/;"	m	language:Make
+builddir	Makefile	/^builddir = .$/;"	m	language:Make
+builddir	doc/Makefile	/^builddir = .$/;"	m	language:Make
+builddir	src/Makefile	/^builddir = .$/;"	m	language:Make
+builddir	tests/Makefile	/^builddir = .$/;"	m	language:Make
+byte_timeout	src/modbus-private.h	/^    struct timeval byte_timeout;$/;"	m	language:C++	struct:_modbus	typeref:struct:_modbus::timeval
+check_confirmation	src/modbus.c	/^static int check_confirmation(modbus_t *ctx, uint8_t *req,$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req, uint8_t *rsp, int rsp_length)
+check_integrity	src/modbus-private.h	/^    int (*check_integrity) (modbus_t *ctx, uint8_t *msg,$/;"	m	language:C++	struct:_modbus_backend
+checksum_length	src/modbus-private.h	/^    unsigned int checksum_length;$/;"	m	language:C++	struct:_modbus_backend
+close	src/modbus-private.h	/^    void (*close) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
+close	src/modbus-tcp.c	31;"	d	language:C	file:
+close	tests/bandwidth-server-one.c	18;"	d	language:C	file:
+close_sigint	tests/bandwidth-server-many-up.c	/^static void close_sigint(int dummy)$/;"	f	language:C	file:	signature:(int dummy)
+common_ldflags	tests/Makefile	/^common_ldflags = \\$/;"	m	language:Make
+compiler	src/win32/configure.js	/^var compiler = "msvc";$/;"	v	language:JavaScript
+compute_data_length_after_meta	src/modbus.c	/^static int compute_data_length_after_meta(modbus_t *ctx, uint8_t *msg,$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)
+compute_meta_length_after_function	src/modbus.c	/^static uint8_t compute_meta_length_after_function(int function,$/;"	f	language:C	file:	signature:(int function, msg_type_t msg_type)
+compute_response_length_from_request	src/modbus.c	/^static unsigned int compute_response_length_from_request(modbus_t *ctx, uint8_t *req)$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req)
+configFile	src/win32/configure.js	/^var configFile = srcDir + "\\\\..\\\\configure.ac";$/;"	v	language:JavaScript
+confirmation_to_ignore	src/modbus-rtu-private.h	/^    int confirmation_to_ignore;$/;"	m	language:C++	struct:_modbus_rtu
+connect	src/modbus-private.h	/^    int (*connect) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
+context	src/modbus-private.h	/^	void *context;$/;"	m	language:C++	struct:_modbus
+crc16	src/modbus-rtu.c	/^static uint16_t crc16(uint8_t *buffer, uint16_t buffer_length)$/;"	f	language:C	file:	signature:(uint8_t *buffer, uint16_t buffer_length)
+ctx	tests/bandwidth-server-many-up.c	/^static modbus_t *ctx = NULL;$/;"	v	language:C	file:
+data_bit	src/modbus-rtu-private.h	/^    uint8_t data_bit;$/;"	m	language:C++	struct:_modbus_rtu
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
+datadir	doc/Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
+datadir	src/Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
+datadir	tests/Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m	language:Make
+datarootdir	doc/Makefile	/^datarootdir = ${prefix}\/share$/;"	m	language:Make
+datarootdir	src/Makefile	/^datarootdir = ${prefix}\/share$/;"	m	language:Make
+datarootdir	tests/Makefile	/^datarootdir = ${prefix}\/share$/;"	m	language:Make
+debug	src/modbus-private.h	/^    int debug;$/;"	m	language:C++	struct:_modbus
+depcomp	src/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/build-aux\/depcomp$/;"	m	language:Make
+depcomp	tests/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/build-aux\/depcomp$/;"	m	language:Make
+device	src/modbus-rtu-private.h	/^    char *device;$/;"	m	language:C++	struct:_modbus_rtu
+dist_doc_DATA	Makefile	/^dist_doc_DATA = MIGRATION README.md$/;"	m	language:Make
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m	language:Make
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m	language:Make
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m	language:Make
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m	language:Make
+docdir	doc/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m	language:Make
+docdir	src/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m	language:Make
+docdir	tests/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m	language:Make
+dryRun	src/win32/configure.js	/^var dryRun = false;$/;"	v	language:JavaScript
+due_us	src/modbus-glib.c	/^	int64_t due_us;$/;"	m	language:C	struct:fd_source	file:
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m	language:Make
+dvidir	doc/Makefile	/^dvidir = ${docdir}$/;"	m	language:Make
+dvidir	src/Makefile	/^dvidir = ${docdir}$/;"	m	language:Make
+dvidir	tests/Makefile	/^dvidir = ${docdir}$/;"	m	language:Make
+equal_dword	tests/unit-test-client.c	/^int equal_dword(uint16_t *tab_reg, const uint32_t value) {$/;"	f	language:C	signature:(uint16_t *tab_reg, const uint32_t value)
+error	src/win32/configure.js	/^var error = 0;$/;"	v	language:JavaScript
+error_recovery	src/modbus-private.h	/^    int error_recovery;$/;"	m	language:C++	struct:_modbus
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m	language:Make
+exec_prefix	doc/Makefile	/^exec_prefix = ${prefix}$/;"	m	language:Make
+exec_prefix	src/Makefile	/^exec_prefix = ${prefix}$/;"	m	language:Make
+exec_prefix	tests/Makefile	/^exec_prefix = ${prefix}$/;"	m	language:Make
+fd	src/modbus-rtu-private.h	/^    HANDLE fd;$/;"	m	language:C++	struct:win32_ser
+fd_source	src/modbus-glib.c	/^struct fd_source {$/;"	s	language:C	file:
+fd_source_check	src/modbus-glib.c	/^static gboolean fd_source_check(GSource *source)$/;"	f	language:C	file:	signature:(GSource *source)
+fd_source_dispatch	src/modbus-glib.c	/^static gboolean fd_source_dispatch(GSource *source,$/;"	f	language:C	file:	signature:(GSource *source, GSourceFunc callback, void *user_data)
+fd_source_finalize	src/modbus-glib.c	/^static void fd_source_finalize(GSource *source)$/;"	f	language:C	file:	signature:(GSource *source)
+fd_source_new	src/modbus-glib.c	/^static GSource *fd_source_new(struct sr_session *session, void *key,$/;"	f	language:C	file:	signature:(struct sr_session *session, void *key, gintptr fd, int events, int timeout_ms)
+fd_source_prepare	src/modbus-glib.c	/^static gboolean fd_source_prepare(GSource *source, int *timeout)$/;"	f	language:C	file:	signature:(GSource *source, int *timeout)
+flush	src/modbus-private.h	/^    int (*flush) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
+free	src/modbus-private.h	/^    void (*free) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
+func_add_hook	build-aux/ltmain.sh	/^func_add_hook ()$/;"	f	language:Sh
+func_add_hook	libtool	/^func_add_hook ()$/;"	f	language:Sh
+func_append	build-aux/ltmain.sh	/^  func_append ()$/;"	f	language:Sh
+func_append	libtool	/^  func_append ()$/;"	f	language:Sh
+func_append_quoted	build-aux/ltmain.sh	/^  func_append_quoted ()$/;"	f	language:Sh
+func_append_quoted	libtool	/^  func_append_quoted ()$/;"	f	language:Sh
+func_append_uniq	build-aux/ltmain.sh	/^func_append_uniq ()$/;"	f	language:Sh
+func_append_uniq	libtool	/^func_append_uniq ()$/;"	f	language:Sh
+func_arith	build-aux/ltmain.sh	/^  func_arith ()$/;"	f	language:Sh
+func_arith	libtool	/^  func_arith ()$/;"	f	language:Sh
+func_cc_basename	config.status	/^func_cc_basename ()$/;"	f	language:Sh
+func_cc_basename	configure	/^func_cc_basename ()$/;"	f	language:Sh
+func_cc_basename	libtool	/^func_cc_basename ()$/;"	f	language:Sh
+func_check_prog_grep	build-aux/ltmain.sh	/^  func_check_prog_grep ()$/;"	f	language:Sh
+func_check_prog_grep	libtool	/^  func_check_prog_grep ()$/;"	f	language:Sh
+func_check_prog_sed	build-aux/ltmain.sh	/^  func_check_prog_sed ()$/;"	f	language:Sh
+func_check_prog_sed	libtool	/^  func_check_prog_sed ()$/;"	f	language:Sh
+func_check_version_match	build-aux/ltmain.sh	/^func_check_version_match ()$/;"	f	language:Sh
+func_check_version_match	libtool	/^func_check_version_match ()$/;"	f	language:Sh
+func_cl_dashL	build-aux/compile	/^func_cl_dashL ()$/;"	f	language:Sh
+func_cl_dashl	build-aux/compile	/^func_cl_dashl ()$/;"	f	language:Sh
+func_cl_wrapper	build-aux/compile	/^func_cl_wrapper ()$/;"	f	language:Sh
+func_config	build-aux/ltmain.sh	/^func_config ()$/;"	f	language:Sh
+func_config	libtool	/^func_config ()$/;"	f	language:Sh
+func_convert_core_file_wine_to_w32	build-aux/ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f	language:Sh
+func_convert_core_file_wine_to_w32	libtool	/^func_convert_core_file_wine_to_w32 ()$/;"	f	language:Sh
+func_convert_core_msys_to_w32	build-aux/ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_core_msys_to_w32	libtool	/^func_convert_core_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_core_path_wine_to_w32	build-aux/ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f	language:Sh
+func_convert_core_path_wine_to_w32	libtool	/^func_convert_core_path_wine_to_w32 ()$/;"	f	language:Sh
+func_convert_file_check	build-aux/ltmain.sh	/^func_convert_file_check ()$/;"	f	language:Sh
+func_convert_file_check	libtool	/^func_convert_file_check ()$/;"	f	language:Sh
+func_convert_file_cygwin_to_w32	build-aux/ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f	language:Sh
+func_convert_file_cygwin_to_w32	libtool	/^func_convert_file_cygwin_to_w32 ()$/;"	f	language:Sh
+func_convert_file_msys_to_cygwin	build-aux/ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f	language:Sh
+func_convert_file_msys_to_cygwin	libtool	/^func_convert_file_msys_to_cygwin ()$/;"	f	language:Sh
+func_convert_file_msys_to_w32	build-aux/ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_file_msys_to_w32	libtool	/^func_convert_file_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_file_nix_to_cygwin	build-aux/ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f	language:Sh
+func_convert_file_nix_to_cygwin	libtool	/^func_convert_file_nix_to_cygwin ()$/;"	f	language:Sh
+func_convert_file_nix_to_w32	build-aux/ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f	language:Sh
+func_convert_file_nix_to_w32	libtool	/^func_convert_file_nix_to_w32 ()$/;"	f	language:Sh
+func_convert_file_noop	build-aux/ltmain.sh	/^func_convert_file_noop ()$/;"	f	language:Sh
+func_convert_file_noop	libtool	/^func_convert_file_noop ()$/;"	f	language:Sh
+func_convert_path_check	build-aux/ltmain.sh	/^func_convert_path_check ()$/;"	f	language:Sh
+func_convert_path_check	libtool	/^func_convert_path_check ()$/;"	f	language:Sh
+func_convert_path_cygwin_to_w32	build-aux/ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f	language:Sh
+func_convert_path_cygwin_to_w32	libtool	/^func_convert_path_cygwin_to_w32 ()$/;"	f	language:Sh
+func_convert_path_front_back_pathsep	build-aux/ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f	language:Sh
+func_convert_path_front_back_pathsep	libtool	/^func_convert_path_front_back_pathsep ()$/;"	f	language:Sh
+func_convert_path_msys_to_cygwin	build-aux/ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f	language:Sh
+func_convert_path_msys_to_cygwin	libtool	/^func_convert_path_msys_to_cygwin ()$/;"	f	language:Sh
+func_convert_path_msys_to_w32	build-aux/ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_path_msys_to_w32	libtool	/^func_convert_path_msys_to_w32 ()$/;"	f	language:Sh
+func_convert_path_nix_to_cygwin	build-aux/ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f	language:Sh
+func_convert_path_nix_to_cygwin	libtool	/^func_convert_path_nix_to_cygwin ()$/;"	f	language:Sh
+func_convert_path_nix_to_w32	build-aux/ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f	language:Sh
+func_convert_path_nix_to_w32	libtool	/^func_convert_path_nix_to_w32 ()$/;"	f	language:Sh
+func_convert_path_noop	build-aux/ltmain.sh	/^func_convert_path_noop ()$/;"	f	language:Sh
+func_convert_path_noop	libtool	/^func_convert_path_noop ()$/;"	f	language:Sh
+func_cygming_dll_for_implib	build-aux/ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f	language:Sh
+func_cygming_dll_for_implib	libtool	/^func_cygming_dll_for_implib ()$/;"	f	language:Sh
+func_cygming_dll_for_implib_fallback	build-aux/ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f	language:Sh
+func_cygming_dll_for_implib_fallback	libtool	/^func_cygming_dll_for_implib_fallback ()$/;"	f	language:Sh
+func_cygming_dll_for_implib_fallback_core	build-aux/ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f	language:Sh
+func_cygming_dll_for_implib_fallback_core	libtool	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f	language:Sh
+func_cygming_gnu_implib_p	build-aux/ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f	language:Sh
+func_cygming_gnu_implib_p	libtool	/^func_cygming_gnu_implib_p ()$/;"	f	language:Sh
+func_cygming_ms_implib_p	build-aux/ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f	language:Sh
+func_cygming_ms_implib_p	libtool	/^func_cygming_ms_implib_p ()$/;"	f	language:Sh
+func_cygpath	build-aux/ltmain.sh	/^func_cygpath ()$/;"	f	language:Sh
+func_cygpath	libtool	/^func_cygpath ()$/;"	f	language:Sh
+func_dll_def_p	build-aux/ltmain.sh	/^func_dll_def_p ()$/;"	f	language:Sh
+func_dll_def_p	libtool	/^func_dll_def_p ()$/;"	f	language:Sh
+func_echo	build-aux/ltmain.sh	/^func_echo ()$/;"	f	language:Sh
+func_echo	libtool	/^func_echo ()$/;"	f	language:Sh
+func_echo_all	build-aux/ltmain.sh	/^func_echo_all ()$/;"	f	language:Sh
+func_echo_all	configure	/^func_echo_all ()$/;"	f	language:Sh
+func_echo_all	libtool	/^func_echo_all ()$/;"	f	language:Sh
+func_echo_infix_1	build-aux/ltmain.sh	/^func_echo_infix_1 ()$/;"	f	language:Sh
+func_echo_infix_1	libtool	/^func_echo_infix_1 ()$/;"	f	language:Sh
+func_emit_cwrapperexe_src	build-aux/ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f	language:Sh
+func_emit_cwrapperexe_src	libtool	/^func_emit_cwrapperexe_src ()$/;"	f	language:Sh
+func_emit_wrapper	build-aux/ltmain.sh	/^func_emit_wrapper ()$/;"	f	language:Sh
+func_emit_wrapper	libtool	/^func_emit_wrapper ()$/;"	f	language:Sh
+func_enable_tag	build-aux/ltmain.sh	/^func_enable_tag ()$/;"	f	language:Sh
+func_enable_tag	libtool	/^func_enable_tag ()$/;"	f	language:Sh
+func_error	build-aux/ltmain.sh	/^func_error ()$/;"	f	language:Sh
+func_error	libtool	/^func_error ()$/;"	f	language:Sh
+func_exec_program	build-aux/ltmain.sh	/^func_exec_program ()$/;"	f	language:Sh
+func_exec_program	libtool	/^func_exec_program ()$/;"	f	language:Sh
+func_exec_program_core	build-aux/ltmain.sh	/^func_exec_program_core ()$/;"	f	language:Sh
+func_exec_program_core	libtool	/^func_exec_program_core ()$/;"	f	language:Sh
+func_executable_p	build-aux/ltmain.sh	/^func_executable_p ()$/;"	f	language:Sh
+func_executable_p	libtool	/^func_executable_p ()$/;"	f	language:Sh
+func_execute_cmds	build-aux/ltmain.sh	/^func_execute_cmds ()$/;"	f	language:Sh
+func_execute_cmds	libtool	/^func_execute_cmds ()$/;"	f	language:Sh
+func_extract_an_archive	build-aux/ltmain.sh	/^func_extract_an_archive ()$/;"	f	language:Sh
+func_extract_an_archive	libtool	/^func_extract_an_archive ()$/;"	f	language:Sh
+func_extract_archives	build-aux/ltmain.sh	/^func_extract_archives ()$/;"	f	language:Sh
+func_extract_archives	libtool	/^func_extract_archives ()$/;"	f	language:Sh
+func_fallback_echo	build-aux/ltmain.sh	/^func_fallback_echo ()$/;"	f	language:Sh
+func_fallback_echo	config.status	/^func_fallback_echo ()$/;"	f	language:Sh
+func_fallback_echo	configure	/^  func_fallback_echo ()$/;"	f	language:Sh
+func_fallback_echo	configure	/^func_fallback_echo ()$/;"	f	language:Sh
+func_fallback_echo	libtool	/^func_fallback_echo ()$/;"	f	language:Sh
+func_fatal_configuration	build-aux/ltmain.sh	/^func_fatal_configuration ()$/;"	f	language:Sh
+func_fatal_configuration	libtool	/^func_fatal_configuration ()$/;"	f	language:Sh
+func_fatal_error	build-aux/ltmain.sh	/^func_fatal_error ()$/;"	f	language:Sh
+func_fatal_error	libtool	/^func_fatal_error ()$/;"	f	language:Sh
+func_fatal_help	build-aux/ltmain.sh	/^func_fatal_help ()$/;"	f	language:Sh
+func_fatal_help	libtool	/^func_fatal_help ()$/;"	f	language:Sh
+func_features	build-aux/ltmain.sh	/^func_features ()$/;"	f	language:Sh
+func_features	libtool	/^func_features ()$/;"	f	language:Sh
+func_file_conv	build-aux/compile	/^func_file_conv ()$/;"	f	language:Sh
+func_generate_dlsyms	build-aux/ltmain.sh	/^func_generate_dlsyms ()$/;"	f	language:Sh
+func_generate_dlsyms	libtool	/^func_generate_dlsyms ()$/;"	f	language:Sh
+func_generated_by_libtool_p	build-aux/ltmain.sh	/^func_generated_by_libtool_p ()$/;"	f	language:Sh
+func_generated_by_libtool_p	libtool	/^func_generated_by_libtool_p ()$/;"	f	language:Sh
+func_grep	build-aux/ltmain.sh	/^func_grep ()$/;"	f	language:Sh
+func_grep	libtool	/^func_grep ()$/;"	f	language:Sh
+func_help	build-aux/ltmain.sh	/^func_help ()$/;"	f	language:Sh
+func_help	libtool	/^func_help ()$/;"	f	language:Sh
+func_hookable	build-aux/ltmain.sh	/^func_hookable ()$/;"	f	language:Sh
+func_hookable	libtool	/^func_hookable ()$/;"	f	language:Sh
+func_infer_tag	build-aux/ltmain.sh	/^func_infer_tag ()$/;"	f	language:Sh
+func_infer_tag	libtool	/^func_infer_tag ()$/;"	f	language:Sh
+func_init_to_host_path_cmd	build-aux/ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f	language:Sh
+func_init_to_host_path_cmd	libtool	/^func_init_to_host_path_cmd ()$/;"	f	language:Sh
+func_lalib_p	build-aux/ltmain.sh	/^func_lalib_p ()$/;"	f	language:Sh
+func_lalib_p	libtool	/^func_lalib_p ()$/;"	f	language:Sh
+func_lalib_unsafe_p	build-aux/ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f	language:Sh
+func_lalib_unsafe_p	libtool	/^func_lalib_unsafe_p ()$/;"	f	language:Sh
+func_len	build-aux/ltmain.sh	/^  func_len ()$/;"	f	language:Sh
+func_len	libtool	/^  func_len ()$/;"	f	language:Sh
+func_lo2o	build-aux/ltmain.sh	/^  func_lo2o ()$/;"	f	language:Sh
+func_lo2o	libtool	/^  func_lo2o ()$/;"	f	language:Sh
+func_lt_dump_args	build-aux/ltmain.sh	/^func_lt_dump_args ()$/;"	f	language:Sh
+func_lt_dump_args	libtool	/^func_lt_dump_args ()$/;"	f	language:Sh
+func_lt_ver	build-aux/ltmain.sh	/^func_lt_ver ()$/;"	f	language:Sh
+func_lt_ver	libtool	/^func_lt_ver ()$/;"	f	language:Sh
+func_ltwrapper_executable_p	build-aux/ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f	language:Sh
+func_ltwrapper_executable_p	libtool	/^func_ltwrapper_executable_p ()$/;"	f	language:Sh
+func_ltwrapper_p	build-aux/ltmain.sh	/^func_ltwrapper_p ()$/;"	f	language:Sh
+func_ltwrapper_p	libtool	/^func_ltwrapper_p ()$/;"	f	language:Sh
+func_ltwrapper_script_p	build-aux/ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f	language:Sh
+func_ltwrapper_script_p	libtool	/^func_ltwrapper_script_p ()$/;"	f	language:Sh
+func_ltwrapper_scriptname	build-aux/ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f	language:Sh
+func_ltwrapper_scriptname	libtool	/^func_ltwrapper_scriptname ()$/;"	f	language:Sh
+func_missing_arg	build-aux/ltmain.sh	/^func_missing_arg ()$/;"	f	language:Sh
+func_missing_arg	libtool	/^func_missing_arg ()$/;"	f	language:Sh
+func_mkdir_p	build-aux/ltmain.sh	/^func_mkdir_p ()$/;"	f	language:Sh
+func_mkdir_p	libtool	/^func_mkdir_p ()$/;"	f	language:Sh
+func_mktempdir	build-aux/ltmain.sh	/^func_mktempdir ()$/;"	f	language:Sh
+func_mktempdir	libtool	/^func_mktempdir ()$/;"	f	language:Sh
+func_mode_compile	build-aux/ltmain.sh	/^func_mode_compile ()$/;"	f	language:Sh
+func_mode_compile	libtool	/^func_mode_compile ()$/;"	f	language:Sh
+func_mode_execute	build-aux/ltmain.sh	/^func_mode_execute ()$/;"	f	language:Sh
+func_mode_execute	libtool	/^func_mode_execute ()$/;"	f	language:Sh
+func_mode_finish	build-aux/ltmain.sh	/^func_mode_finish ()$/;"	f	language:Sh
+func_mode_finish	libtool	/^func_mode_finish ()$/;"	f	language:Sh
+func_mode_help	build-aux/ltmain.sh	/^func_mode_help ()$/;"	f	language:Sh
+func_mode_help	libtool	/^func_mode_help ()$/;"	f	language:Sh
+func_mode_install	build-aux/ltmain.sh	/^func_mode_install ()$/;"	f	language:Sh
+func_mode_install	libtool	/^func_mode_install ()$/;"	f	language:Sh
+func_mode_link	build-aux/ltmain.sh	/^func_mode_link ()$/;"	f	language:Sh
+func_mode_link	libtool	/^func_mode_link ()$/;"	f	language:Sh
+func_mode_uninstall	build-aux/ltmain.sh	/^func_mode_uninstall ()$/;"	f	language:Sh
+func_mode_uninstall	libtool	/^func_mode_uninstall ()$/;"	f	language:Sh
+func_munge_path_list	config.status	/^func_munge_path_list ()$/;"	f	language:Sh
+func_munge_path_list	configure	/^func_munge_path_list ()$/;"	f	language:Sh
+func_munge_path_list	libtool	/^func_munge_path_list ()$/;"	f	language:Sh
+func_normal_abspath	build-aux/ltmain.sh	/^func_normal_abspath ()$/;"	f	language:Sh
+func_normal_abspath	libtool	/^func_normal_abspath ()$/;"	f	language:Sh
+func_notquiet	build-aux/ltmain.sh	/^func_notquiet ()$/;"	f	language:Sh
+func_notquiet	libtool	/^func_notquiet ()$/;"	f	language:Sh
+func_options	build-aux/ltmain.sh	/^func_options ()$/;"	f	language:Sh
+func_options	libtool	/^func_options ()$/;"	f	language:Sh
+func_options_prep	build-aux/ltmain.sh	/^func_options_prep ()$/;"	f	language:Sh
+func_options_prep	libtool	/^func_options_prep ()$/;"	f	language:Sh
+func_parse_lt_options	build-aux/ltmain.sh	/^func_parse_lt_options ()$/;"	f	language:Sh
+func_parse_lt_options	libtool	/^func_parse_lt_options ()$/;"	f	language:Sh
+func_parse_options	build-aux/ltmain.sh	/^func_parse_options ()$/;"	f	language:Sh
+func_parse_options	libtool	/^func_parse_options ()$/;"	f	language:Sh
+func_path_progs	build-aux/ltmain.sh	/^func_path_progs ()$/;"	f	language:Sh
+func_path_progs	libtool	/^func_path_progs ()$/;"	f	language:Sh
+func_quote_for_eval	build-aux/ltmain.sh	/^func_quote_for_eval ()$/;"	f	language:Sh
+func_quote_for_eval	libtool	/^func_quote_for_eval ()$/;"	f	language:Sh
+func_quote_for_expand	build-aux/ltmain.sh	/^func_quote_for_expand ()$/;"	f	language:Sh
+func_quote_for_expand	libtool	/^func_quote_for_expand ()$/;"	f	language:Sh
+func_relative_path	build-aux/ltmain.sh	/^func_relative_path ()$/;"	f	language:Sh
+func_relative_path	libtool	/^func_relative_path ()$/;"	f	language:Sh
+func_remove_hook	build-aux/ltmain.sh	/^func_remove_hook ()$/;"	f	language:Sh
+func_remove_hook	libtool	/^func_remove_hook ()$/;"	f	language:Sh
+func_replace_sysroot	build-aux/ltmain.sh	/^func_replace_sysroot ()$/;"	f	language:Sh
+func_replace_sysroot	libtool	/^func_replace_sysroot ()$/;"	f	language:Sh
+func_require_term_colors	build-aux/ltmain.sh	/^func_require_term_colors ()$/;"	f	language:Sh
+func_require_term_colors	libtool	/^func_require_term_colors ()$/;"	f	language:Sh
+func_resolve_sysroot	build-aux/ltmain.sh	/^func_resolve_sysroot ()$/;"	f	language:Sh
+func_resolve_sysroot	libtool	/^func_resolve_sysroot ()$/;"	f	language:Sh
+func_run_hooks	build-aux/ltmain.sh	/^func_run_hooks ()$/;"	f	language:Sh
+func_run_hooks	libtool	/^func_run_hooks ()$/;"	f	language:Sh
+func_show_eval	build-aux/ltmain.sh	/^func_show_eval ()$/;"	f	language:Sh
+func_show_eval	libtool	/^func_show_eval ()$/;"	f	language:Sh
+func_show_eval_locale	build-aux/ltmain.sh	/^func_show_eval_locale ()$/;"	f	language:Sh
+func_show_eval_locale	libtool	/^func_show_eval_locale ()$/;"	f	language:Sh
+func_sort_ver	build-aux/ltmain.sh	/^func_sort_ver ()$/;"	f	language:Sh
+func_sort_ver	libtool	/^func_sort_ver ()$/;"	f	language:Sh
+func_source	build-aux/ltmain.sh	/^func_source ()$/;"	f	language:Sh
+func_source	libtool	/^func_source ()$/;"	f	language:Sh
+func_split_equals	build-aux/ltmain.sh	/^  func_split_equals ()$/;"	f	language:Sh
+func_split_equals	libtool	/^  func_split_equals ()$/;"	f	language:Sh
+func_split_short_opt	build-aux/ltmain.sh	/^  func_split_short_opt ()$/;"	f	language:Sh
+func_split_short_opt	libtool	/^  func_split_short_opt ()$/;"	f	language:Sh
+func_stripname	build-aux/ltmain.sh	/^  func_stripname ()$/;"	f	language:Sh
+func_stripname	libtool	/^  func_stripname ()$/;"	f	language:Sh
+func_stripname_cnf	configure	/^func_stripname_cnf ()$/;"	f	language:Sh
+func_suncc_cstd_abi	build-aux/ltmain.sh	/^func_suncc_cstd_abi ()$/;"	f	language:Sh
+func_suncc_cstd_abi	libtool	/^func_suncc_cstd_abi ()$/;"	f	language:Sh
+func_to_host_file	build-aux/ltmain.sh	/^func_to_host_file ()$/;"	f	language:Sh
+func_to_host_file	libtool	/^func_to_host_file ()$/;"	f	language:Sh
+func_to_host_path	build-aux/ltmain.sh	/^func_to_host_path ()$/;"	f	language:Sh
+func_to_host_path	libtool	/^func_to_host_path ()$/;"	f	language:Sh
+func_to_tool_file	build-aux/ltmain.sh	/^func_to_tool_file ()$/;"	f	language:Sh
+func_to_tool_file	libtool	/^func_to_tool_file ()$/;"	f	language:Sh
+func_tr_sh	build-aux/ltmain.sh	/^func_tr_sh ()$/;"	f	language:Sh
+func_tr_sh	libtool	/^func_tr_sh ()$/;"	f	language:Sh
+func_usage	build-aux/ltmain.sh	/^func_usage ()$/;"	f	language:Sh
+func_usage	libtool	/^func_usage ()$/;"	f	language:Sh
+func_usage_message	build-aux/ltmain.sh	/^func_usage_message ()$/;"	f	language:Sh
+func_usage_message	libtool	/^func_usage_message ()$/;"	f	language:Sh
+func_validate_options	build-aux/ltmain.sh	/^func_validate_options ()$/;"	f	language:Sh
+func_validate_options	libtool	/^func_validate_options ()$/;"	f	language:Sh
+func_verbose	build-aux/ltmain.sh	/^func_verbose ()$/;"	f	language:Sh
+func_verbose	libtool	/^func_verbose ()$/;"	f	language:Sh
+func_version	build-aux/ltmain.sh	/^func_version ()$/;"	f	language:Sh
+func_version	libtool	/^func_version ()$/;"	f	language:Sh
+func_warn_and_continue	build-aux/ltmain.sh	/^func_warn_and_continue ()$/;"	f	language:Sh
+func_warn_and_continue	libtool	/^func_warn_and_continue ()$/;"	f	language:Sh
+func_warning	build-aux/ltmain.sh	/^func_warning ()$/;"	f	language:Sh
+func_warning	libtool	/^func_warning ()$/;"	f	language:Sh
+func_win32_import_lib_p	build-aux/ltmain.sh	/^func_win32_import_lib_p ()$/;"	f	language:Sh
+func_win32_import_lib_p	libtool	/^func_win32_import_lib_p ()$/;"	f	language:Sh
+func_win32_libid	build-aux/ltmain.sh	/^func_win32_libid ()$/;"	f	language:Sh
+func_win32_libid	libtool	/^func_win32_libid ()$/;"	f	language:Sh
+func_write_libtool_object	build-aux/ltmain.sh	/^func_write_libtool_object ()$/;"	f	language:Sh
+func_write_libtool_object	libtool	/^func_write_libtool_object ()$/;"	f	language:Sh
+func_xform	build-aux/ltmain.sh	/^  func_xform ()$/;"	f	language:Sh
+func_xform	libtool	/^  func_xform ()$/;"	f	language:Sh
+function	src/modbus-private.h	/^    int function;$/;"	m	language:C++	struct:_sft
+gettime_ms	tests/bandwidth-client.c	/^static uint32_t gettime_ms(void)$/;"	f	language:C	file:	signature:(void)
+give_advice	build-aux/missing	/^give_advice ()$/;"	f	language:Sh
+header_length	src/modbus-private.h	/^    unsigned int header_length;$/;"	m	language:C++	struct:_modbus_backend
+host	Makefile	/^host = i686-pc-linux-gnu$/;"	m	language:Make
+host	doc/Makefile	/^host = i686-pc-linux-gnu$/;"	m	language:Make
+host	src/Makefile	/^host = i686-pc-linux-gnu$/;"	m	language:Make
+host	tests/Makefile	/^host = i686-pc-linux-gnu$/;"	m	language:Make
+host_alias	Makefile	/^host_alias = $/;"	m	language:Make
+host_alias	doc/Makefile	/^host_alias = $/;"	m	language:Make
+host_alias	src/Makefile	/^host_alias = $/;"	m	language:Make
+host_alias	tests/Makefile	/^host_alias = $/;"	m	language:Make
+host_cpu	Makefile	/^host_cpu = i686$/;"	m	language:Make
+host_cpu	doc/Makefile	/^host_cpu = i686$/;"	m	language:Make
+host_cpu	src/Makefile	/^host_cpu = i686$/;"	m	language:Make
+host_cpu	tests/Makefile	/^host_cpu = i686$/;"	m	language:Make
+host_os	Makefile	/^host_os = linux-gnu$/;"	m	language:Make
+host_os	doc/Makefile	/^host_os = linux-gnu$/;"	m	language:Make
+host_os	src/Makefile	/^host_os = linux-gnu$/;"	m	language:Make
+host_os	tests/Makefile	/^host_os = linux-gnu$/;"	m	language:Make
+host_triplet	Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+host_triplet	doc/Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+host_triplet	src/Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+host_triplet	tests/Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m	language:Make
+host_vendor	Makefile	/^host_vendor = pc$/;"	m	language:Make
+host_vendor	doc/Makefile	/^host_vendor = pc$/;"	m	language:Make
+host_vendor	src/Makefile	/^host_vendor = pc$/;"	m	language:Make
+host_vendor	tests/Makefile	/^host_vendor = pc$/;"	m	language:Make
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m	language:Make
+htmldir	doc/Makefile	/^htmldir = ${docdir}$/;"	m	language:Make
+htmldir	src/Makefile	/^htmldir = ${docdir}$/;"	m	language:Make
+htmldir	tests/Makefile	/^htmldir = ${docdir}$/;"	m	language:Make
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m	language:Make
+includedir	doc/Makefile	/^includedir = ${prefix}\/include$/;"	m	language:Make
+includedir	src/Makefile	/^includedir = ${prefix}\/include$/;"	m	language:Make
+includedir	tests/Makefile	/^includedir = ${prefix}\/include$/;"	m	language:Make
+indication_timeout	src/modbus-private.h	/^    struct timeval indication_timeout;$/;"	m	language:C++	struct:_modbus	typeref:struct:_modbus::timeval
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m	language:Make
+infodir	doc/Makefile	/^infodir = ${datarootdir}\/info$/;"	m	language:Make
+infodir	src/Makefile	/^infodir = ${datarootdir}\/info$/;"	m	language:Make
+infodir	tests/Makefile	/^infodir = ${datarootdir}\/info$/;"	m	language:Make
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/install-sh$/;"	m	language:Make
+install_sh	doc/Makefile	/^install_sh = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/install-sh$/;"	m	language:Make
+install_sh	src/Makefile	/^install_sh = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/install-sh$/;"	m	language:Make
+install_sh	tests/Makefile	/^install_sh = ${SHELL} \/home\/linux\/wkdir\/src\/lib\/libmodbus\/build-aux\/install-sh$/;"	m	language:Make
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m	language:Make
+install_sh_DATA	doc/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m	language:Make
+install_sh_DATA	src/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m	language:Make
+install_sh_DATA	tests/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m	language:Make
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m	language:Make
+install_sh_PROGRAM	doc/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m	language:Make
+install_sh_PROGRAM	src/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m	language:Make
+install_sh_PROGRAM	tests/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m	language:Make
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m	language:Make
+install_sh_SCRIPT	doc/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m	language:Make
+install_sh_SCRIPT	src/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m	language:Make
+install_sh_SCRIPT	tests/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m	language:Make
+ip	src/modbus-tcp-private.h	/^    char ip[16];$/;"	m	language:C++	struct:_modbus_tcp
+key	src/modbus-glib.c	/^	void *key;$/;"	m	language:C	struct:fd_source	file:
+lib_LTLIBRARIES	src/Makefile	/^lib_LTLIBRARIES = libmodbus.la$/;"	m	language:Make
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m	language:Make
+libdir	doc/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m	language:Make
+libdir	src/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m	language:Make
+libdir	tests/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m	language:Make
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
+libexecdir	doc/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
+libexecdir	src/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
+libexecdir	tests/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
+libmodbus_la_DEPENDENCIES	src/Makefile	/^libmodbus_la_DEPENDENCIES =$/;"	m	language:Make
+libmodbus_la_LDFLAGS	src/Makefile	/^libmodbus_la_LDFLAGS = -no-undefined \\$/;"	m	language:Make
+libmodbus_la_LINK	src/Makefile	/^libmodbus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
+libmodbus_la_OBJECTS	src/Makefile	/^libmodbus_la_OBJECTS = $(am_libmodbus_la_OBJECTS)$/;"	m	language:Make
+libmodbus_la_SOURCES	src/Makefile	/^libmodbus_la_SOURCES = \\$/;"	m	language:Make
+libmodbus_version_major	src/modbus.c	/^const unsigned int libmodbus_version_major = LIBMODBUS_VERSION_MAJOR;$/;"	v	language:C
+libmodbus_version_micro	src/modbus.c	/^const unsigned int libmodbus_version_micro = LIBMODBUS_VERSION_MICRO;$/;"	v	language:C
+libmodbus_version_minor	src/modbus.c	/^const unsigned int libmodbus_version_minor = LIBMODBUS_VERSION_MINOR;$/;"	v	language:C
+libmodbusinclude_HEADERS	src/Makefile	/^libmodbusinclude_HEADERS = modbus.h modbus-version.h modbus-rtu.h modbus-tcp.h$/;"	m	language:Make
+libmodbusincludedir	src/Makefile	/^libmodbusincludedir = $(includedir)\/modbus$/;"	m	language:Make
+libtool_options_prep	build-aux/ltmain.sh	/^libtool_options_prep ()$/;"	f	language:Sh
+libtool_options_prep	libtool	/^libtool_options_prep ()$/;"	f	language:Sh
+libtool_parse_options	build-aux/ltmain.sh	/^libtool_parse_options ()$/;"	f	language:Sh
+libtool_parse_options	libtool	/^libtool_parse_options ()$/;"	f	language:Sh
+libtool_validate_options	build-aux/ltmain.sh	/^libtool_validate_options ()$/;"	f	language:Sh
+libtool_validate_options	libtool	/^libtool_validate_options ()$/;"	f	language:Sh
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m	language:Make
+localedir	doc/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m	language:Make
+localedir	src/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m	language:Make
+localedir	tests/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m	language:Make
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m	language:Make
+localstatedir	doc/Makefile	/^localstatedir = ${prefix}\/var$/;"	m	language:Make
+localstatedir	src/Makefile	/^localstatedir = ${prefix}\/var$/;"	m	language:Make
+localstatedir	tests/Makefile	/^localstatedir = ${prefix}\/var$/;"	m	language:Make
+main	build-aux/config.guess	/^		main()$/;"	f	language:Sh
+main	build-aux/config.guess	/^	main ()$/;"	f	language:Sh
+main	tests/bandwidth-client.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
+main	tests/bandwidth-server-many-up.c	/^int main(void)$/;"	f	language:C	signature:(void)
+main	tests/bandwidth-server-one.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
+main	tests/random-test-client.c	/^int main(void)$/;"	f	language:C	signature:(void)
+main	tests/random-test-server.c	/^int main(void)$/;"	f	language:C	signature:(void)
+main	tests/unit-test-client.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
+main	tests/unit-test-server.c	/^int main(int argc, char*argv[])$/;"	f	language:C	signature:(int argc, char*argv[])
+main	tests/version.c	/^int main(void)$/;"	f	language:C	signature:(void)
+make_dummy_depfile	build-aux/depcomp	/^make_dummy_depfile ()$/;"	f	language:Sh
+man3dir	doc/Makefile	/^man3dir = $(mandir)\/man3$/;"	m	language:Make
+man7dir	doc/Makefile	/^man7dir = $(mandir)\/man7$/;"	m	language:Make
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m	language:Make
+mandir	doc/Makefile	/^mandir = ${datarootdir}\/man$/;"	m	language:Make
+mandir	src/Makefile	/^mandir = ${datarootdir}\/man$/;"	m	language:Make
+mandir	tests/Makefile	/^mandir = ${datarootdir}\/man$/;"	m	language:Make
+max_adu_length	src/modbus-private.h	/^    unsigned int max_adu_length;$/;"	m	language:C++	struct:_modbus_backend
+mb_mapping	tests/bandwidth-server-many-up.c	/^static modbus_mapping_t *mb_mapping;$/;"	v	language:C	file:
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m	language:Make
+mkdir_p	doc/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m	language:Make
+mkdir_p	src/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m	language:Make
+mkdir_p	tests/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m	language:Make
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Make
+mkinstalldirs	doc/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Make
+mkinstalldirs	src/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Make
+mkinstalldirs	tests/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Make
+modbus_backend_t	src/modbus-private.h	/^} modbus_backend_t;$/;"	t	language:C++	typeref:struct:_modbus_backend
+modbus_backend_type_t	src/modbus-private.h	/^} modbus_backend_type_t;$/;"	t	language:C++	typeref:enum:__anon8
+modbus_close	src/modbus.c	/^void modbus_close(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_connect	src/modbus.c	/^int modbus_connect(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_error_recovery_mode	src/modbus.h	/^} modbus_error_recovery_mode;$/;"	t	language:C++	typeref:enum:__anon6
+modbus_flush	src/modbus.c	/^int modbus_flush(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_free	src/modbus.c	/^void modbus_free(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_get_byte_from_bits	src/modbus-data.c	/^uint8_t modbus_get_byte_from_bits(const uint8_t *src, int idx,$/;"	f	language:C	signature:(const uint8_t *src, int idx, unsigned int nb_bits)
+modbus_get_byte_timeout	src/modbus.c	/^int modbus_get_byte_timeout(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)
+modbus_get_float	src/modbus-data.c	/^float modbus_get_float(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
+modbus_get_float_abcd	src/modbus-data.c	/^float modbus_get_float_abcd(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
+modbus_get_float_badc	src/modbus-data.c	/^float modbus_get_float_badc(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
+modbus_get_float_cdab	src/modbus-data.c	/^float modbus_get_float_cdab(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
+modbus_get_float_dcba	src/modbus-data.c	/^float modbus_get_float_dcba(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
+modbus_get_header_length	src/modbus.c	/^int modbus_get_header_length(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_get_indication_timeout	src/modbus.c	/^int modbus_get_indication_timeout(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)
+modbus_get_response_timeout	src/modbus.c	/^int modbus_get_response_timeout(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)
+modbus_get_slave	src/modbus.c	/^int modbus_get_slave(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_get_socket	src/modbus.c	/^int modbus_get_socket(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_mapping_free	src/modbus.c	/^void modbus_mapping_free(modbus_mapping_t *mb_mapping)$/;"	f	language:C	signature:(modbus_mapping_t *mb_mapping)
+modbus_mapping_new	src/modbus.c	/^modbus_mapping_t* modbus_mapping_new(int nb_bits, int nb_input_bits,$/;"	f	language:C	signature:(int nb_bits, int nb_input_bits, int nb_registers, int nb_input_registers)
+modbus_mapping_new_start_address	src/modbus.c	/^modbus_mapping_t* modbus_mapping_new_start_address($/;"	f	language:C	signature:( unsigned int start_bits, unsigned int nb_bits, unsigned int start_input_bits, unsigned int nb_input_bits, unsigned int start_registers, unsigned int nb_registers, unsigned int start_input_registers, unsigned int nb_input_registers)
+modbus_mapping_t	src/modbus.h	/^} modbus_mapping_t;$/;"	t	language:C++	typeref:struct:_modbus_mapping_t
+modbus_mask_write_register	src/modbus.c	/^int modbus_mask_write_register(modbus_t *ctx, int addr, uint16_t and_mask, uint16_t or_mask)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, uint16_t and_mask, uint16_t or_mask)
+modbus_new_rtu	src/modbus-rtu.c	/^modbus_t* modbus_new_rtu(const char *device,$/;"	f	language:C	signature:(const char *device, int baud, char parity, int data_bit, int stop_bit)
+modbus_new_tcp	src/modbus-tcp.c	/^modbus_t* modbus_new_tcp(const char *ip, int port)$/;"	f	language:C	signature:(const char *ip, int port)
+modbus_new_tcp_pi	src/modbus-tcp.c	/^modbus_t* modbus_new_tcp_pi(const char *node, const char *service)$/;"	f	language:C	signature:(const char *node, const char *service)
+modbus_read_bits	src/modbus.c	/^int modbus_read_bits(modbus_t *ctx, int addr, int nb, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint8_t *dest)
+modbus_read_input_bits	src/modbus.c	/^int modbus_read_input_bits(modbus_t *ctx, int addr, int nb, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint8_t *dest)
+modbus_read_input_registers	src/modbus.c	/^int modbus_read_input_registers(modbus_t *ctx, int addr, int nb,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint16_t *dest)
+modbus_read_registers	src/modbus.c	/^int modbus_read_registers(modbus_t *ctx, int addr, int nb, uint16_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint16_t *dest)
+modbus_receive	src/modbus.c	/^int modbus_receive(modbus_t *ctx, uint8_t *req)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *req)
+modbus_receive_confirmation	src/modbus.c	/^int modbus_receive_confirmation(modbus_t *ctx, uint8_t *rsp)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *rsp)
+modbus_reply	src/modbus.c	/^int modbus_reply(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	signature:(modbus_t *ctx, const uint8_t *req, int req_length, modbus_mapping_t *mb_mapping)
+modbus_reply_exception	src/modbus.c	/^int modbus_reply_exception(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	signature:(modbus_t *ctx, const uint8_t *req, unsigned int exception_code)
+modbus_report_slave_id	src/modbus.c	/^int modbus_report_slave_id(modbus_t *ctx, int max_dest, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int max_dest, uint8_t *dest)
+modbus_rtu_get_rts	src/modbus-rtu.c	/^int modbus_rtu_get_rts(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_rtu_get_rts_delay	src/modbus-rtu.c	/^int modbus_rtu_get_rts_delay(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_rtu_get_serial_mode	src/modbus-rtu.c	/^int modbus_rtu_get_serial_mode(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
+modbus_rtu_set_custom_rts	src/modbus-rtu.c	/^int modbus_rtu_set_custom_rts(modbus_t *ctx, void (*set_rts) (modbus_t *ctx, int on))$/;"	f	language:C	signature:(modbus_t *ctx, void (*set_rts) (modbus_t *ctx, int on))
+modbus_rtu_set_rts	src/modbus-rtu.c	/^int modbus_rtu_set_rts(modbus_t *ctx, int mode)$/;"	f	language:C	signature:(modbus_t *ctx, int mode)
+modbus_rtu_set_rts_delay	src/modbus-rtu.c	/^int modbus_rtu_set_rts_delay(modbus_t *ctx, int us)$/;"	f	language:C	signature:(modbus_t *ctx, int us)
+modbus_rtu_set_serial_mode	src/modbus-rtu.c	/^int modbus_rtu_set_serial_mode(modbus_t *ctx, int mode)$/;"	f	language:C	signature:(modbus_t *ctx, int mode)
+modbus_rtu_t	src/modbus-rtu-private.h	/^} modbus_rtu_t;$/;"	t	language:C++	typeref:struct:_modbus_rtu
+modbus_send_raw_request	src/modbus.c	/^int modbus_send_raw_request(modbus_t *ctx, uint8_t *raw_req, int raw_req_length)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *raw_req, int raw_req_length)
+modbus_set_bits_from_byte	src/modbus-data.c	/^void modbus_set_bits_from_byte(uint8_t *dest, int idx, const uint8_t value)$/;"	f	language:C	signature:(uint8_t *dest, int idx, const uint8_t value)
+modbus_set_bits_from_bytes	src/modbus-data.c	/^void modbus_set_bits_from_bytes(uint8_t *dest, int idx, unsigned int nb_bits,$/;"	f	language:C	signature:(uint8_t *dest, int idx, unsigned int nb_bits, const uint8_t *tab_byte)
+modbus_set_byte_timeout	src/modbus.c	/^int modbus_set_byte_timeout(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)
+modbus_set_debug	src/modbus.c	/^int modbus_set_debug(modbus_t *ctx, int flag)$/;"	f	language:C	signature:(modbus_t *ctx, int flag)
+modbus_set_error_recovery	src/modbus.c	/^int modbus_set_error_recovery(modbus_t *ctx,$/;"	f	language:C	signature:(modbus_t *ctx, modbus_error_recovery_mode error_recovery)
+modbus_set_float	src/modbus-data.c	/^void modbus_set_float(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
+modbus_set_float_abcd	src/modbus-data.c	/^void modbus_set_float_abcd(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
+modbus_set_float_badc	src/modbus-data.c	/^void modbus_set_float_badc(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
+modbus_set_float_cdab	src/modbus-data.c	/^void modbus_set_float_cdab(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
+modbus_set_float_dcba	src/modbus-data.c	/^void modbus_set_float_dcba(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
+modbus_set_indication_timeout	src/modbus.c	/^int modbus_set_indication_timeout(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)
+modbus_set_response_timeout	src/modbus.c	/^int modbus_set_response_timeout(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)
+modbus_set_slave	src/modbus.c	/^int modbus_set_slave(modbus_t *ctx, int slave)$/;"	f	language:C	signature:(modbus_t *ctx, int slave)
+modbus_set_socket	src/modbus.c	/^int modbus_set_socket(modbus_t *ctx, int s)$/;"	f	language:C	signature:(modbus_t *ctx, int s)
+modbus_strerror	src/modbus.c	/^const char *modbus_strerror(int errnum) {$/;"	f	language:C	signature:(int errnum)
+modbus_t	src/modbus.h	/^typedef struct _modbus modbus_t;$/;"	t	language:C++	typeref:struct:_modbus
+modbus_tcp_accept	src/modbus-tcp.c	/^int modbus_tcp_accept(modbus_t *ctx, int *s)$/;"	f	language:C	signature:(modbus_t *ctx, int *s)
+modbus_tcp_listen	src/modbus-tcp.c	/^int modbus_tcp_listen(modbus_t *ctx, int nb_connection)$/;"	f	language:C	signature:(modbus_t *ctx, int nb_connection)
+modbus_tcp_pi_accept	src/modbus-tcp.c	/^int modbus_tcp_pi_accept(modbus_t *ctx, int *s)$/;"	f	language:C	signature:(modbus_t *ctx, int *s)
+modbus_tcp_pi_listen	src/modbus-tcp.c	/^int modbus_tcp_pi_listen(modbus_t *ctx, int nb_connection)$/;"	f	language:C	signature:(modbus_t *ctx, int nb_connection)
+modbus_tcp_pi_t	src/modbus-tcp-private.h	/^} modbus_tcp_pi_t;$/;"	t	language:C++	typeref:struct:_modbus_tcp_pi
+modbus_tcp_t	src/modbus-tcp-private.h	/^} modbus_tcp_t;$/;"	t	language:C++	typeref:struct:_modbus_tcp
+modbus_write_and_read_registers	src/modbus.c	/^int modbus_write_and_read_registers(modbus_t *ctx,$/;"	f	language:C	signature:(modbus_t *ctx, int write_addr, int write_nb, const uint16_t *src, int read_addr, int read_nb, uint16_t *dest)
+modbus_write_bit	src/modbus.c	/^int modbus_write_bit(modbus_t *ctx, int addr, int status)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int status)
+modbus_write_bits	src/modbus.c	/^int modbus_write_bits(modbus_t *ctx, int addr, int nb, const uint8_t *src)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint8_t *src)
+modbus_write_register	src/modbus.c	/^int modbus_write_register(modbus_t *ctx, int addr, int value)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int value)
+modbus_write_registers	src/modbus.c	/^int modbus_write_registers(modbus_t *ctx, int addr, int nb, const uint16_t *src)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint16_t *src)
+msg_type_t	src/modbus-private.h	/^} msg_type_t;$/;"	t	language:C++	typeref:enum:__anon9
+my_CFLAGS	Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
+my_CFLAGS	doc/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
+my_CFLAGS	src/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
+my_CFLAGS	tests/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
+n_bytes	src/modbus-rtu-private.h	/^    DWORD n_bytes;$/;"	m	language:C++	struct:win32_ser
+nb_bits	src/modbus.h	/^    int nb_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+nb_input_bits	src/modbus.h	/^    int nb_input_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+nb_input_registers	src/modbus.h	/^    int nb_input_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+nb_registers	src/modbus.h	/^    int nb_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+newFile	src/win32/configure.js	/^var newFile;$/;"	v	language:JavaScript
+newfile	src/win32/configure.js	/^var newfile;$/;"	v	language:JavaScript
+node	src/modbus-tcp-private.h	/^    char node[_MODBUS_TCP_PI_NODE_LENGTH];$/;"	m	language:C++	struct:_modbus_tcp_pi
+noinst_PROGRAMS	tests/Makefile	/^noinst_PROGRAMS = bandwidth-server-one$(EXEEXT) \\$/;"	m	language:Make
+noinst_SCRIPTS	tests/Makefile	/^noinst_SCRIPTS = unit-tests.sh$/;"	m	language:Make
+old_dcb	src/modbus-rtu-private.h	/^    DCB old_dcb;$/;"	m	language:C++	struct:_modbus_rtu
+old_tios	src/modbus-rtu-private.h	/^    struct termios old_tios;$/;"	m	language:C++	struct:_modbus_rtu	typeref:struct:_modbus_rtu::termios
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
+oldincludedir	doc/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
+oldincludedir	src/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
+oldincludedir	tests/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
+onebyte_time	src/modbus-rtu-private.h	/^    int onebyte_time;$/;"	m	language:C++	struct:_modbus_rtu
+parity	src/modbus-rtu-private.h	/^    char parity;$/;"	m	language:C++	struct:_modbus_rtu
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
+pdfdir	doc/Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
+pdfdir	src/Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
+pdfdir	tests/Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
+pkgconfig_DATA	Makefile	/^pkgconfig_DATA = libmodbus.pc$/;"	m	language:Make
+pkgconfigdir	Makefile	/^pkgconfigdir = $(libdir)\/pkgconfig$/;"	m	language:Make
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/libmodbus$/;"	m	language:Make
+pkgdatadir	doc/Makefile	/^pkgdatadir = $(datadir)\/libmodbus$/;"	m	language:Make
+pkgdatadir	src/Makefile	/^pkgdatadir = $(datadir)\/libmodbus$/;"	m	language:Make
+pkgdatadir	tests/Makefile	/^pkgdatadir = $(datadir)\/libmodbus$/;"	m	language:Make
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/libmodbus$/;"	m	language:Make
+pkgincludedir	doc/Makefile	/^pkgincludedir = $(includedir)\/libmodbus$/;"	m	language:Make
+pkgincludedir	src/Makefile	/^pkgincludedir = $(includedir)\/libmodbus$/;"	m	language:Make
+pkgincludedir	tests/Makefile	/^pkgincludedir = $(includedir)\/libmodbus$/;"	m	language:Make
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/libmodbus$/;"	m	language:Make
+pkglibdir	doc/Makefile	/^pkglibdir = $(libdir)\/libmodbus$/;"	m	language:Make
+pkglibdir	src/Makefile	/^pkglibdir = $(libdir)\/libmodbus$/;"	m	language:Make
+pkglibdir	tests/Makefile	/^pkglibdir = $(libdir)\/libmodbus$/;"	m	language:Make
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/libmodbus$/;"	m	language:Make
+pkglibexecdir	doc/Makefile	/^pkglibexecdir = $(libexecdir)\/libmodbus$/;"	m	language:Make
+pkglibexecdir	src/Makefile	/^pkglibexecdir = $(libexecdir)\/libmodbus$/;"	m	language:Make
+pkglibexecdir	tests/Makefile	/^pkglibexecdir = $(libexecdir)\/libmodbus$/;"	m	language:Make
+pollfd	src/modbus-glib.c	/^	GPollFD pollfd;$/;"	m	language:C	struct:fd_source	file:
+port	src/modbus-tcp-private.h	/^    int port;$/;"	m	language:C++	struct:_modbus_tcp
+port	src/modbus-tcp-private.h	/^    int port;$/;"	m	language:C++	struct:_modbus_tcp_pi
+pre_check_confirmation	src/modbus-private.h	/^    int (*pre_check_confirmation) (modbus_t *ctx, const uint8_t *req,$/;"	m	language:C++	struct:_modbus_backend
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m	language:Make
+prefix	doc/Makefile	/^prefix = \/usr\/local$/;"	m	language:Make
+prefix	src/Makefile	/^prefix = \/usr\/local$/;"	m	language:Make
+prefix	tests/Makefile	/^prefix = \/usr\/local$/;"	m	language:Make
+prepare_response_tid	src/modbus-private.h	/^    int (*prepare_response_tid) (const uint8_t *req, int *req_length);$/;"	m	language:C++	struct:_modbus_backend
+print_usage	build-aux/test-driver	/^print_usage ()$/;"	f	language:Sh
+program_details	build-aux/missing	/^program_details ()$/;"	f	language:Sh
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m	language:Make
+program_transform_name	doc/Makefile	/^program_transform_name = s,x,x,$/;"	m	language:Make
+program_transform_name	src/Makefile	/^program_transform_name = s,x,x,$/;"	m	language:Make
+program_transform_name	tests/Makefile	/^program_transform_name = s,x,x,$/;"	m	language:Make
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f	language:Sh
+psdir	Makefile	/^psdir = ${docdir}$/;"	m	language:Make
+psdir	doc/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
+psdir	src/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
+psdir	tests/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
+random_test_client_DEPENDENCIES	tests/Makefile	/^random_test_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+random_test_client_LDADD	tests/Makefile	/^random_test_client_LDADD = $(common_ldflags)$/;"	m	language:Make
+random_test_client_OBJECTS	tests/Makefile	/^random_test_client_OBJECTS = $(am_random_test_client_OBJECTS)$/;"	m	language:Make
+random_test_client_SOURCES	tests/Makefile	/^random_test_client_SOURCES = random-test-client.c$/;"	m	language:Make
+random_test_server_DEPENDENCIES	tests/Makefile	/^random_test_server_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+random_test_server_LDADD	tests/Makefile	/^random_test_server_LDADD = $(common_ldflags)$/;"	m	language:Make
+random_test_server_OBJECTS	tests/Makefile	/^random_test_server_OBJECTS = $(am_random_test_server_OBJECTS)$/;"	m	language:Make
+random_test_server_SOURCES	tests/Makefile	/^random_test_server_SOURCES = random-test-server.c$/;"	m	language:Make
+read_io_status	src/modbus.c	/^static int read_io_status(modbus_t *ctx, int function,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint8_t *dest)
+read_registers	src/modbus.c	/^static int read_registers(modbus_t *ctx, int function, int addr, int nb,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint16_t *dest)
+receive	src/modbus-private.h	/^    int (*receive) (modbus_t *ctx, uint8_t *req);$/;"	m	language:C++	struct:_modbus_backend
+recv	src/modbus-private.h	/^    ssize_t (*recv) (modbus_t *ctx, uint8_t *rsp, int rsp_length);$/;"	m	language:C++	struct:_modbus_backend
+response_exception	src/modbus.c	/^static int response_exception(modbus_t *ctx, sft_t *sft,$/;"	f	language:C	file:	signature:(modbus_t *ctx, sft_t *sft, int exception_code, uint8_t *rsp, unsigned int to_flush, const char* template, ...)
+response_io_status	src/modbus.c	/^static int response_io_status(uint8_t *tab_io_status,$/;"	f	language:C	file:	signature:(uint8_t *tab_io_status, int address, int nb, uint8_t *rsp, int offset)
+response_timeout	src/modbus-private.h	/^    struct timeval response_timeout;$/;"	m	language:C++	struct:_modbus	typeref:struct:_modbus::timeval
+rts	src/modbus-rtu-private.h	/^    int rts;$/;"	m	language:C++	struct:_modbus_rtu
+rts_delay	src/modbus-rtu-private.h	/^    int rts_delay;$/;"	m	language:C++	struct:_modbus_rtu
+runstatedir	Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m	language:Make
+runstatedir	doc/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m	language:Make
+runstatedir	src/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m	language:Make
+runstatedir	tests/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m	language:Make
+s	src/modbus-private.h	/^    int s;$/;"	m	language:C++	struct:_modbus
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m	language:Make
+sbindir	doc/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m	language:Make
+sbindir	src/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m	language:Make
+sbindir	tests/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m	language:Make
+select	src/modbus-private.h	/^    int (*select) (modbus_t *ctx, fd_set *rset, struct timeval *tv, int msg_length);$/;"	m	language:C++	struct:_modbus_backend
+send	src/modbus-private.h	/^    ssize_t (*send) (modbus_t *ctx, const uint8_t *req, int req_length);$/;"	m	language:C++	struct:_modbus_backend
+send_crafted_request	tests/unit-test-client.c	/^int send_crafted_request(modbus_t *ctx, int function,$/;"	f	language:C	signature:(modbus_t *ctx, int function, uint8_t *req, int req_len, uint16_t max_value, uint16_t bytes, int backend_length, int backend_offset)
+send_msg	src/modbus.c	/^static int send_msg(modbus_t *ctx, uint8_t *msg, int msg_length)$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *msg, int msg_length)
+send_msg_pre	src/modbus-private.h	/^    int (*send_msg_pre) (uint8_t *req, int req_length);$/;"	m	language:C++	struct:_modbus_backend
+serial_mode	src/modbus-rtu-private.h	/^    int serial_mode;$/;"	m	language:C++	struct:_modbus_rtu
+server_socket	tests/bandwidth-server-many-up.c	/^static int server_socket = -1;$/;"	v	language:C	file:
+service	src/modbus-tcp-private.h	/^    char service[_MODBUS_TCP_PI_SERVICE_LENGTH];$/;"	m	language:C++	struct:_modbus_tcp_pi
+session	src/modbus-glib.c	/^	struct sr_session *session;$/;"	m	language:C	struct:fd_source	typeref:struct:fd_source::sr_session	file:
+set_base_from	build-aux/depcomp	/^set_base_from ()$/;"	f	language:Sh
+set_dir_from	build-aux/depcomp	/^set_dir_from ()$/;"	f	language:Sh
+set_rts	src/modbus-rtu-private.h	/^    void (*set_rts) (modbus_t *ctx, int on);$/;"	m	language:C++	struct:_modbus_rtu
+set_slave	src/modbus-private.h	/^    int (*set_slave) (modbus_t *ctx, int slave);$/;"	m	language:C++	struct:_modbus_backend
+sft_t	src/modbus-private.h	/^} sft_t;$/;"	t	language:C++	typeref:struct:_sft
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Make
+sharedstatedir	doc/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Make
+sharedstatedir	src/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Make
+sharedstatedir	tests/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Make
+slave	src/modbus-private.h	/^    int slave;$/;"	m	language:C++	struct:_modbus
+slave	src/modbus-private.h	/^    int slave;$/;"	m	language:C++	struct:_sft
+sr_receive_data_callback	src/modbus-glib.c	/^typedef int (*sr_receive_data_callback)(int fd, int revents, void *cb_data);$/;"	t	language:C	file:
+srcDir	src/win32/configure.js	/^var srcDir = "..";$/;"	v	language:JavaScript
+srcdir	Makefile	/^srcdir = .$/;"	m	language:Make
+srcdir	doc/Makefile	/^srcdir = .$/;"	m	language:Make
+srcdir	src/Makefile	/^srcdir = .$/;"	m	language:Make
+srcdir	tests/Makefile	/^srcdir = .$/;"	m	language:Make
+ssize_t	src/modbus-private.h	/^typedef int ssize_t;$/;"	t	language:C++
+start_bits	src/modbus.h	/^    int start_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+start_input_bits	src/modbus.h	/^    int start_input_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+start_input_registers	src/modbus.h	/^    int start_input_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+start_registers	src/modbus.h	/^    int start_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+stop_bit	src/modbus-rtu-private.h	/^    uint8_t stop_bit;$/;"	m	language:C++	struct:_modbus_rtu
+strlcpy	src/modbus.c	/^size_t strlcpy(char *dest, const char *src, size_t dest_size)$/;"	f	language:C	signature:(char *dest, const char *src, size_t dest_size)
+subdir	Makefile	/^subdir = .$/;"	m	language:Make
+subdir	doc/Makefile	/^subdir = doc$/;"	m	language:Make
+subdir	src/Makefile	/^subdir = src$/;"	m	language:Make
+subdir	tests/Makefile	/^subdir = tests$/;"	m	language:Make
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m	language:Make
+sysconfdir	doc/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m	language:Make
+sysconfdir	src/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m	language:Make
+sysconfdir	tests/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m	language:Make
+t_id	src/modbus-private.h	/^    int t_id;$/;"	m	language:C++	struct:_sft
+t_id	src/modbus-tcp-private.h	/^    uint16_t t_id;$/;"	m	language:C++	struct:_modbus_tcp
+t_id	src/modbus-tcp-private.h	/^    uint16_t t_id;$/;"	m	language:C++	struct:_modbus_tcp_pi
+tab_bits	src/modbus.h	/^    uint8_t *tab_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+tab_input_bits	src/modbus.h	/^    uint8_t *tab_input_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
+tab_input_registers	src/modbus.h	/^    uint16_t *tab_input_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+tab_registers	src/modbus.h	/^    uint16_t *tab_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
+table_crc_hi	src/modbus-rtu.c	/^static const uint8_t table_crc_hi[] = {$/;"	v	language:C	file:
+table_crc_lo	src/modbus-rtu.c	/^static const uint8_t table_crc_lo[] = {$/;"	v	language:C	file:
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m	language:Make
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m	language:Make
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m	language:Make
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | eval GZIP= gzip $(GZIP_ENV) -c >$(distdir).tar.gz$/;"	m	language:Make
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m	language:Make
+target_alias	Makefile	/^target_alias = $/;"	m	language:Make
+target_alias	doc/Makefile	/^target_alias = $/;"	m	language:Make
+target_alias	src/Makefile	/^target_alias = $/;"	m	language:Make
+target_alias	tests/Makefile	/^target_alias = $/;"	m	language:Make
+test_server	tests/unit-test-client.c	/^int test_server(modbus_t *ctx, int use_backend)$/;"	f	language:C	signature:(modbus_t *ctx, int use_backend)
+test_varargs_macros	configure	/^  test_varargs_macros ();$/;"	f	language:Sh
+timeout_us	src/modbus-glib.c	/^	int64_t timeout_us;$/;"	m	language:C	struct:fd_source	file:
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m	language:Make
+top_build_prefix	doc/Makefile	/^top_build_prefix = ..\/$/;"	m	language:Make
+top_build_prefix	src/Makefile	/^top_build_prefix = ..\/$/;"	m	language:Make
+top_build_prefix	tests/Makefile	/^top_build_prefix = ..\/$/;"	m	language:Make
+top_builddir	Makefile	/^top_builddir = .$/;"	m	language:Make
+top_builddir	doc/Makefile	/^top_builddir = ..$/;"	m	language:Make
+top_builddir	src/Makefile	/^top_builddir = ..$/;"	m	language:Make
+top_builddir	tests/Makefile	/^top_builddir = ..$/;"	m	language:Make
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m	language:Make
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m	language:Make
+top_srcdir	doc/Makefile	/^top_srcdir = ..$/;"	m	language:Make
+top_srcdir	src/Makefile	/^top_srcdir = ..$/;"	m	language:Make
+top_srcdir	tests/Makefile	/^top_srcdir = ..$/;"	m	language:Make
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
+transform	doc/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
+transform	src/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
+transform	tests/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
+unit_test_client_DEPENDENCIES	tests/Makefile	/^unit_test_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+unit_test_client_LDADD	tests/Makefile	/^unit_test_client_LDADD = $(common_ldflags)$/;"	m	language:Make
+unit_test_client_OBJECTS	tests/Makefile	/^unit_test_client_OBJECTS = $(am_unit_test_client_OBJECTS)$/;"	m	language:Make
+unit_test_client_SOURCES	tests/Makefile	/^unit_test_client_SOURCES = unit-test-client.c unit-test.h$/;"	m	language:Make
+unit_test_server_DEPENDENCIES	tests/Makefile	/^unit_test_server_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+unit_test_server_LDADD	tests/Makefile	/^unit_test_server_LDADD = $(common_ldflags)$/;"	m	language:Make
+unit_test_server_OBJECTS	tests/Makefile	/^unit_test_server_OBJECTS = $(am_unit_test_server_OBJECTS)$/;"	m	language:Make
+unit_test_server_SOURCES	tests/Makefile	/^unit_test_server_SOURCES = unit-test-server.c unit-test.h$/;"	m	language:Make
+usage	src/win32/configure.js	/^function usage() {$/;"	f	language:JavaScript
+usage_error	build-aux/test-driver	/^usage_error ()$/;"	f	language:Sh
+verMajor	src/win32/configure.js	/^var verMajor;$/;"	v	language:JavaScript
+verMicro	src/win32/configure.js	/^var verMicro;$/;"	v	language:JavaScript
+verMinor	src/win32/configure.js	/^var verMinor;$/;"	v	language:JavaScript
+version_DEPENDENCIES	tests/Makefile	/^version_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+version_LDADD	tests/Makefile	/^version_LDADD = $(common_ldflags)$/;"	m	language:Make
+version_OBJECTS	tests/Makefile	/^version_OBJECTS = $(am_version_OBJECTS)$/;"	m	language:Make
+version_SOURCES	tests/Makefile	/^version_SOURCES = version.c$/;"	m	language:Make
+w_ser	src/modbus-rtu-private.h	/^    struct win32_ser w_ser;$/;"	m	language:C++	struct:_modbus_rtu	typeref:struct:_modbus_rtu::win32_ser
+win32_ser	src/modbus-rtu-private.h	/^struct win32_ser {$/;"	s	language:C++
+win32_ser_init	src/modbus-rtu.c	/^static void win32_ser_init(struct win32_ser *ws)$/;"	f	language:C	file:	signature:(struct win32_ser *ws)
+win32_ser_read	src/modbus-rtu.c	/^static int win32_ser_read(struct win32_ser *ws, uint8_t *p_msg,$/;"	f	language:C	file:	signature:(struct win32_ser *ws, uint8_t *p_msg, unsigned int max_len)
+win32_ser_select	src/modbus-rtu.c	/^static int win32_ser_select(struct win32_ser *ws, int max_len,$/;"	f	language:C	file:	signature:(struct win32_ser *ws, int max_len, const struct timeval *tv)
+write_single	src/modbus.c	/^static int write_single(modbus_t *ctx, int function, int addr, int value)$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int value)
