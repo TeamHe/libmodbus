@@ -10,28 +10,34 @@ AM_CPPFLAGS = \
 AM_CFLAGS = ${my_CFLAGS}
 
 libmodbus_la_SOURCES = \
-        modbus.c \
-        modbus.h \
-        modbus-data.c \
-        modbus-private.h \
-        modbus-rtu.c \
-        modbus-rtu.h \
-        modbus-rtu-private.h \
-        modbus-tcp.c \
-        modbus-tcp.h \
-        modbus-tcp-private.h \
+        modbus.c 				\
+        modbus.h 				\
+        modbus-data.c 			\
+        modbus-private.h 		\
+        modbus-rtu.c 			\
+        modbus-rtu.h 			\
+        modbus-rtu-private.h 	\
+        modbus-tcp.c 			\
+        modbus-tcp.h 			\
+        modbus-tcp-private.h 	\
+		modbus-glib.c 			\
         modbus-version.h
 
 libmodbus_la_LDFLAGS = -no-undefined \
         -version-info $(LIBMODBUS_LT_VERSION_INFO)
-
+libmodbus_la_LIBADD = 
 if OS_WIN32
-libmodbus_la_LIBADD = -lwsock32
+libmodbus_la_LIBADD += -lwsock32 -lglib-2.0
 endif
 
 if OS_QNX
-libmodbus_la_LIBADD = -lsocket
+libmodbus_la_LIBADD += -lsocket 
+
 endif
+
+#libmodbus_la_LIBADD += -lglib-2.0 -lgobject-2.0
+
+
 
 # Header files to install
 libmodbusincludedir = $(includedir)/modbus

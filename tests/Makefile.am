@@ -6,12 +6,15 @@ noinst_PROGRAMS = \
 	bandwidth-client \
 	random-test-server \
 	random-test-client \
+	test-glib 			\
 	unit-test-server \
 	unit-test-client \
 	version
 
 common_ldflags = \
-	$(top_builddir)/src/libmodbus.la
+	$(top_builddir)/src/libmodbus.la 	\
+	-lglib-2.0 	\
+	-lgio-2.0
 
 bandwidth_server_one_SOURCES = bandwidth-server-one.c
 bandwidth_server_one_LDADD = $(common_ldflags)
@@ -34,17 +37,23 @@ unit_test_server_LDADD = $(common_ldflags)
 unit_test_client_SOURCES = unit-test-client.c unit-test.h
 unit_test_client_LDADD = $(common_ldflags)
 
+test_glib_SOURCES=test-glib.c
+test_glib_LDADD=$(common_ldflags)
+
 version_SOURCES = version.c
 version_LDADD = $(common_ldflags)
 
-AM_CPPFLAGS = \
-    -include $(top_builddir)/config.h \
-    -DSYSCONFDIR=\""$(sysconfdir)"\" \
-    -DLIBEXECDIR=\""$(libexecdir)"\" \
+AM_CPPFLAGS = 							\
+	-g -w -O0 							\
+    -include $(top_builddir)/config.h 	\
+    -DSYSCONFDIR=\""$(sysconfdir)"\" 	\
+    -DLIBEXECDIR=\""$(libexecdir)"\" 	\
     -I${top_srcdir}/src \
-    -I${top_builddir}/src
+    -I${top_builddir}/src 	
+
 
 AM_CFLAGS = ${my_CFLAGS}
+
 
 CLEANFILES = *~ *.log
 

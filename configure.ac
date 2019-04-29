@@ -146,6 +146,21 @@ my_CFLAGS="-Wall \
 -Wformat-security"
 AC_SUBST([my_CFLAGS])
 
+AC_ARG_ENABLE(debug, AC_HELP_STRING([--enable-debug],
+            [enable compiling with debugging information]), [
+    if (test "${enableval}" = "yes" &&
+                test "${ac_cv_prog_cc_g}" = "yes"); then
+        CFLAGS="$CFLAGS -g"
+    fi
+])
+
+
+CXXFLAGS=${CXXFLAGS--g --O0}
+CFLAGS=" -g -W  -O0"
+CPPFLAGS="-g -W -O0"
+LDFLAGS="-g -W -std=c++0x"
+# Checks for library functions
+
 # Build options
 AC_ARG_ENABLE(tests,
 	AS_HELP_STRING([--disable-tests],

@@ -288,6 +288,11 @@ MODBUS_API void modbus_set_float_cdab(float f, uint16_t *dest);
 #include "modbus-tcp.h"
 #include "modbus-rtu.h"
 
+typedef int (*modbus_receive_msg_cb)(int res,char *buff,int len,void * data);
+
+int modbus_read_registers_g(modbus_t *ctx, int addr, int nb,
+		modbus_receive_msg_cb cb,void* data);
+
 MODBUS_END_DECLS
 
 #endif  /* MODBUS_H */
