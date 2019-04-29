@@ -329,7 +329,9 @@ static ssize_t _modbus_rtu_recv(modbus_t *ctx, uint8_t *rsp, int rsp_length)
 #if defined(_WIN32)
     return win32_ser_read(&((modbus_rtu_t *)ctx->backend_data)->w_ser, rsp, rsp_length);
 #else
-    return read(ctx->s, rsp, rsp_length);
+	ssize_t len = read(ctx->s, rsp, rsp_length);
+
+    return len;
 #endif
 }
 
@@ -1239,12 +1241,14 @@ modbus_t* modbus_new_rtu(const char *device,
         return NULL;
     }
 
+	
     ctx = (modbus_t *)malloc(sizeof(modbus_t));
     if (ctx == NULL) {
         return NULL;
     }
 
     _modbus_init_common(ctx);
+	ctx->context = NULL;
     ctx->backend = &_modbus_rtu_backend;
     ctx->backend_data = (modbus_rtu_t *)malloc(sizeof(modbus_rtu_t));
     if (ctx->backend_data == NULL) {

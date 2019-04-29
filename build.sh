@@ -1,11 +1,9 @@
 # !/bin/sh
 
-./configure \
-	CC=arm-linux-gnueabihf-gcc \
-	--prefix=/home/linux/usr \
-	--host=arm-linux-gnueabihf 
-
-make 
-
-make install
-
+make
+echo "make test-glib"
+gcc -g -o0  						\
+	tests/test-glib.c 				\
+	src/.libs/libmodbus.a 			\
+	-o test-glib  					\
+	-lglib-2.0 -lgio-2.0 

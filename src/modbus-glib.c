@@ -2,7 +2,7 @@
 #include <gio/gio.h>
 #include <stdio.h>
 #include <errno.h>
-#include "modbus.h"
+#include "modbus_ex.h"
 #include "modbus-private.h" 
 
 /* Internal use */
@@ -17,28 +17,8 @@ typedef enum {
     _STEP_DATA
 } _step_t;
 
-typedef int (*sr_receive_data_callback)(int fd, int revents, void *cb_data);
+typedef int (*sr_receive_data_callback)(modbus_t *ctx, int revents, void *cb_data);
 
-//typedef void (*sr_datafeed_callback)(const struct sr_dev_inst *sdi,
-//		const struct sr_datafeed_packet *packet, void *cb_data);
-/**
- * @file
- *
- * Creating, using, or destroying libsigrok sessions.
- */
-
-/**
- * @defgroup grp_session Session handling
- *
- * Creating, using, or destroying libsigrok sessions.
- *
- * @{
- */
-
-//struct datafeed_callback {
-//	sr_datafeed_callback cb;
-//	void *cb_data;
-//};
 
 /** Custom GLib event source for generic descriptor I/O.
  * @see https://developer.gnome.org/glib/stable/glib-The-Main-Event-Loop.html
@@ -117,7 +97,7 @@ static gboolean fd_source_dispatch(GSource *source,
 		return G_SOURCE_REMOVE;
 	}
 	keep = (*(sr_receive_data_callback)callback)
-			(fsource->pollfd.fd, revents, user_data);
+			(fsource->ctx, revents, user_data);
 
 	if (fsource->timeout_us >= 0 && G_LIKELY(keep)
 			&& G_LIKELY(!g_source_is_destroyed(source)))
@@ -130,14 +110,11 @@ static gboolean fd_source_dispatch(GSource *source,
  */
 static void fd_source_finalize(GSource *source)
 {
-	struct fd_source *fsource;
-
-	fsource = (struct fd_source *)source;
-
-	g_source_unref(source);
+	source =source;
+//	g_source_unref(source);
 }
 
-static void fd_source_set_timeout(GSource *source,uint64_t timeout_us){
+static void fd_source_set_timeout(GSource *source,int64_t timeout_us){
 	struct fd_source *fsource = (struct fd_source *)source;
 	fsource->timeout_us = timeout_us;
 }
@@ -170,7 +147,7 @@ static GSource *fd_source_new(modbus_t *ctx,
 
 //	g_source_set_name(source, (fd < 0) ? "timer" : "fd");
 
-	if (timeout_us >= 0) {
+	if (timeout_us > 0) {
 		fsource->timeout_us = timeout_us;
 		fsource->due_us = 0;
 	} else {
@@ -289,165 +266,6 @@ static int compute_data_length_after_meta(modbus_t *ctx, uint8_t *msg,
     return length;
 }
 
-///* Waits a response from a modbus server or a request from a modbus client.
-//   This function blocks if there is no replies (3 timeouts).
-//
-//   The function shall return the number of received characters and the received
-//   message in an array of uint8_t if successful. Otherwise it shall return -1
-//   and errno is set to one of the values defined below:
-//   - ECONNRESET
-//   - EMBBADDATA
-//   - EMBUNKEXC
-//   - ETIMEDOUT
-//   - read() or recv() error codes
-//*/
-//
-//int _modbus_receive_msg(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)
-//{
-//    int rc;
-//    fd_set rset;
-//    struct timeval tv;
-//    struct timeval *p_tv;
-//    int length_to_read;
-//    int msg_length = 0;
-//    _step_t step;
-//
-//    if (ctx->debug) {
-//        if (msg_type == MSG_INDICATION) {
-//            printf("Waiting for an indication...\n");
-//        } else {
-//            printf("Waiting for a confirmation...\n");
-//        }
-//    }
-//
-//    /* Add a file descriptor to the set */
-//    FD_ZERO(&rset);
-//    FD_SET(ctx->s, &rset);
-//
-//    /* We need to analyse the message step by step.  At the first step, we want
-//     * to reach the function code because all packets contain this
-//     * information. */
-//    step = _STEP_FUNCTION;
-//    length_to_read = ctx->backend->header_length + 1;
-//
-//    if (msg_type == MSG_INDICATION) {
-//        /* Wait for a message, we don't know when the message will be
-//         * received */
-//        if (ctx->indication_timeout.tv_sec == 0 && ctx->indication_timeout.tv_usec == 0) {
-//            /* By default, the indication timeout isn't set */
-//            p_tv = NULL;
-//        } else {
-//            /* Wait for an indication (name of a received request by a server, see schema) */
-//            tv.tv_sec = ctx->indication_timeout.tv_sec;
-//            tv.tv_usec = ctx->indication_timeout.tv_usec;
-//            p_tv = &tv;
-//        }
-//    } else {
-//        tv.tv_sec = ctx->response_timeout.tv_sec;
-//        tv.tv_usec = ctx->response_timeout.tv_usec;
-//        p_tv = &tv;
-//    }
-//
-//    while (length_to_read != 0) {
-//        rc = ctx->backend->select(ctx, &rset, p_tv, length_to_read);
-//        if (rc == -1) {
-//            _error_print(ctx, "select");
-//            if (ctx->error_recovery & MODBUS_ERROR_RECOVERY_LINK) {
-//                int saved_errno = errno;
-//
-//                if (errno == ETIMEDOUT) {
-//                    _sleep_response_timeout(ctx);
-//                    modbus_flush(ctx);
-//                } else if (errno == EBADF) {
-//                    modbus_close(ctx);
-//                    modbus_connect(ctx);
-//                }
-//                errno = saved_errno;
-//            }
-//            return -1;
-//        }
-//
-//        rc = ctx->backend->recv(ctx, msg + msg_length, length_to_read);
-//        if (rc == 0) {
-//            errno = ECONNRESET;
-//            rc = -1;
-//        }
-//
-//        if (rc == -1) {
-//            _error_print(ctx, "read");
-//            if ((ctx->error_recovery & MODBUS_ERROR_RECOVERY_LINK) &&
-//                (errno == ECONNRESET || errno == ECONNREFUSED ||
-//                 errno == EBADF)) {
-//                int saved_errno = errno;
-//                modbus_close(ctx);
-//                modbus_connect(ctx);
-//                /* Could be removed by previous calls */
-//                errno = saved_errno;
-//            }
-//            return -1;
-//        }
-//
-//        /* Display the hex code of each character received */
-//        if (ctx->debug) {
-//            int i;
-//            for (i=0; i < rc; i++)
-//                printf("<%.2X>", msg[msg_length + i]);
-//        }
-//
-//        /* Sums bytes received */
-//        msg_length += rc;
-//        /* Computes remaining bytes */
-//        length_to_read -= rc;
-//
-//        if (length_to_read == 0) {
-//            switch (step) {
-//            case _STEP_FUNCTION:
-//                /* Function code position */
-//                length_to_read = compute_meta_length_after_function(
-//                    msg[ctx->backend->header_length],
-//                    msg_type);
-//                if (length_to_read != 0) {
-//                    step = _STEP_META;
-//                    break;
-//                } /* else switches straight to the next step */
-//            case _STEP_META:
-//                length_to_read = compute_data_length_after_meta(
-//                    ctx, msg, msg_type);
-//                if ((msg_length + length_to_read) > (int)ctx->backend->max_adu_length) {
-//                    errno = EMBBADDATA;
-//                    _error_print(ctx, "too many data");
-//                    return -1;
-//                }
-//                step = _STEP_DATA;
-//                break;
-//            default:
-//                break;
-//            }
-//        }
-//
-//        if (length_to_read > 0 &&
-//            (ctx->byte_timeout.tv_sec > 0 || ctx->byte_timeout.tv_usec > 0)) {
-//            /* If there is no character in the buffer, the allowed timeout
-//               interval between two consecutive bytes is defined by
-//               byte_timeout */
-////            tv.tv_sec = ctx->byte_timeout.tv_sec;
-////            tv.tv_usec = ctx->byte_timeout.tv_usec;
-////            p_tv = &tv;
-//			int64_t timeout = ctx->byte_timeout.tv_sec * 1000 *1000 +
-//				ctx->byte_timeout.tv_usec;
-//			GSource *source = g_main_current_source();
-//			fd_source_set_timeout(source,timeout);
-//			return TRUE;
-//        }
-//        /* else timeout isn't set again, the full response must be read before
-//           expiration of response timeout (for CONFIRMATION only) */
-//    }
-//
-//    if (ctx->debug)
-//        printf("\n");
-//	return  ctx->backend->check_integrity(ctx, msg, msg_length);
-//}
-//
 
 struct _ctx_para{
 	modbus_t *ctx;
@@ -471,13 +289,11 @@ static void _ctx_para_destroy(gpointer data){
 
 static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data){
 	struct _ctx_para *para = data;
-	gboolean timeout = 0;
-	gboolean error = 0;
-	if(condition ==0){
-		timeout = TRUE;	
+	gboolean error = FALSE;
+	if(condition ==0){ 							//time out
 		error = TRUE;
 		errno = ETIMEDOUT;
-	}else if(condition & G_IO_ERROR){
+	}else if(condition == G_IO_ERROR){ 			//io error
 		error = TRUE;
 		errno = EBADF;
 	}		
@@ -490,10 +306,10 @@ static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data)
     	    modbus_connect(ctx);
     	}
 	}else if(error){
-		para->cb(-1,para->str->data,para->str->len,para->data);	
+		para->cb(ctx,-1,para->str,para->data);	
 		return FALSE;
 	}
-	char *buf = g_malloc(para->length_to_read+1);	
+	uint8_t *buf = g_malloc(para->length_to_read+1);	
 	int rc = ctx->backend->recv(para->ctx,buf,para->length_to_read);		
 	if(rc == 0){
 		errno = ECONNRESET;
@@ -510,7 +326,7 @@ static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data)
             /* Could be removed by previous calls */
             errno = saved_errno;
         }
-		para->cb(-1,para->str->data,para->str->len,para->data);	
+		para->cb(ctx,-1,para->str,para->data);	
 		g_free(buf);
         return -1;
 	}
@@ -550,26 +366,23 @@ static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data)
    		}
 
         if (para->length_to_read > 0 &&
-            (ctx->byte_timeout.tv_sec > 0 || ctx->byte_timeout.tv_usec > 0)) {
-            /* If there is no character in the buffer, the allowed timeout
-               interval between two consecutive bytes is defined by
-               byte_timeout */
-//            tv.tv_sec = ctx->byte_timeout.tv_sec;
-//            tv.tv_usec = ctx->byte_timeout.tv_usec;
-//            p_tv = &tv;
-			int64_t timeout = ctx->byte_timeout.tv_sec * 1000 *1000 +
+            (ctx->byte_timeout.tv_sec > 0 || ctx->byte_timeout.tv_usec > 0)) 
+		{
+			int64_t timeout_us = ctx->byte_timeout.tv_sec * 1000 *1000 +
 				ctx->byte_timeout.tv_usec;
 			GSource *source = g_main_current_source();
-			fd_source_set_timeout(source,timeout);
+			fd_source_set_timeout(source,timeout_us);
 			return TRUE;
         }
     }
-//	}
 
-    if (para->ctx->debug)
+	if(ctx->debug){
         printf("\n");
-	int ret  = para->ctx->backend->check_integrity(ctx, para->str->data,para->str->len);
-	para->cb(ret,para->str->data,para->str->len,para->data);
+
+	}
+	rc  = ctx->backend->check_integrity(ctx, para->str->data,para->str->len);
+
+	para->cb(ctx,rc,para->str,para->data);
     return FALSE;
 
 }
@@ -586,10 +399,11 @@ static int _modbus_receive_msg_g(modbus_t *ctx, msg_type_t msg_type,
     }
 	
 	guint64 timout_us = -1;
-	struct _ctx_para *para = g_new(struct _ctx_para,1);
+	struct _ctx_para *para = g_new0(struct _ctx_para,1);
 	para->ctx = ctx;
 	para->cb = cb;
 	para->data = data;
+	para->msg_type = msg_type;
 	para->length_to_read = ctx->backend->header_length +1;
 	para->str = g_byte_array_sized_new(para->length_to_read);
 	if(msg_type == MSG_INDICATION){
@@ -603,7 +417,7 @@ static int _modbus_receive_msg_g(modbus_t *ctx, msg_type_t msg_type,
 	if(timout_us <=0) timout_us = -1;
 
 	GSource  *source = fd_source_new(ctx,G_IO_IN |G_IO_ERROR,timout_us);
-	g_source_set_callback(source,(GSourceFunc)_read_msg_cb,para,g_free);
+	g_source_set_callback(source,(GSourceFunc)_read_msg_cb,para,_ctx_para_destroy);
 	g_source_attach(source,ctx->context);
 	g_source_unref(source);
 	return 0;
@@ -820,102 +634,437 @@ static int send_msg(modbus_t *ctx, uint8_t *msg, int msg_length)
 
     return rc;
 }
+struct _read_register_para{
+	modbus_read_reg_cb cb;
+	gpointer data;
+	GByteArray *req;
+};
+/*******************************************************************************
+ * 										io status
+ * ****************************************************************************/
+//static int _read_io_status_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){
+//	struct _read_register_para *para= data;
+//	if(res < 0)
+//		goto finish;
+//	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
+//finish:
+//	para->cb(ctx,res,para->req,rsp,para->data);		
+//	g_byte_array_free(para->req,TRUE);
+//	g_free(data);
+//	return 0;
+//}
+//
+//
+///* Reads IO status */
+//int _read_io_status_g(modbus_t *ctx, int function,int addr, int nb,
+//			modbus_read_reg_cb cb,gpointer data)
+//           
+//{
+//    int rc;
+//    int req_length;
+//
+//    uint8_t req[_MIN_REQ_LENGTH];
+//
+//    req_length = ctx->backend->build_request_basis(ctx, function, addr, nb, req);
+//
+//    rc = send_msg(ctx, req, req_length);
+//	if(rc <= 0)
+//		return rc;
+//	struct _read_register_para *para= g_malloc0(sizeof(struct _read_register_para));
+//	para->req = g_byte_array_sized_new(rc);
+//	g_byte_array_append(para->req,req,rc);
+//	para->cb = cb;
+//	para->data = data;
+//
+//
+//    rc = _modbus_receive_msg_g(ctx, rsp, MSG_CONFIRMATION);
+//    if (rc == -1)
+//        return -1;
+//
+//
+////    rc = check_confirmation(ctx, req, rsp, rc);
+////    if (rc == -1)
+////        return -1;
+////
+////    offset = ctx->backend->header_length + 2;
+////    offset_end = offset + rc;
+////    for (i = offset; i < offset_end; i++) {
+////        /* Shift reg hi_byte to temp */
+////        temp = rsp[i];
+////
+////        for (bit = 0x01; (bit & 0xff) && (pos < nb);) {
+////            dest[pos++] = (temp & bit) ? TRUE : FALSE;
+////            bit = bit << 1;
+////        }
+////
+////    }
+//    
+//
+//    return rc;
+//}
+//
+//
 
+/*******************************************************************************
+ * 										register
+ * ****************************************************************************/
+static int _read_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){
+	struct _read_register_para *para= data;
+	if(res < 0)
+		goto finish;
+	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
+finish:
+	para->cb(ctx,res,para->req,rsp,para->data);		
+	g_byte_array_free(para->req,TRUE);
+	g_free(data);
+	return 0;
+}
 
 /* Reads the data from a remove device and put that data into an array */
-static int read_registers_g(modbus_t *ctx, int function, int addr, int nb,
-                          modbus_receive_msg_cb cb,gpointer data)
+static int _read_registers_g(modbus_t *ctx, int function, int addr, int nb,
+                          modbus_read_reg_cb cb,gpointer data)
 {
     int rc;
     int req_length;
     uint8_t req[_MIN_REQ_LENGTH];
-    uint8_t rsp[MAX_MESSAGE_LENGTH];
-
-    if (nb > MODBUS_MAX_READ_REGISTERS) {
-        if (ctx->debug) {
-            fprintf(stderr,
-                    "ERROR Too many registers requested (%d > %d)\n",
-                    nb, MODBUS_MAX_READ_REGISTERS);
-        }
-        errno = EMBMDATA;
-        return -1;
-    }
 
     req_length = ctx->backend->build_request_basis(ctx, function, addr, nb, req);
 
     rc = send_msg(ctx, req, req_length);
-    if (rc > 0) {
-        int offset;
-        int i;
-
-        rc = _modbus_receive_msg_g(ctx,MSG_CONFIRMATION,cb,data);
-    //    if (rc == -1)
-    //        return -1;
-
-    //    rc = check_confirmation(ctx, req, rsp, rc);
-    //    if (rc == -1)
-    //        return -1;
-
-    //    offset = ctx->backend->header_length;
-
-    //    for (i = 0; i < rc; i++) {
-    //        /* shift reg hi_byte to temp OR with lo_byte */
-    //        dest[i] = (rsp[offset + 2 + (i << 1)] << 8) |
-    //            rsp[offset + 3 + (i << 1)];
-    //    }
-    }
-
+	if(rc < 0)
+		return -1;	
+	struct _read_register_para *para= g_malloc0(sizeof(struct _read_register_para));
+	para->req = g_byte_array_sized_new(rc);
+	g_byte_array_append(para->req,req,rc);
+	para->cb = cb;
+	para->data = data;
+	rc = _modbus_receive_msg_g(ctx,MSG_CONFIRMATION,_read_registers_g_cb,para);
     return rc;
+}
+
+int modbus_read_g(modbus_t *ctx,int function, int addr,int nb,modbus_read_reg_cb cb,gpointer data)
+{
+	if(ctx == NULL){
+        errno = EINVAL;
+        return -1;
+	}
+	switch(function){
+		case MODBUS_FC_READ_COILS:
+    		if (nb > MODBUS_MAX_READ_BITS) {
+    		    if (ctx->debug) {
+    		        fprintf(stderr,
+    		                "ERROR Too many bits requested (%d > %d)\n",
+    		                nb, MODBUS_MAX_READ_BITS);
+    		    }
+    		    errno = EMBMDATA;
+    		    return -1;
+    		}
+			break;
+		case MODBUS_FC_READ_DISCRETE_INPUTS:
+    		if (nb > MODBUS_MAX_READ_BITS) {
+    		    if (ctx->debug) {
+    		        fprintf(stderr,
+    		                "ERROR Too many discrete inputs requested (%d > %d)\n",
+    		                nb, MODBUS_MAX_READ_BITS);
+    		    }
+    		    errno = EMBMDATA;
+    		    return -1;
+    		}
+			break;
+		case MODBUS_FC_READ_HOLDING_REGISTERS:
+    		if (nb > MODBUS_MAX_READ_REGISTERS) {
+    		    if (ctx->debug) {
+    		        fprintf(stderr,
+    		                "ERROR Too many registers requested (%d > %d)\n",
+    		                nb, MODBUS_MAX_READ_REGISTERS);
+    		    }
+    		    errno = EMBMDATA;
+    		    return -1;
+    		}
+			break;
+		case MODBUS_FC_READ_INPUT_REGISTERS:
+    		if (nb > MODBUS_MAX_READ_REGISTERS) {
+    		    fprintf(stderr,
+    		            "ERROR Too many input registers requested (%d > %d)\n",
+    		            nb, MODBUS_MAX_READ_REGISTERS);
+    		    errno = EMBMDATA;
+    		    return -1;
+    		}
+			break;
+		default:
+			return -1;
+	}
+	return _read_registers_g(ctx,function,addr,nb,cb,data);
+
+}
+
+
+int modbus_read_bits_g(modbus_t *ctx, int addr, int nb, 
+		modbus_read_reg_cb cb,gpointer data)
+{
+	return modbus_read_g(ctx,MODBUS_FC_READ_COILS,addr,nb,cb,data);
+}
+
+/* Same as modbus_read_bits but reads the remote device input table */
+int modbus_read_input_bits_g(modbus_t *ctx, int addr, int nb, 
+		modbus_read_reg_cb cb,gpointer data)
+{
+	return modbus_read_g(ctx,MODBUS_FC_READ_DISCRETE_INPUTS,
+			addr,nb,cb,data);
 }
 
 /* Reads the holding registers of remote device and put the data into an
    array */
 int modbus_read_registers_g(modbus_t *ctx, int addr, int nb,
-		modbus_receive_msg_cb cb,gpointer data)
+		modbus_read_reg_cb cb,gpointer data)
 {
-    int status;
+	return modbus_read_g(ctx,MODBUS_FC_READ_HOLDING_REGISTERS,
+			addr,nb,cb,data);
+}
 
+/* Reads the input registers of remote device and put the data into an array */
+int modbus_read_input_registers_g(modbus_t *ctx, int addr, int nb,
+		modbus_read_reg_cb cb,gpointer data)
+{
+	return modbus_read_g(ctx,MODBUS_FC_READ_INPUT_REGISTERS,
+			addr,nb,cb,data);
+}
+/*******************************************************************************
+ * 								write register
+ * ****************************************************************************/
+
+static int _write_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){
+	struct _read_register_para *para= data;
+	if(res < 0)
+		goto finish;
+	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
+finish:
+	para->cb(ctx,res,para->req,rsp,para->data);		
+	g_byte_array_free(para->req,TRUE);
+	g_free(data);
+	return 0;
+}
+
+/* Reads the data from a remove device and put that data into an array */
+static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, char *buf,int len,
+                          modbus_read_reg_cb cb,gpointer data)
+{
+    int rc;
+    int req_length;
+	uint8_t *req = g_malloc0(_MIN_REQ_LENGTH + len+1);
+
+    req_length = ctx->backend->build_request_basis(ctx, function, addr, nb, req);
+	
+	for(int i=0; i< len; i++){
+		req[req_length+i] = buf[i];
+	}
+
+    rc = send_msg(ctx, req, req_length);
+	if(rc < 0)
+	{
+		g_free(req);
+		return -1;	
+	}
+
+	struct _read_register_para *para= g_malloc0(sizeof(struct _read_register_para));
+	para->req = g_byte_array_new_take(buf,req_length);
+	g_byte_array_append(para->req,req,rc);
+	para->cb = cb;
+	para->data = data;
+	rc = _modbus_receive_msg_g(ctx,MSG_CONFIRMATION,_write_registers_g_cb,para);
+    return rc;
+}
+
+int modbus_write_bit_g(modbus_t *ctx, int addr, int status,
+		modbus_read_reg_cb cb,gpointer data)
+{
+	return _write_registers_g(ctx,MODBUS_FC_WRITE_SINGLE_COIL,addr,
+			status?0xFF00:0,NULL,0,cb,data);
+}
+
+int modbus_write_register_g(modbus_t *ctx, int addr, uint16_t value,
+		modbus_read_reg_cb cb,gpointer data)
+{
+	return _write_registers_g(ctx,MODBUS_FC_WRITE_SINGLE_REGISTER,addr,
+			value,NULL,0,cb,data);
+}
+
+
+/* Write the bits of the array in the remote device */
+int modbus_write_bits_g(modbus_t *ctx, int addr, int nb, const uint8_t *src,
+		modbus_read_reg_cb cb,gpointer data)
+{
     if (ctx == NULL) {
         errno = EINVAL;
         return -1;
     }
 
-    if (nb > MODBUS_MAX_READ_REGISTERS) {
+    if (nb > MODBUS_MAX_WRITE_BITS) {
+        if (ctx->debug) {
+            fprintf(stderr, "ERROR Writing too many bits (%d > %d)\n",
+                    nb, MODBUS_MAX_WRITE_BITS);
+        }
+        errno = EMBMDATA;
+        return -1;
+    }
+    int pos = 0;
+    int byte_count = (nb / 8) + ((nb % 8) ? 1 : 0);
+	uint8_t *req =  g_malloc0(byte_count+2);
+	int req_length = 0;
+    int bit_check = 0;
+    req[req_length++] = byte_count;
+	
+
+    for (int i = 0; i < byte_count; i++) {
+        int bit;
+
+        bit = 0x01;
+        req[req_length] = 0;
+
+        while ((bit & 0xFF) && (bit_check++ < nb)) {
+            if (src[pos++])
+                req[req_length] |= bit;
+            else
+                req[req_length] &=~ bit;
+
+            bit = bit << 1;
+        }
+        req_length++;
+    }
+	int ret = _write_registers_g(ctx,MODBUS_FC_WRITE_MULTIPLE_COILS,addr,
+			nb,req,req_length,cb,data);
+	g_free(req);
+	return ret;
+}
+
+
+int modbus_write_registers_g(modbus_t *ctx, int addr, int nb, const uint16_t *src,
+		modbus_read_reg_cb cb,gpointer data)
+{
+    if (ctx == NULL) {
+        errno = EINVAL;
+        return -1;
+    }
+
+    if (nb > MODBUS_MAX_WRITE_REGISTERS) {
         if (ctx->debug) {
             fprintf(stderr,
-                    "ERROR Too many registers requested (%d > %d)\n",
-                    nb, MODBUS_MAX_READ_REGISTERS);
+                    "ERROR Trying to write to too many registers (%d > %d)\n",
+                    nb, MODBUS_MAX_WRITE_REGISTERS);
         }
         errno = EMBMDATA;
         return -1;
     }
 
-    status = read_registers_g(ctx, MODBUS_FC_READ_HOLDING_REGISTERS,
-                            addr, nb, cb,data);
-    return status;
+	uint8_t *req = g_malloc0(nb * 2+2);
+    int req_length =0;
+    req[req_length++] = nb*2;
+
+    for (int i = 0; i < nb; i++) {
+        req[req_length++] = src[i] >> 8;
+        req[req_length++] = src[i] & 0x00FF;
+    }
+	
+	
+	int ret = _write_registers_g(ctx,MODBUS_FC_WRITE_MULTIPLE_REGISTERS,addr,
+			nb,req,req_length,cb,data);
+	g_free(req);
+	return ret;
 }
 
-/* Reads the input registers of remote device and put the data into an array */
-//int modbus_read_input_registers_g(modbus_t *ctx, int addr, int nb,
-//                                uint16_t *dest)
+
+///* Write multiple registers from src array to remote device and read multiple
+//   registers from remote device to dest array. */
+//int modbus_write_and_read_registers(modbus_t *ctx,
+//                                    int write_addr, int write_nb,
+//                                    const uint16_t *src,
+//                                    int read_addr, int read_nb,
+//                                    uint16_t *dest)
+//
 //{
-//    int status;
+//    int rc;
+//    int req_length;
+//    int i;
+//    int byte_count;
+//    uint8_t req[MAX_MESSAGE_LENGTH];
+//    uint8_t rsp[MAX_MESSAGE_LENGTH];
 //
 //    if (ctx == NULL) {
 //        errno = EINVAL;
 //        return -1;
 //    }
 //
-//    if (nb > MODBUS_MAX_READ_REGISTERS) {
-//        fprintf(stderr,
-//                "ERROR Too many input registers requested (%d > %d)\n",
-//                nb, MODBUS_MAX_READ_REGISTERS);
+//    if (write_nb > MODBUS_MAX_WR_WRITE_REGISTERS) {
+//        if (ctx->debug) {
+//            fprintf(stderr,
+//                    "ERROR Too many registers to write (%d > %d)\n",
+//                    write_nb, MODBUS_MAX_WR_WRITE_REGISTERS);
+//        }
 //        errno = EMBMDATA;
 //        return -1;
 //    }
 //
-//    status = read_registers(ctx, MODBUS_FC_READ_INPUT_REGISTERS,
-//                            addr, nb, dest);
+//    if (read_nb > MODBUS_MAX_WR_READ_REGISTERS) {
+//        if (ctx->debug) {
+//            fprintf(stderr,
+//                    "ERROR Too many registers requested (%d > %d)\n",
+//                    read_nb, MODBUS_MAX_WR_READ_REGISTERS);
+//        }
+//        errno = EMBMDATA;
+//        return -1;
+//    }
+//    req_length = ctx->backend->build_request_basis(ctx,
+//                                                   MODBUS_FC_WRITE_AND_READ_REGISTERS,
+//                                                   read_addr, read_nb, req);
 //
-//    return status;
+//    req[req_length++] = write_addr >> 8;
+//    req[req_length++] = write_addr & 0x00ff;
+//    req[req_length++] = write_nb >> 8;
+//    req[req_length++] = write_nb & 0x00ff;
+//    byte_count = write_nb * 2;
+//    req[req_length++] = byte_count;
+//
+//    for (i = 0; i < write_nb; i++) {
+//        req[req_length++] = src[i] >> 8;
+//        req[req_length++] = src[i] & 0x00FF;
+//    }
+//
+//    rc = send_msg(ctx, req, req_length);
+//    if (rc > 0) {
+//        int offset;
+//
+//        rc = _modbus_receive_msg(ctx, rsp, MSG_CONFIRMATION);
+//        if (rc == -1)
+//            return -1;
+//
+//        rc = check_confirmation(ctx, req, rsp, rc);
+//        if (rc == -1)
+//            return -1;
+//
+//        offset = ctx->backend->header_length;
+//        for (i = 0; i < rc; i++) {
+//            /* shift reg hi_byte to temp OR with lo_byte */
+//            dest[i] = (rsp[offset + 2 + (i << 1)] << 8) |
+//                rsp[offset + 3 + (i << 1)];
+//        }
+//    }
+//
+//    return rc;
 //}
+//
+
+
+void modbus_set_context(modbus_t *ctx,GMainContext *context)
+{
+	g_return_if_fail(ctx!=NULL);
+
+	ctx->context = context;
+}
+
+GMainContext *modbus_get_context(modbus_t *ctx)
+{
+	g_return_val_if_fail(ctx!= NULL,NULL);
+
+	return ctx->context;
+}
+

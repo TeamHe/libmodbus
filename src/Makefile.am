@@ -2,6 +2,7 @@ EXTRA_DIST =
 lib_LTLIBRARIES = libmodbus.la
 
 AM_CPPFLAGS = \
+	-g -O0 							\
     -include $(top_builddir)/config.h \
     -DSYSCONFDIR=\""$(sysconfdir)"\" \
     -DLIBEXECDIR=\""$(libexecdir)"\" \
