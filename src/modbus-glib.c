@@ -418,7 +418,10 @@ static int _modbus_receive_msg_g(modbus_t *ctx, msg_type_t msg_type,
 
 	GSource  *source = fd_source_new(ctx,G_IO_IN |G_IO_ERROR,timout_us);
 	g_source_set_callback(source,(GSourceFunc)_read_msg_cb,para,_ctx_para_destroy);
-	g_source_attach(source,ctx->context);
+	if(ctx->context)
+		g_source_attach(source,ctx->context);
+	else
+		g_source_attach(source,NULL);
 	g_source_unref(source);
 	return 0;
 }
@@ -634,76 +637,19 @@ static int send_msg(modbus_t *ctx, uint8_t *msg, int msg_length)
 
     return rc;
 }
+enum modbus_op{
+	MODBUS_OP_READ,
+	MODBUS_OP_WRITE,
+};
 struct _read_register_para{
+	enum 		modbus_op op;
+	int 		function;
+	int 		addr;
+	int  		nb;
 	modbus_read_reg_cb cb;
 	gpointer data;
 	GByteArray *req;
 };
-/*******************************************************************************
- * 										io status
- * ****************************************************************************/
-//static int _read_io_status_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){
-//	struct _read_register_para *para= data;
-//	if(res < 0)
-//		goto finish;
-//	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
-//finish:
-//	para->cb(ctx,res,para->req,rsp,para->data);		
-//	g_byte_array_free(para->req,TRUE);
-//	g_free(data);
-//	return 0;
-//}
-//
-//
-///* Reads IO status */
-//int _read_io_status_g(modbus_t *ctx, int function,int addr, int nb,
-//			modbus_read_reg_cb cb,gpointer data)
-//           
-//{
-//    int rc;
-//    int req_length;
-//
-//    uint8_t req[_MIN_REQ_LENGTH];
-//
-//    req_length = ctx->backend->build_request_basis(ctx, function, addr, nb, req);
-//
-//    rc = send_msg(ctx, req, req_length);
-//	if(rc <= 0)
-//		return rc;
-//	struct _read_register_para *para= g_malloc0(sizeof(struct _read_register_para));
-//	para->req = g_byte_array_sized_new(rc);
-//	g_byte_array_append(para->req,req,rc);
-//	para->cb = cb;
-//	para->data = data;
-//
-//
-//    rc = _modbus_receive_msg_g(ctx, rsp, MSG_CONFIRMATION);
-//    if (rc == -1)
-//        return -1;
-//
-//
-////    rc = check_confirmation(ctx, req, rsp, rc);
-////    if (rc == -1)
-////        return -1;
-////
-////    offset = ctx->backend->header_length + 2;
-////    offset_end = offset + rc;
-////    for (i = offset; i < offset_end; i++) {
-////        /* Shift reg hi_byte to temp */
-////        temp = rsp[i];
-////
-////        for (bit = 0x01; (bit & 0xff) && (pos < nb);) {
-////            dest[pos++] = (temp & bit) ? TRUE : FALSE;
-////            bit = bit << 1;
-////        }
-////
-////    }
-//    
-//
-//    return rc;
-//}
-//
-//
 
 /*******************************************************************************
  * 										register
@@ -713,6 +659,10 @@ static int _read_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer d
 	if(res < 0)
 		goto finish;
 	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
+	if(res < 0)
+		goto finish;
+
+		
 finish:
 	para->cb(ctx,res,para->req,rsp,para->data);		
 	g_byte_array_free(para->req,TRUE);
@@ -738,6 +688,10 @@ static int _read_registers_g(modbus_t *ctx, int function, int addr, int nb,
 	g_byte_array_append(para->req,req,rc);
 	para->cb = cb;
 	para->data = data;
+	para->function = function;
+	para->addr = addr;
+	para->nb = nb;
+	para->op = MODBUS_OP_READ;
 	rc = _modbus_receive_msg_g(ctx,MSG_CONFIRMATION,_read_registers_g_cb,para);
     return rc;
 }
@@ -838,6 +792,11 @@ static int _write_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer 
 	if(res < 0)
 		goto finish;
 	res = check_confirmation(ctx,para->req->data,rsp->data,rsp->len);
+	if(res < 0)
+		goto finish;
+
+	
+
 finish:
 	para->cb(ctx,res,para->req,rsp,para->data);		
 	g_byte_array_free(para->req,TRUE);
@@ -846,7 +805,7 @@ finish:
 }
 
 /* Reads the data from a remove device and put that data into an array */
-static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, char *buf,int len,
+static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, uint8_t *buf,int len,
                           modbus_read_reg_cb cb,gpointer data)
 {
     int rc;
@@ -856,7 +815,7 @@ static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, cha
     req_length = ctx->backend->build_request_basis(ctx, function, addr, nb, req);
 	
 	for(int i=0; i< len; i++){
-		req[req_length+i] = buf[i];
+		req[req_length++] = buf[i];
 	}
 
     rc = send_msg(ctx, req, req_length);
@@ -867,10 +826,14 @@ static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, cha
 	}
 
 	struct _read_register_para *para= g_malloc0(sizeof(struct _read_register_para));
-	para->req = g_byte_array_new_take(buf,req_length);
-	g_byte_array_append(para->req,req,rc);
+	para->req = g_byte_array_new_take(req,req_length);
+//	g_byte_array_append(para->req,req,rc);
 	para->cb = cb;
 	para->data = data;
+	para->function = function;
+	para->nb = nb;
+	para->addr = addr;
+	para->op = MODBUS_OP_WRITE;
 	rc = _modbus_receive_msg_g(ctx,MSG_CONFIRMATION,_write_registers_g_cb,para);
     return rc;
 }
@@ -973,86 +936,6 @@ int modbus_write_registers_g(modbus_t *ctx, int addr, int nb, const uint16_t *sr
 }
 
 
-///* Write multiple registers from src array to remote device and read multiple
-//   registers from remote device to dest array. */
-//int modbus_write_and_read_registers(modbus_t *ctx,
-//                                    int write_addr, int write_nb,
-//                                    const uint16_t *src,
-//                                    int read_addr, int read_nb,
-//                                    uint16_t *dest)
-//
-//{
-//    int rc;
-//    int req_length;
-//    int i;
-//    int byte_count;
-//    uint8_t req[MAX_MESSAGE_LENGTH];
-//    uint8_t rsp[MAX_MESSAGE_LENGTH];
-//
-//    if (ctx == NULL) {
-//        errno = EINVAL;
-//        return -1;
-//    }
-//
-//    if (write_nb > MODBUS_MAX_WR_WRITE_REGISTERS) {
-//        if (ctx->debug) {
-//            fprintf(stderr,
-//                    "ERROR Too many registers to write (%d > %d)\n",
-//                    write_nb, MODBUS_MAX_WR_WRITE_REGISTERS);
-//        }
-//        errno = EMBMDATA;
-//        return -1;
-//    }
-//
-//    if (read_nb > MODBUS_MAX_WR_READ_REGISTERS) {
-//        if (ctx->debug) {
-//            fprintf(stderr,
-//                    "ERROR Too many registers requested (%d > %d)\n",
-//                    read_nb, MODBUS_MAX_WR_READ_REGISTERS);
-//        }
-//        errno = EMBMDATA;
-//        return -1;
-//    }
-//    req_length = ctx->backend->build_request_basis(ctx,
-//                                                   MODBUS_FC_WRITE_AND_READ_REGISTERS,
-//                                                   read_addr, read_nb, req);
-//
-//    req[req_length++] = write_addr >> 8;
-//    req[req_length++] = write_addr & 0x00ff;
-//    req[req_length++] = write_nb >> 8;
-//    req[req_length++] = write_nb & 0x00ff;
-//    byte_count = write_nb * 2;
-//    req[req_length++] = byte_count;
-//
-//    for (i = 0; i < write_nb; i++) {
-//        req[req_length++] = src[i] >> 8;
-//        req[req_length++] = src[i] & 0x00FF;
-//    }
-//
-//    rc = send_msg(ctx, req, req_length);
-//    if (rc > 0) {
-//        int offset;
-//
-//        rc = _modbus_receive_msg(ctx, rsp, MSG_CONFIRMATION);
-//        if (rc == -1)
-//            return -1;
-//
-//        rc = check_confirmation(ctx, req, rsp, rc);
-//        if (rc == -1)
-//            return -1;
-//
-//        offset = ctx->backend->header_length;
-//        for (i = 0; i < rc; i++) {
-//            /* shift reg hi_byte to temp OR with lo_byte */
-//            dest[i] = (rsp[offset + 2 + (i << 1)] << 8) |
-//                rsp[offset + 3 + (i << 1)];
-//        }
-//    }
-//
-//    return rc;
-//}
-//
-
 
 void modbus_set_context(modbus_t *ctx,GMainContext *context)
 {
@@ -1068,3 +951,32 @@ GMainContext *modbus_get_context(modbus_t *ctx)
 	return ctx->context;
 }
 
+uint16_t* modbus_reg_expansion(modbus_t *ctx,uint8_t *rsp,int len)
+{
+	int offset  = ctx->backend->header_length;
+	uint16_t *dest = g_new0(uint16_t,len);
+	for(int i=0;i< len;i++){
+            dest[i] = (rsp[offset + 2 + (i << 1)] << 8) |
+                rsp[offset + 3 + (i << 1)];
+	}
+	return dest;
+}
+
+
+uint8_t *modbus_bit_expansion(modbus_t *ctx,uint8_t* rsp,int len)
+{
+	int offset = ctx->backend->header_length +2;
+	int offset_end = offset + len;
+	int temp,bit;
+	int pos = 0;
+	int i = 0;
+	uint8_t *dest = g_new0(uint8_t, len);
+	for(i=offset; i<offset_end; i++){
+		temp = rsp[i];
+        for (bit = 0x01; (bit & 0xff) && (pos < len);) {
+            dest[pos++] = (temp & bit) ? TRUE : FALSE;
+            bit = bit << 1;
+        }
+	}
+	return dest;
+}

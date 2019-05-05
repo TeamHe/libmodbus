@@ -84,10 +84,10 @@ CCDEPMODE	src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
 CCDEPMODE	tests/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m	language:Make
 CCLD	src/Makefile	/^CCLD = $(CC)$/;"	m	language:Make
 CCLD	tests/Makefile	/^CCLD = $(CC)$/;"	m	language:Make
-CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
-CFLAGS	doc/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
-CFLAGS	src/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
-CFLAGS	tests/Makefile	/^CFLAGS = -g -O2$/;"	m	language:Make
+CFLAGS	Makefile	/^CFLAGS =  -g -W  -O0$/;"	m	language:Make
+CFLAGS	doc/Makefile	/^CFLAGS =  -g -W  -O0$/;"	m	language:Make
+CFLAGS	src/Makefile	/^CFLAGS =  -g -W  -O0$/;"	m	language:Make
+CFLAGS	tests/Makefile	/^CFLAGS =  -g -W  -O0$/;"	m	language:Make
 CLEANFILES	Makefile	/^CLEANFILES = libmodbus.pc$/;"	m	language:Make
 CLEANFILES	doc/Makefile	/^CLEANFILES = *.3 *.7 *.html$/;"	m	language:Make
 CLEANFILES	src/Makefile	/^CLEANFILES = *~$/;"	m	language:Make
@@ -110,10 +110,10 @@ CPP	Makefile	/^CPP = gcc -E$/;"	m	language:Make
 CPP	doc/Makefile	/^CPP = gcc -E$/;"	m	language:Make
 CPP	src/Makefile	/^CPP = gcc -E$/;"	m	language:Make
 CPP	tests/Makefile	/^CPP = gcc -E$/;"	m	language:Make
-CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m	language:Make
-CPPFLAGS	doc/Makefile	/^CPPFLAGS = $/;"	m	language:Make
-CPPFLAGS	src/Makefile	/^CPPFLAGS = $/;"	m	language:Make
-CPPFLAGS	tests/Makefile	/^CPPFLAGS = $/;"	m	language:Make
+CPPFLAGS	Makefile	/^CPPFLAGS = -g -W -O0$/;"	m	language:Make
+CPPFLAGS	doc/Makefile	/^CPPFLAGS = -g -W -O0$/;"	m	language:Make
+CPPFLAGS	src/Makefile	/^CPPFLAGS = -g -W -O0$/;"	m	language:Make
+CPPFLAGS	tests/Makefile	/^CPPFLAGS = -g -W -O0$/;"	m	language:Make
 CSCOPE	Makefile	/^CSCOPE = cscope$/;"	m	language:Make
 CTAGS	Makefile	/^CTAGS = ctags$/;"	m	language:Make
 CTAGS	src/Makefile	/^CTAGS = ctags$/;"	m	language:Make
@@ -198,22 +198,22 @@ EGREP	doc/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
 EGREP	src/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
 EGREP	tests/Makefile	/^EGREP = \/bin\/grep -E$/;"	m	language:Make
 EINPROGRESS	src/modbus-tcp.h	30;"	d	language:C++
-EMBBADCRC	src/modbus.h	144;"	d	language:C++
-EMBBADDATA	src/modbus.h	145;"	d	language:C++
-EMBBADEXC	src/modbus.h	146;"	d	language:C++
-EMBBADSLAVE	src/modbus.h	149;"	d	language:C++
-EMBMDATA	src/modbus.h	148;"	d	language:C++
-EMBUNKEXC	src/modbus.h	147;"	d	language:C++
-EMBXACK	src/modbus.h	136;"	d	language:C++
-EMBXGPATH	src/modbus.h	140;"	d	language:C++
-EMBXGTAR	src/modbus.h	141;"	d	language:C++
-EMBXILADD	src/modbus.h	133;"	d	language:C++
-EMBXILFUN	src/modbus.h	132;"	d	language:C++
-EMBXILVAL	src/modbus.h	134;"	d	language:C++
-EMBXMEMPAR	src/modbus.h	139;"	d	language:C++
-EMBXNACK	src/modbus.h	138;"	d	language:C++
-EMBXSBUSY	src/modbus.h	137;"	d	language:C++
-EMBXSFAIL	src/modbus.h	135;"	d	language:C++
+EMBBADCRC	src/modbus.h	145;"	d	language:C++
+EMBBADDATA	src/modbus.h	146;"	d	language:C++
+EMBBADEXC	src/modbus.h	147;"	d	language:C++
+EMBBADSLAVE	src/modbus.h	150;"	d	language:C++
+EMBMDATA	src/modbus.h	149;"	d	language:C++
+EMBUNKEXC	src/modbus.h	148;"	d	language:C++
+EMBXACK	src/modbus.h	137;"	d	language:C++
+EMBXGPATH	src/modbus.h	141;"	d	language:C++
+EMBXGTAR	src/modbus.h	142;"	d	language:C++
+EMBXILADD	src/modbus.h	134;"	d	language:C++
+EMBXILFUN	src/modbus.h	133;"	d	language:C++
+EMBXILVAL	src/modbus.h	135;"	d	language:C++
+EMBXMEMPAR	src/modbus.h	140;"	d	language:C++
+EMBXNACK	src/modbus.h	139;"	d	language:C++
+EMBXSBUSY	src/modbus.h	138;"	d	language:C++
+EMBXSFAIL	src/modbus.h	136;"	d	language:C++
 ENOPROTOOPT	src/modbus-tcp.h	27;"	d	language:C++
 ENOTSUP	src/modbus-rtu-private.h	30;"	d	language:C++
 ETAGS	Makefile	/^ETAGS = etags$/;"	m	language:Make
@@ -229,11 +229,12 @@ EXTRA_DIST	Makefile	/^EXTRA_DIST = libmodbus.pc.in$/;"	m	language:Make
 EXTRA_DIST	doc/Makefile	/^EXTRA_DIST = asciidoc.conf $(TXT3) $(TXT7)$/;"	m	language:Make
 EXTRA_DIST	src/Makefile	/^EXTRA_DIST = modbus-version.h.in$/;"	m	language:Make
 EXTRA_DIST	tests/Makefile	/^EXTRA_DIST = README.md unit-tests.sh$/;"	m	language:Make
-FALSE	src/modbus.h	45;"	d	language:C++
+FALSE	src/modbus.h	46;"	d	language:C++
 FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
 FGREP	doc/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
 FGREP	src/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
 FGREP	tests/Makefile	/^FGREP = \/bin\/grep -F$/;"	m	language:Make
+FUNC	tests/test-glib.c	6;"	d	language:C	file:
 GCC_VERSION	src/modbus-data.c	40;"	d	language:C	file:
 GREP	Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
 GREP	doc/Makefile	/^GREP = \/bin\/grep$/;"	m	language:Make
@@ -308,10 +309,11 @@ LD	Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
 LD	doc/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
 LD	src/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
 LD	tests/Makefile	/^LD = \/usr\/bin\/ld$/;"	m	language:Make
-LDFLAGS	Makefile	/^LDFLAGS = $/;"	m	language:Make
-LDFLAGS	doc/Makefile	/^LDFLAGS = $/;"	m	language:Make
-LDFLAGS	src/Makefile	/^LDFLAGS = $/;"	m	language:Make
-LDFLAGS	tests/Makefile	/^LDFLAGS = $/;"	m	language:Make
+LDFLAGS	Makefile	/^LDFLAGS = -g -W -std=c++0x$/;"	m	language:Make
+LDFLAGS	doc/Makefile	/^LDFLAGS = -g -W -std=c++0x$/;"	m	language:Make
+LDFLAGS	src/Makefile	/^LDFLAGS = -g -W -std=c++0x$/;"	m	language:Make
+LDFLAGS	tests/Makefile	/^LDFLAGS = -g -W -std=c++0x$/;"	m	language:Make
+LEN	tests/test-glib.c	8;"	d	language:C	file:
 LIBMODBUS_LT_VERSION_INFO	Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
 LIBMODBUS_LT_VERSION_INFO	doc/Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
 LIBMODBUS_LT_VERSION_INFO	src/Makefile	/^LIBMODBUS_LT_VERSION_INFO = 6:0:1$/;"	m	language:Make
@@ -393,15 +395,15 @@ MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
 MKDIR_P	doc/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
 MKDIR_P	src/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
 MKDIR_P	tests/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m	language:Make
-MODBUS_API	src/modbus.h	26;"	d	language:C++
-MODBUS_API	src/modbus.h	28;"	d	language:C++
-MODBUS_API	src/modbus.h	31;"	d	language:C++
-MODBUS_BEGIN_DECLS	src/modbus.h	35;"	d	language:C++
-MODBUS_BEGIN_DECLS	src/modbus.h	38;"	d	language:C++
-MODBUS_BROADCAST_ADDRESS	src/modbus.h	74;"	d	language:C++
-MODBUS_END_DECLS	src/modbus.h	36;"	d	language:C++
-MODBUS_END_DECLS	src/modbus.h	39;"	d	language:C++
-MODBUS_ENOBASE	src/modbus.h	114;"	d	language:C++
+MODBUS_API	src/modbus.h	27;"	d	language:C++
+MODBUS_API	src/modbus.h	29;"	d	language:C++
+MODBUS_API	src/modbus.h	32;"	d	language:C++
+MODBUS_BEGIN_DECLS	src/modbus.h	36;"	d	language:C++
+MODBUS_BEGIN_DECLS	src/modbus.h	39;"	d	language:C++
+MODBUS_BROADCAST_ADDRESS	src/modbus.h	75;"	d	language:C++
+MODBUS_END_DECLS	src/modbus.h	37;"	d	language:C++
+MODBUS_END_DECLS	src/modbus.h	40;"	d	language:C++
+MODBUS_ENOBASE	src/modbus.h	115;"	d	language:C++
 MODBUS_ERROR_RECOVERY_LINK	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_LINK          = (1<<1),$/;"	e	language:C++	enum:__anon6
 MODBUS_ERROR_RECOVERY_NONE	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_NONE          = 0,$/;"	e	language:C++	enum:__anon6
 MODBUS_ERROR_RECOVERY_PROTOCOL	src/modbus.h	/^    MODBUS_ERROR_RECOVERY_PROTOCOL      = (1<<2)$/;"	e	language:C++	enum:__anon6
@@ -417,32 +419,35 @@ MODBUS_EXCEPTION_NEGATIVE_ACKNOWLEDGE	src/modbus.h	/^    MODBUS_EXCEPTION_NEGATI
 MODBUS_EXCEPTION_NOT_DEFINED	src/modbus.h	/^    MODBUS_EXCEPTION_NOT_DEFINED,$/;"	e	language:C++	enum:__anon5
 MODBUS_EXCEPTION_SLAVE_OR_SERVER_BUSY	src/modbus.h	/^    MODBUS_EXCEPTION_SLAVE_OR_SERVER_BUSY,$/;"	e	language:C++	enum:__anon5
 MODBUS_EXCEPTION_SLAVE_OR_SERVER_FAILURE	src/modbus.h	/^    MODBUS_EXCEPTION_SLAVE_OR_SERVER_FAILURE,$/;"	e	language:C++	enum:__anon5
-MODBUS_FC_MASK_WRITE_REGISTER	src/modbus.h	71;"	d	language:C++
-MODBUS_FC_READ_COILS	src/modbus.h	61;"	d	language:C++
-MODBUS_FC_READ_DISCRETE_INPUTS	src/modbus.h	62;"	d	language:C++
-MODBUS_FC_READ_EXCEPTION_STATUS	src/modbus.h	67;"	d	language:C++
-MODBUS_FC_READ_HOLDING_REGISTERS	src/modbus.h	63;"	d	language:C++
-MODBUS_FC_READ_INPUT_REGISTERS	src/modbus.h	64;"	d	language:C++
-MODBUS_FC_REPORT_SLAVE_ID	src/modbus.h	70;"	d	language:C++
-MODBUS_FC_WRITE_AND_READ_REGISTERS	src/modbus.h	72;"	d	language:C++
-MODBUS_FC_WRITE_MULTIPLE_COILS	src/modbus.h	68;"	d	language:C++
-MODBUS_FC_WRITE_MULTIPLE_REGISTERS	src/modbus.h	69;"	d	language:C++
-MODBUS_FC_WRITE_SINGLE_COIL	src/modbus.h	65;"	d	language:C++
-MODBUS_FC_WRITE_SINGLE_REGISTER	src/modbus.h	66;"	d	language:C++
-MODBUS_GET_HIGH_BYTE	src/modbus.h	245;"	d	language:C++
-MODBUS_GET_INT16_FROM_INT8	src/modbus.h	253;"	d	language:C++
-MODBUS_GET_INT32_FROM_INT16	src/modbus.h	252;"	d	language:C++
-MODBUS_GET_INT64_FROM_INT16	src/modbus.h	247;"	d	language:C++
-MODBUS_GET_LOW_BYTE	src/modbus.h	246;"	d	language:C++
+MODBUS_EX_H	src/modbus_ex.h	2;"	d	language:C++
+MODBUS_FC_MASK_WRITE_REGISTER	src/modbus.h	72;"	d	language:C++
+MODBUS_FC_READ_COILS	src/modbus.h	62;"	d	language:C++
+MODBUS_FC_READ_DISCRETE_INPUTS	src/modbus.h	63;"	d	language:C++
+MODBUS_FC_READ_EXCEPTION_STATUS	src/modbus.h	68;"	d	language:C++
+MODBUS_FC_READ_HOLDING_REGISTERS	src/modbus.h	64;"	d	language:C++
+MODBUS_FC_READ_INPUT_REGISTERS	src/modbus.h	65;"	d	language:C++
+MODBUS_FC_REPORT_SLAVE_ID	src/modbus.h	71;"	d	language:C++
+MODBUS_FC_WRITE_AND_READ_REGISTERS	src/modbus.h	73;"	d	language:C++
+MODBUS_FC_WRITE_MULTIPLE_COILS	src/modbus.h	69;"	d	language:C++
+MODBUS_FC_WRITE_MULTIPLE_REGISTERS	src/modbus.h	70;"	d	language:C++
+MODBUS_FC_WRITE_SINGLE_COIL	src/modbus.h	66;"	d	language:C++
+MODBUS_FC_WRITE_SINGLE_REGISTER	src/modbus.h	67;"	d	language:C++
+MODBUS_GET_HIGH_BYTE	src/modbus.h	246;"	d	language:C++
+MODBUS_GET_INT16_FROM_INT8	src/modbus.h	254;"	d	language:C++
+MODBUS_GET_INT32_FROM_INT16	src/modbus.h	253;"	d	language:C++
+MODBUS_GET_INT64_FROM_INT16	src/modbus.h	248;"	d	language:C++
+MODBUS_GET_LOW_BYTE	src/modbus.h	247;"	d	language:C++
 MODBUS_H	src/modbus.h	8;"	d	language:C++
-MODBUS_MAX_ADU_LENGTH	src/modbus.h	111;"	d	language:C++
-MODBUS_MAX_PDU_LENGTH	src/modbus.h	101;"	d	language:C++
-MODBUS_MAX_READ_BITS	src/modbus.h	81;"	d	language:C++
-MODBUS_MAX_READ_REGISTERS	src/modbus.h	91;"	d	language:C++
-MODBUS_MAX_WRITE_BITS	src/modbus.h	82;"	d	language:C++
-MODBUS_MAX_WRITE_REGISTERS	src/modbus.h	92;"	d	language:C++
-MODBUS_MAX_WR_READ_REGISTERS	src/modbus.h	94;"	d	language:C++
-MODBUS_MAX_WR_WRITE_REGISTERS	src/modbus.h	93;"	d	language:C++
+MODBUS_MAX_ADU_LENGTH	src/modbus.h	112;"	d	language:C++
+MODBUS_MAX_PDU_LENGTH	src/modbus.h	102;"	d	language:C++
+MODBUS_MAX_READ_BITS	src/modbus.h	82;"	d	language:C++
+MODBUS_MAX_READ_REGISTERS	src/modbus.h	92;"	d	language:C++
+MODBUS_MAX_WRITE_BITS	src/modbus.h	83;"	d	language:C++
+MODBUS_MAX_WRITE_REGISTERS	src/modbus.h	93;"	d	language:C++
+MODBUS_MAX_WR_READ_REGISTERS	src/modbus.h	95;"	d	language:C++
+MODBUS_MAX_WR_WRITE_REGISTERS	src/modbus.h	94;"	d	language:C++
+MODBUS_OP_READ	src/modbus-glib.c	/^	MODBUS_OP_READ,$/;"	e	language:C	enum:modbus_op	file:
+MODBUS_OP_WRITE	src/modbus-glib.c	/^	MODBUS_OP_WRITE,$/;"	e	language:C	enum:modbus_op	file:
 MODBUS_PRIVATE_H	src/modbus-private.h	8;"	d	language:C++
 MODBUS_RTU_H	src/modbus-rtu.h	8;"	d	language:C++
 MODBUS_RTU_MAX_ADU_LENGTH	src/modbus-rtu.h	17;"	d	language:C++
@@ -452,9 +457,9 @@ MODBUS_RTU_RS485	src/modbus-rtu.h	23;"	d	language:C++
 MODBUS_RTU_RTS_DOWN	src/modbus-rtu.h	30;"	d	language:C++
 MODBUS_RTU_RTS_NONE	src/modbus-rtu.h	28;"	d	language:C++
 MODBUS_RTU_RTS_UP	src/modbus-rtu.h	29;"	d	language:C++
-MODBUS_SET_INT16_TO_INT8	src/modbus.h	254;"	d	language:C++
-MODBUS_SET_INT32_TO_INT16	src/modbus.h	259;"	d	language:C++
-MODBUS_SET_INT64_TO_INT16	src/modbus.h	264;"	d	language:C++
+MODBUS_SET_INT16_TO_INT8	src/modbus.h	255;"	d	language:C++
+MODBUS_SET_INT32_TO_INT16	src/modbus.h	260;"	d	language:C++
+MODBUS_SET_INT64_TO_INT16	src/modbus.h	265;"	d	language:C++
 MODBUS_TCP_DEFAULT_PORT	src/modbus-tcp.h	34;"	d	language:C++
 MODBUS_TCP_H	src/modbus-tcp.h	8;"	d	language:C++
 MODBUS_TCP_MAX_ADU_LENGTH	src/modbus-tcp.h	40;"	d	language:C++
@@ -494,8 +499,8 @@ OBJEXT	Makefile	/^OBJEXT = o$/;"	m	language:Make
 OBJEXT	doc/Makefile	/^OBJEXT = o$/;"	m	language:Make
 OBJEXT	src/Makefile	/^OBJEXT = o$/;"	m	language:Make
 OBJEXT	tests/Makefile	/^OBJEXT = o$/;"	m	language:Make
-OFF	src/modbus.h	53;"	d	language:C++
-ON	src/modbus.h	57;"	d	language:C++
+OFF	src/modbus.h	54;"	d	language:C++
+ON	src/modbus.h	58;"	d	language:C++
 OS_BSD	src/modbus-tcp.c	37;"	d	language:C	file:
 OS_WIN32	src/modbus-tcp.c	8;"	d	language:C	file:
 OTOOL	Makefile	/^OTOOL = $/;"	m	language:Make
@@ -580,7 +585,7 @@ SED	doc/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
 SED	src/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
 SED	tests/Makefile	/^SED = \/bin\/sed$/;"	m	language:Make
 SERVER_ID	tests/random-test-client.c	31;"	d	language:C	file:
-SERVER_ID	tests/test_glib.c	4;"	d	language:C	file:
+SERVER_ID	tests/test-glib.c	4;"	d	language:C	file:
 SERVER_ID	tests/unit-test.h	26;"	d	language:C++
 SET_MAKE	Makefile	/^SET_MAKE = $/;"	m	language:Make
 SET_MAKE	doc/Makefile	/^SET_MAKE = $/;"	m	language:Make
@@ -595,6 +600,7 @@ SOURCES	Makefile	/^SOURCES =$/;"	m	language:Make
 SOURCES	doc/Makefile	/^SOURCES =$/;"	m	language:Make
 SOURCES	src/Makefile	/^SOURCES = $(libmodbus_la_SOURCES)$/;"	m	language:Make
 SOURCES	tests/Makefile	/^SOURCES = $(bandwidth_client_SOURCES) \\$/;"	m	language:Make
+START	tests/test-glib.c	7;"	d	language:C	file:
 STDC_HEADERS	config.h	143;"	d	language:C++
 STRIP	Makefile	/^STRIP = strip$/;"	m	language:Make
 STRIP	doc/Makefile	/^STRIP = strip$/;"	m	language:Make
@@ -613,7 +619,7 @@ TEST_LOGS	tests/Makefile	/^TEST_LOGS = $(am__test_logs2:.test.log=.log)$/;"	m	la
 TEST_LOG_COMPILE	tests/Makefile	/^TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \\$/;"	m	language:Make
 TEST_LOG_DRIVER	tests/Makefile	/^TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)\/build-aux\/test-driver$/;"	m	language:Make
 TEST_SUITE_LOG	tests/Makefile	/^TEST_SUITE_LOG = test-suite.log$/;"	m	language:Make
-TRUE	src/modbus.h	49;"	d	language:C++
+TRUE	src/modbus.h	50;"	d	language:C++
 TXT3	doc/Makefile	/^TXT3 = \\$/;"	m	language:Make
 TXT7	doc/Makefile	/^TXT7 = libmodbus.txt$/;"	m	language:Make
 UT_BITS_ADDRESS	tests/unit-test.h	/^const uint16_t UT_BITS_ADDRESS = 0x130;$/;"	v	language:C++
@@ -685,7 +691,6 @@ _modbus	src/modbus-private.h	/^struct _modbus {$/;"	s	language:C++
 _modbus_backend	src/modbus-private.h	/^typedef struct _modbus_backend {$/;"	s	language:C++
 _modbus_init_common	src/modbus.c	/^void _modbus_init_common(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
 _modbus_mapping_t	src/modbus.h	/^typedef struct _modbus_mapping_t {$/;"	s	language:C++
-_modbus_receive_msg	src/modbus-glib.c	/^int _modbus_receive_msg(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)
 _modbus_receive_msg	src/modbus.c	/^int _modbus_receive_msg(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *msg, msg_type_t msg_type)
 _modbus_receive_msg_g	src/modbus-glib.c	/^static int _modbus_receive_msg_g(modbus_t *ctx, msg_type_t msg_type,$/;"	f	language:C	file:	signature:(modbus_t *ctx, msg_type_t msg_type, modbus_receive_msg_cb cb,gpointer data)
 _modbus_rtu	src/modbus-rtu-private.h	/^typedef struct _modbus_rtu {$/;"	s	language:C++
@@ -729,11 +734,17 @@ _modbus_tcp_send	src/modbus-tcp.c	/^static ssize_t _modbus_tcp_send(modbus_t *ct
 _modbus_tcp_send_msg_pre	src/modbus-tcp.c	/^static int _modbus_tcp_send_msg_pre(uint8_t *req, int req_length)$/;"	f	language:C	file:	signature:(uint8_t *req, int req_length)
 _modbus_tcp_set_ipv4_options	src/modbus-tcp.c	/^static int _modbus_tcp_set_ipv4_options(int s)$/;"	f	language:C	file:	signature:(int s)
 _read_msg_cb	src/modbus-glib.c	/^static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data){$/;"	f	language:C	file:	signature:(modbus_t *ctx,GIOCondition condition,gpointer data)
+_read_register_para	src/modbus-glib.c	/^struct _read_register_para{$/;"	s	language:C	file:
+_read_registers_g	src/modbus-glib.c	/^static int _read_registers_g(modbus_t *ctx, int function, int addr, int nb,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, modbus_read_reg_cb cb,gpointer data)
+_read_registers_g_cb	src/modbus-glib.c	/^static int _read_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){$/;"	f	language:C	file:	signature:(modbus_t *ctx,int res,GByteArray *rsp,gpointer data)
+_reg_read_cb	tests/test-glib.c	/^static int _reg_read_cb(modbus_t *ctx,int res,GByteArray *req,GByteArray *rsp,gpointer data){$/;"	f	language:C	file:	signature:(modbus_t *ctx,int res,GByteArray *req,GByteArray *rsp,gpointer data)
 _sft	src/modbus-private.h	/^typedef struct _sft {$/;"	s	language:C++
 _sleep_response_timeout	src/modbus-glib.c	/^static void _sleep_response_timeout(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
 _sleep_response_timeout	src/modbus.c	/^static void _sleep_response_timeout(modbus_t *ctx)$/;"	f	language:C	file:	signature:(modbus_t *ctx)
 _step_t	src/modbus-glib.c	/^} _step_t;$/;"	t	language:C	typeref:enum:__anon10	file:
 _step_t	src/modbus.c	/^} _step_t;$/;"	t	language:C	typeref:enum:__anon7	file:
+_write_registers_g	src/modbus-glib.c	/^static int _write_registers_g(modbus_t *ctx, int function, int addr, int nb, uint8_t *buf,int len,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint8_t *buf,int len, modbus_read_reg_cb cb,gpointer data)
+_write_registers_g_cb	src/modbus-glib.c	/^static int _write_registers_g_cb(modbus_t *ctx,int res,GByteArray *rsp,gpointer data){$/;"	f	language:C	file:	signature:(modbus_t *ctx,int res,GByteArray *rsp,gpointer data)
 abs_builddir	Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus$/;"	m	language:Make
 abs_builddir	doc/Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/doc$/;"	m	language:Make
 abs_builddir	src/Makefile	/^abs_builddir = \/home\/linux\/wkdir\/src\/lib\/libmodbus\/src$/;"	m	language:Make
@@ -788,8 +799,11 @@ ac_libmodbus_have_xmlto	Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:M
 ac_libmodbus_have_xmlto	doc/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
 ac_libmodbus_have_xmlto	src/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
 ac_libmodbus_have_xmlto	tests/Makefile	/^ac_libmodbus_have_xmlto = no$/;"	m	language:Make
+addr	src/modbus-glib.c	/^	int 		addr;$/;"	m	language:C	struct:_read_register_para	file:
 aix_post_process_depfile	build-aux/depcomp	/^aix_post_process_depfile ()$/;"	f	language:Sh
 am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m	language:Make
+am__DEPENDENCIES_1	src/Makefile	/^am__DEPENDENCIES_1 =$/;"	m	language:Make
+am__DEPENDENCIES_1	tests/Makefile	/^am__DEPENDENCIES_1 = $(top_builddir)\/src\/libmodbus.la$/;"	m	language:Make
 am__DIST_COMMON	Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/config.h.in \\$/;"	m	language:Make
 am__DIST_COMMON	doc/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in$/;"	m	language:Make
 am__DIST_COMMON	src/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/modbus-version.h.in \\$/;"	m	language:Make
@@ -1006,15 +1020,15 @@ as_fn_unset	configure	/^as_fn_unset ()$/;"	f	language:Sh
 backend	src/modbus-private.h	/^    modbus_backend_t *backend;$/;"	m	language:C++	struct:_modbus
 backend_data	src/modbus-private.h	/^    void *backend_data;$/;"	m	language:C++	struct:_modbus
 backend_type	src/modbus-private.h	/^    unsigned int backend_type;$/;"	m	language:C++	struct:_modbus_backend
-bandwidth_client_DEPENDENCIES	tests/Makefile	/^bandwidth_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_client_DEPENDENCIES	tests/Makefile	/^bandwidth_client_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 bandwidth_client_LDADD	tests/Makefile	/^bandwidth_client_LDADD = $(common_ldflags)$/;"	m	language:Make
 bandwidth_client_OBJECTS	tests/Makefile	/^bandwidth_client_OBJECTS = $(am_bandwidth_client_OBJECTS)$/;"	m	language:Make
 bandwidth_client_SOURCES	tests/Makefile	/^bandwidth_client_SOURCES = bandwidth-client.c$/;"	m	language:Make
-bandwidth_server_many_up_DEPENDENCIES	tests/Makefile	/^bandwidth_server_many_up_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_many_up_DEPENDENCIES	tests/Makefile	/^bandwidth_server_many_up_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 bandwidth_server_many_up_LDADD	tests/Makefile	/^bandwidth_server_many_up_LDADD = $(common_ldflags)$/;"	m	language:Make
 bandwidth_server_many_up_OBJECTS	tests/Makefile	/^bandwidth_server_many_up_OBJECTS =  \\$/;"	m	language:Make
 bandwidth_server_many_up_SOURCES	tests/Makefile	/^bandwidth_server_many_up_SOURCES = bandwidth-server-many-up.c$/;"	m	language:Make
-bandwidth_server_one_DEPENDENCIES	tests/Makefile	/^bandwidth_server_one_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+bandwidth_server_one_DEPENDENCIES	tests/Makefile	/^bandwidth_server_one_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 bandwidth_server_one_LDADD	tests/Makefile	/^bandwidth_server_one_LDADD = $(common_ldflags)$/;"	m	language:Make
 bandwidth_server_one_OBJECTS	tests/Makefile	/^bandwidth_server_one_OBJECTS = $(am_bandwidth_server_one_OBJECTS)$/;"	m	language:Make
 bandwidth_server_one_SOURCES	tests/Makefile	/^bandwidth_server_one_SOURCES = bandwidth-server-one.c$/;"	m	language:Make
@@ -1068,6 +1082,7 @@ builddir	doc/Makefile	/^builddir = .$/;"	m	language:Make
 builddir	src/Makefile	/^builddir = .$/;"	m	language:Make
 builddir	tests/Makefile	/^builddir = .$/;"	m	language:Make
 byte_timeout	src/modbus-private.h	/^    struct timeval byte_timeout;$/;"	m	language:C++	struct:_modbus	typeref:struct:_modbus::timeval
+cb	src/modbus-glib.c	/^	modbus_read_reg_cb cb;$/;"	m	language:C	struct:_read_register_para	file:
 cb	src/modbus-glib.c	/^	modbus_receive_msg_cb cb;$/;"	m	language:C	struct:_ctx_para	file:
 check_confirmation	src/modbus-glib.c	/^static int check_confirmation(modbus_t *ctx, uint8_t *req,$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req, uint8_t *rsp, int rsp_length)
 check_confirmation	src/modbus.c	/^static int check_confirmation(modbus_t *ctx, uint8_t *req,$/;"	f	language:C	file:	signature:(modbus_t *ctx, uint8_t *req, uint8_t *rsp, int rsp_length)
@@ -1094,6 +1109,7 @@ ctx	src/modbus-glib.c	/^	modbus_t *ctx;$/;"	m	language:C	struct:_ctx_para	file:
 ctx	src/modbus-glib.c	/^	modbus_t *ctx;$/;"	m	language:C	struct:fd_source	file:
 ctx	tests/bandwidth-server-many-up.c	/^static modbus_t *ctx = NULL;$/;"	v	language:C	file:
 data	src/modbus-glib.c	/^	gpointer data;$/;"	m	language:C	struct:_ctx_para	file:
+data	src/modbus-glib.c	/^	gpointer data;$/;"	m	language:C	struct:_read_register_para	file:
 data_bit	src/modbus-rtu-private.h	/^    uint8_t data_bit;$/;"	m	language:C++	struct:_modbus_rtu
 datadir	Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
 datadir	doc/Makefile	/^datadir = ${datarootdir}$/;"	m	language:Make
@@ -1135,7 +1151,7 @@ fd_source_dispatch	src/modbus-glib.c	/^static gboolean fd_source_dispatch(GSourc
 fd_source_finalize	src/modbus-glib.c	/^static void fd_source_finalize(GSource *source)$/;"	f	language:C	file:	signature:(GSource *source)
 fd_source_new	src/modbus-glib.c	/^static GSource *fd_source_new(modbus_t *ctx,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int events, guint64 timeout_us )
 fd_source_prepare	src/modbus-glib.c	/^static gboolean fd_source_prepare(GSource *source, int *timeout)$/;"	f	language:C	file:	signature:(GSource *source, int *timeout)
-fd_source_set_timeout	src/modbus-glib.c	/^static void fd_source_set_timeout(GSource *source,uint64_t timeout_us){$/;"	f	language:C	file:	signature:(GSource *source,uint64_t timeout_us)
+fd_source_set_timeout	src/modbus-glib.c	/^static void fd_source_set_timeout(GSource *source,int64_t timeout_us){$/;"	f	language:C	file:	signature:(GSource *source,int64_t timeout_us)
 flush	src/modbus-private.h	/^    int (*flush) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
 free	src/modbus-private.h	/^    void (*free) (modbus_t *ctx);$/;"	m	language:C++	struct:_modbus_backend
 func_add_hook	build-aux/ltmain.sh	/^func_add_hook ()$/;"	f	language:Sh
@@ -1234,6 +1250,7 @@ func_exec_program	tests/bandwidth-server-many-up	/^func_exec_program ()$/;"	f	la
 func_exec_program	tests/bandwidth-server-one	/^func_exec_program ()$/;"	f	language:Sh
 func_exec_program	tests/random-test-client	/^func_exec_program ()$/;"	f	language:Sh
 func_exec_program	tests/random-test-server	/^func_exec_program ()$/;"	f	language:Sh
+func_exec_program	tests/test-glib	/^func_exec_program ()$/;"	f	language:Sh
 func_exec_program	tests/unit-test-client	/^func_exec_program ()$/;"	f	language:Sh
 func_exec_program	tests/unit-test-server	/^func_exec_program ()$/;"	f	language:Sh
 func_exec_program	tests/version	/^func_exec_program ()$/;"	f	language:Sh
@@ -1244,6 +1261,7 @@ func_exec_program_core	tests/bandwidth-server-many-up	/^func_exec_program_core (
 func_exec_program_core	tests/bandwidth-server-one	/^func_exec_program_core ()$/;"	f	language:Sh
 func_exec_program_core	tests/random-test-client	/^func_exec_program_core ()$/;"	f	language:Sh
 func_exec_program_core	tests/random-test-server	/^func_exec_program_core ()$/;"	f	language:Sh
+func_exec_program_core	tests/test-glib	/^func_exec_program_core ()$/;"	f	language:Sh
 func_exec_program_core	tests/unit-test-client	/^func_exec_program_core ()$/;"	f	language:Sh
 func_exec_program_core	tests/unit-test-server	/^func_exec_program_core ()$/;"	f	language:Sh
 func_exec_program_core	tests/version	/^func_exec_program_core ()$/;"	f	language:Sh
@@ -1265,6 +1283,7 @@ func_fallback_echo	tests/bandwidth-server-many-up	/^func_fallback_echo ()$/;"	f	
 func_fallback_echo	tests/bandwidth-server-one	/^func_fallback_echo ()$/;"	f	language:Sh
 func_fallback_echo	tests/random-test-client	/^func_fallback_echo ()$/;"	f	language:Sh
 func_fallback_echo	tests/random-test-server	/^func_fallback_echo ()$/;"	f	language:Sh
+func_fallback_echo	tests/test-glib	/^func_fallback_echo ()$/;"	f	language:Sh
 func_fallback_echo	tests/unit-test-client	/^func_fallback_echo ()$/;"	f	language:Sh
 func_fallback_echo	tests/unit-test-server	/^func_fallback_echo ()$/;"	f	language:Sh
 func_fallback_echo	tests/version	/^func_fallback_echo ()$/;"	f	language:Sh
@@ -1306,6 +1325,7 @@ func_lt_dump_args	tests/bandwidth-server-many-up	/^func_lt_dump_args ()$/;"	f	la
 func_lt_dump_args	tests/bandwidth-server-one	/^func_lt_dump_args ()$/;"	f	language:Sh
 func_lt_dump_args	tests/random-test-client	/^func_lt_dump_args ()$/;"	f	language:Sh
 func_lt_dump_args	tests/random-test-server	/^func_lt_dump_args ()$/;"	f	language:Sh
+func_lt_dump_args	tests/test-glib	/^func_lt_dump_args ()$/;"	f	language:Sh
 func_lt_dump_args	tests/unit-test-client	/^func_lt_dump_args ()$/;"	f	language:Sh
 func_lt_dump_args	tests/unit-test-server	/^func_lt_dump_args ()$/;"	f	language:Sh
 func_lt_dump_args	tests/version	/^func_lt_dump_args ()$/;"	f	language:Sh
@@ -1357,6 +1377,7 @@ func_parse_lt_options	tests/bandwidth-server-many-up	/^func_parse_lt_options ()$
 func_parse_lt_options	tests/bandwidth-server-one	/^func_parse_lt_options ()$/;"	f	language:Sh
 func_parse_lt_options	tests/random-test-client	/^func_parse_lt_options ()$/;"	f	language:Sh
 func_parse_lt_options	tests/random-test-server	/^func_parse_lt_options ()$/;"	f	language:Sh
+func_parse_lt_options	tests/test-glib	/^func_parse_lt_options ()$/;"	f	language:Sh
 func_parse_lt_options	tests/unit-test-client	/^func_parse_lt_options ()$/;"	f	language:Sh
 func_parse_lt_options	tests/unit-test-server	/^func_parse_lt_options ()$/;"	f	language:Sh
 func_parse_lt_options	tests/version	/^func_parse_lt_options ()$/;"	f	language:Sh
@@ -1427,6 +1448,7 @@ func_write_libtool_object	build-aux/ltmain.sh	/^func_write_libtool_object ()$/;"
 func_write_libtool_object	libtool	/^func_write_libtool_object ()$/;"	f	language:Sh
 func_xform	build-aux/ltmain.sh	/^  func_xform ()$/;"	f	language:Sh
 func_xform	libtool	/^  func_xform ()$/;"	f	language:Sh
+function	src/modbus-glib.c	/^	int 		function;$/;"	m	language:C	struct:_read_register_para	file:
 function	src/modbus-private.h	/^    int function;$/;"	m	language:C++	struct:_sft
 gettime_ms	tests/bandwidth-client.c	/^static uint32_t gettime_ms(void)$/;"	f	language:C	file:	signature:(void)
 give_advice	build-aux/missing	/^give_advice ()$/;"	f	language:Sh
@@ -1496,8 +1518,9 @@ libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
 libexecdir	doc/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
 libexecdir	src/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
 libexecdir	tests/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m	language:Make
-libmodbus_la_DEPENDENCIES	src/Makefile	/^libmodbus_la_DEPENDENCIES =$/;"	m	language:Make
+libmodbus_la_DEPENDENCIES	src/Makefile	/^libmodbus_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \\$/;"	m	language:Make
 libmodbus_la_LDFLAGS	src/Makefile	/^libmodbus_la_LDFLAGS = -no-undefined \\$/;"	m	language:Make
+libmodbus_la_LIBADD	src/Makefile	/^libmodbus_la_LIBADD = $(am__append_1) $(am__append_2)$/;"	m	language:Make
 libmodbus_la_LINK	src/Makefile	/^libmodbus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m	language:Make
 libmodbus_la_OBJECTS	src/Makefile	/^libmodbus_la_OBJECTS = $(am_libmodbus_la_OBJECTS)$/;"	m	language:Make
 libmodbus_la_SOURCES	src/Makefile	/^libmodbus_la_SOURCES = \\$/;"	m	language:Make
@@ -1527,7 +1550,7 @@ main	tests/bandwidth-server-many-up.c	/^int main(void)$/;"	f	language:C	signatur
 main	tests/bandwidth-server-one.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
 main	tests/random-test-client.c	/^int main(void)$/;"	f	language:C	signature:(void)
 main	tests/random-test-server.c	/^int main(void)$/;"	f	language:C	signature:(void)
-main	tests/test_glib.c	/^int main(int argc,char *argv){$/;"	f	language:C	signature:(int argc,char *argv)
+main	tests/test-glib.c	/^int main(int argc,char *argv[]){$/;"	f	language:C	signature:(int argc,char *argv[])
 main	tests/unit-test-client.c	/^int main(int argc, char *argv[])$/;"	f	language:C	signature:(int argc, char *argv[])
 main	tests/unit-test-server.c	/^int main(int argc, char*argv[])$/;"	f	language:C	signature:(int argc, char*argv[])
 main	tests/version.c	/^int main(void)$/;"	f	language:C	signature:(void)
@@ -1550,6 +1573,7 @@ mkinstalldirs	src/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Mak
 mkinstalldirs	tests/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m	language:Make
 modbus_backend_t	src/modbus-private.h	/^} modbus_backend_t;$/;"	t	language:C++	typeref:struct:_modbus_backend
 modbus_backend_type_t	src/modbus-private.h	/^} modbus_backend_type_t;$/;"	t	language:C++	typeref:enum:__anon8
+modbus_bit_expansion	src/modbus-glib.c	/^uint8_t *modbus_bit_expansion(modbus_t *ctx,uint8_t* rsp,int len)$/;"	f	language:C	signature:(modbus_t *ctx,uint8_t* rsp,int len)
 modbus_close	src/modbus.c	/^void modbus_close(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
 modbus_connect	src/modbus.c	/^int modbus_connect(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
 modbus_error_recovery_mode	src/modbus.h	/^} modbus_error_recovery_mode;$/;"	t	language:C++	typeref:enum:__anon6
@@ -1557,6 +1581,7 @@ modbus_flush	src/modbus.c	/^int modbus_flush(modbus_t *ctx)$/;"	f	language:C	sig
 modbus_free	src/modbus.c	/^void modbus_free(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
 modbus_get_byte_from_bits	src/modbus-data.c	/^uint8_t modbus_get_byte_from_bits(const uint8_t *src, int idx,$/;"	f	language:C	signature:(const uint8_t *src, int idx, unsigned int nb_bits)
 modbus_get_byte_timeout	src/modbus.c	/^int modbus_get_byte_timeout(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t *to_sec, uint32_t *to_usec)
+modbus_get_context	src/modbus-glib.c	/^GMainContext *modbus_get_context(modbus_t *ctx)$/;"	f	language:C	signature:(modbus_t *ctx)
 modbus_get_float	src/modbus-data.c	/^float modbus_get_float(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
 modbus_get_float_abcd	src/modbus-data.c	/^float modbus_get_float_abcd(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
 modbus_get_float_badc	src/modbus-data.c	/^float modbus_get_float_badc(const uint16_t *src)$/;"	f	language:C	signature:(const uint16_t *src)
@@ -1575,14 +1600,21 @@ modbus_mask_write_register	src/modbus.c	/^int modbus_mask_write_register(modbus_
 modbus_new_rtu	src/modbus-rtu.c	/^modbus_t* modbus_new_rtu(const char *device,$/;"	f	language:C	signature:(const char *device, int baud, char parity, int data_bit, int stop_bit)
 modbus_new_tcp	src/modbus-tcp.c	/^modbus_t* modbus_new_tcp(const char *ip, int port)$/;"	f	language:C	signature:(const char *ip, int port)
 modbus_new_tcp_pi	src/modbus-tcp.c	/^modbus_t* modbus_new_tcp_pi(const char *node, const char *service)$/;"	f	language:C	signature:(const char *node, const char *service)
+modbus_op	src/modbus-glib.c	/^enum modbus_op{$/;"	g	language:C	file:
 modbus_read_bits	src/modbus.c	/^int modbus_read_bits(modbus_t *ctx, int addr, int nb, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint8_t *dest)
+modbus_read_bits_g	src/modbus-glib.c	/^int modbus_read_bits_g(modbus_t *ctx, int addr, int nb, $/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, modbus_read_reg_cb cb,gpointer data)
+modbus_read_g	src/modbus-glib.c	/^int modbus_read_g(modbus_t *ctx,int function, int addr,int nb,modbus_read_reg_cb cb,gpointer data)$/;"	f	language:C	signature:(modbus_t *ctx,int function, int addr,int nb,modbus_read_reg_cb cb,gpointer data)
 modbus_read_input_bits	src/modbus.c	/^int modbus_read_input_bits(modbus_t *ctx, int addr, int nb, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint8_t *dest)
+modbus_read_input_bits_g	src/modbus-glib.c	/^int modbus_read_input_bits_g(modbus_t *ctx, int addr, int nb, $/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, modbus_read_reg_cb cb,gpointer data)
 modbus_read_input_registers	src/modbus.c	/^int modbus_read_input_registers(modbus_t *ctx, int addr, int nb,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint16_t *dest)
+modbus_read_input_registers_g	src/modbus-glib.c	/^int modbus_read_input_registers_g(modbus_t *ctx, int addr, int nb,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, modbus_read_reg_cb cb,gpointer data)
+modbus_read_reg_cb	src/modbus_ex.h	/^typedef int (*modbus_read_reg_cb)(modbus_t *ctx,int res,GByteArray *req,GByteArray *rsp,gpointer data);$/;"	t	language:C++
 modbus_read_registers	src/modbus.c	/^int modbus_read_registers(modbus_t *ctx, int addr, int nb, uint16_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, uint16_t *dest)
-modbus_read_registers_g	src/modbus-glib.c	/^int modbus_read_registers_g(modbus_t *ctx, int addr, int nb,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, modbus_receive_msg_cb cb,gpointer data)
+modbus_read_registers_g	src/modbus-glib.c	/^int modbus_read_registers_g(modbus_t *ctx, int addr, int nb,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, modbus_read_reg_cb cb,gpointer data)
 modbus_receive	src/modbus.c	/^int modbus_receive(modbus_t *ctx, uint8_t *req)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *req)
 modbus_receive_confirmation	src/modbus.c	/^int modbus_receive_confirmation(modbus_t *ctx, uint8_t *rsp)$/;"	f	language:C	signature:(modbus_t *ctx, uint8_t *rsp)
-modbus_receive_msg_cb	src/modbus-glib.c	/^typedef int (*modbus_receive_msg_cb)(int res,char *buff,int len,gpointer data);$/;"	t	language:C	file:
+modbus_receive_msg_cb	src/modbus_ex.h	/^typedef int (*modbus_receive_msg_cb)(modbus_t *ctx,int res,GByteArray *array,void * data);$/;"	t	language:C++
+modbus_reg_expansion	src/modbus-glib.c	/^uint16_t* modbus_reg_expansion(modbus_t *ctx,uint8_t *rsp,int len)$/;"	f	language:C	signature:(modbus_t *ctx,uint8_t *rsp,int len)
 modbus_reply	src/modbus.c	/^int modbus_reply(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	signature:(modbus_t *ctx, const uint8_t *req, int req_length, modbus_mapping_t *mb_mapping)
 modbus_reply_exception	src/modbus.c	/^int modbus_reply_exception(modbus_t *ctx, const uint8_t *req,$/;"	f	language:C	signature:(modbus_t *ctx, const uint8_t *req, unsigned int exception_code)
 modbus_report_slave_id	src/modbus.c	/^int modbus_report_slave_id(modbus_t *ctx, int max_dest, uint8_t *dest)$/;"	f	language:C	signature:(modbus_t *ctx, int max_dest, uint8_t *dest)
@@ -1598,6 +1630,7 @@ modbus_send_raw_request	src/modbus.c	/^int modbus_send_raw_request(modbus_t *ctx
 modbus_set_bits_from_byte	src/modbus-data.c	/^void modbus_set_bits_from_byte(uint8_t *dest, int idx, const uint8_t value)$/;"	f	language:C	signature:(uint8_t *dest, int idx, const uint8_t value)
 modbus_set_bits_from_bytes	src/modbus-data.c	/^void modbus_set_bits_from_bytes(uint8_t *dest, int idx, unsigned int nb_bits,$/;"	f	language:C	signature:(uint8_t *dest, int idx, unsigned int nb_bits, const uint8_t *tab_byte)
 modbus_set_byte_timeout	src/modbus.c	/^int modbus_set_byte_timeout(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)$/;"	f	language:C	signature:(modbus_t *ctx, uint32_t to_sec, uint32_t to_usec)
+modbus_set_context	src/modbus-glib.c	/^void modbus_set_context(modbus_t *ctx,GMainContext *context)$/;"	f	language:C	signature:(modbus_t *ctx,GMainContext *context)
 modbus_set_debug	src/modbus.c	/^int modbus_set_debug(modbus_t *ctx, int flag)$/;"	f	language:C	signature:(modbus_t *ctx, int flag)
 modbus_set_error_recovery	src/modbus.c	/^int modbus_set_error_recovery(modbus_t *ctx,$/;"	f	language:C	signature:(modbus_t *ctx, modbus_error_recovery_mode error_recovery)
 modbus_set_float	src/modbus-data.c	/^void modbus_set_float(float f, uint16_t *dest)$/;"	f	language:C	signature:(float f, uint16_t *dest)
@@ -1619,9 +1652,13 @@ modbus_tcp_pi_t	src/modbus-tcp-private.h	/^} modbus_tcp_pi_t;$/;"	t	language:C++
 modbus_tcp_t	src/modbus-tcp-private.h	/^} modbus_tcp_t;$/;"	t	language:C++	typeref:struct:_modbus_tcp
 modbus_write_and_read_registers	src/modbus.c	/^int modbus_write_and_read_registers(modbus_t *ctx,$/;"	f	language:C	signature:(modbus_t *ctx, int write_addr, int write_nb, const uint16_t *src, int read_addr, int read_nb, uint16_t *dest)
 modbus_write_bit	src/modbus.c	/^int modbus_write_bit(modbus_t *ctx, int addr, int status)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int status)
+modbus_write_bit_g	src/modbus-glib.c	/^int modbus_write_bit_g(modbus_t *ctx, int addr, int status,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int status, modbus_read_reg_cb cb,gpointer data)
 modbus_write_bits	src/modbus.c	/^int modbus_write_bits(modbus_t *ctx, int addr, int nb, const uint8_t *src)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint8_t *src)
+modbus_write_bits_g	src/modbus-glib.c	/^int modbus_write_bits_g(modbus_t *ctx, int addr, int nb, const uint8_t *src,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint8_t *src, modbus_read_reg_cb cb,gpointer data)
 modbus_write_register	src/modbus.c	/^int modbus_write_register(modbus_t *ctx, int addr, int value)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int value)
+modbus_write_register_g	src/modbus-glib.c	/^int modbus_write_register_g(modbus_t *ctx, int addr, uint16_t value,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, uint16_t value, modbus_read_reg_cb cb,gpointer data)
 modbus_write_registers	src/modbus.c	/^int modbus_write_registers(modbus_t *ctx, int addr, int nb, const uint16_t *src)$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint16_t *src)
+modbus_write_registers_g	src/modbus-glib.c	/^int modbus_write_registers_g(modbus_t *ctx, int addr, int nb, const uint16_t *src,$/;"	f	language:C	signature:(modbus_t *ctx, int addr, int nb, const uint16_t *src, modbus_read_reg_cb cb,gpointer data)
 msg_length	src/modbus-glib.c	/^	int msg_length;$/;"	m	language:C	struct:_ctx_para	file:
 msg_type	src/modbus-glib.c	/^	int msg_type;$/;"	m	language:C	struct:_ctx_para	file:
 msg_type_t	src/modbus-private.h	/^} msg_type_t;$/;"	t	language:C++	typeref:enum:__anon9
@@ -1630,6 +1667,7 @@ my_CFLAGS	doc/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prot
 my_CFLAGS	src/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
 my_CFLAGS	tests/Makefile	/^my_CFLAGS = -Wall -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wpointer-arith -Wsign-compare -Wchar-subscripts -Wstrict-prototypes -Wshadow -Wformat-security$/;"	m	language:Make
 n_bytes	src/modbus-rtu-private.h	/^    DWORD n_bytes;$/;"	m	language:C++	struct:win32_ser
+nb	src/modbus-glib.c	/^	int  		nb;$/;"	m	language:C	struct:_read_register_para	file:
 nb_bits	src/modbus.h	/^    int nb_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
 nb_input_bits	src/modbus.h	/^    int nb_input_bits;$/;"	m	language:C++	struct:_modbus_mapping_t
 nb_input_registers	src/modbus.h	/^    int nb_input_registers;$/;"	m	language:C++	struct:_modbus_mapping_t
@@ -1646,6 +1684,7 @@ oldincludedir	doc/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
 oldincludedir	src/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
 oldincludedir	tests/Makefile	/^oldincludedir = \/usr\/include$/;"	m	language:Make
 onebyte_time	src/modbus-rtu-private.h	/^    int onebyte_time;$/;"	m	language:C++	struct:_modbus_rtu
+op	src/modbus-glib.c	/^	enum 		modbus_op op;$/;"	m	language:C	struct:_read_register_para	typeref:enum:_read_register_para::modbus_op	file:
 parity	src/modbus-rtu-private.h	/^    char parity;$/;"	m	language:C++	struct:_modbus_rtu
 pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
 pdfdir	doc/Makefile	/^pdfdir = ${docdir}$/;"	m	language:Make
@@ -1689,19 +1728,19 @@ psdir	Makefile	/^psdir = ${docdir}$/;"	m	language:Make
 psdir	doc/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
 psdir	src/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
 psdir	tests/Makefile	/^psdir = ${docdir}$/;"	m	language:Make
-random_test_client_DEPENDENCIES	tests/Makefile	/^random_test_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+random_test_client_DEPENDENCIES	tests/Makefile	/^random_test_client_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 random_test_client_LDADD	tests/Makefile	/^random_test_client_LDADD = $(common_ldflags)$/;"	m	language:Make
 random_test_client_OBJECTS	tests/Makefile	/^random_test_client_OBJECTS = $(am_random_test_client_OBJECTS)$/;"	m	language:Make
 random_test_client_SOURCES	tests/Makefile	/^random_test_client_SOURCES = random-test-client.c$/;"	m	language:Make
-random_test_server_DEPENDENCIES	tests/Makefile	/^random_test_server_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+random_test_server_DEPENDENCIES	tests/Makefile	/^random_test_server_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 random_test_server_LDADD	tests/Makefile	/^random_test_server_LDADD = $(common_ldflags)$/;"	m	language:Make
 random_test_server_OBJECTS	tests/Makefile	/^random_test_server_OBJECTS = $(am_random_test_server_OBJECTS)$/;"	m	language:Make
 random_test_server_SOURCES	tests/Makefile	/^random_test_server_SOURCES = random-test-server.c$/;"	m	language:Make
 read_io_status	src/modbus.c	/^static int read_io_status(modbus_t *ctx, int function,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint8_t *dest)
 read_registers	src/modbus.c	/^static int read_registers(modbus_t *ctx, int function, int addr, int nb,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, uint16_t *dest)
-read_registers_g	src/modbus-glib.c	/^static int read_registers_g(modbus_t *ctx, int function, int addr, int nb,$/;"	f	language:C	file:	signature:(modbus_t *ctx, int function, int addr, int nb, modbus_receive_msg_cb cb,gpointer data)
 receive	src/modbus-private.h	/^    int (*receive) (modbus_t *ctx, uint8_t *req);$/;"	m	language:C++	struct:_modbus_backend
 recv	src/modbus-private.h	/^    ssize_t (*recv) (modbus_t *ctx, uint8_t *rsp, int rsp_length);$/;"	m	language:C++	struct:_modbus_backend
+req	src/modbus-glib.c	/^	GByteArray *req;$/;"	m	language:C	struct:_read_register_para	file:
 response_exception	src/modbus.c	/^static int response_exception(modbus_t *ctx, sft_t *sft,$/;"	f	language:C	file:	signature:(modbus_t *ctx, sft_t *sft, int exception_code, uint8_t *rsp, unsigned int to_flush, const char* template, ...)
 response_io_status	src/modbus.c	/^static int response_io_status(uint8_t *tab_io_status,$/;"	f	language:C	file:	signature:(uint8_t *tab_io_status, int address, int nb, uint8_t *rsp, int offset)
 response_timeout	src/modbus-private.h	/^    struct timeval response_timeout;$/;"	m	language:C++	struct:_modbus	typeref:struct:_modbus::timeval
@@ -1736,7 +1775,7 @@ sharedstatedir	src/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Mak
 sharedstatedir	tests/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m	language:Make
 slave	src/modbus-private.h	/^    int slave;$/;"	m	language:C++	struct:_modbus
 slave	src/modbus-private.h	/^    int slave;$/;"	m	language:C++	struct:_sft
-sr_receive_data_callback	src/modbus-glib.c	/^typedef int (*sr_receive_data_callback)(int fd, int revents, void *cb_data);$/;"	t	language:C	file:
+sr_receive_data_callback	src/modbus-glib.c	/^typedef int (*sr_receive_data_callback)(modbus_t *ctx, int revents, void *cb_data);$/;"	t	language:C	file:
 srcDir	src/win32/configure.js	/^var srcDir = "..";$/;"	v	language:JavaScript
 srcdir	Makefile	/^srcdir = .$/;"	m	language:Make
 srcdir	doc/Makefile	/^srcdir = .$/;"	m	language:Make
@@ -1797,11 +1836,11 @@ transform	Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
 transform	doc/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
 transform	src/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
 transform	tests/Makefile	/^transform = $(program_transform_name)$/;"	m	language:Make
-unit_test_client_DEPENDENCIES	tests/Makefile	/^unit_test_client_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+unit_test_client_DEPENDENCIES	tests/Makefile	/^unit_test_client_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 unit_test_client_LDADD	tests/Makefile	/^unit_test_client_LDADD = $(common_ldflags)$/;"	m	language:Make
 unit_test_client_OBJECTS	tests/Makefile	/^unit_test_client_OBJECTS = $(am_unit_test_client_OBJECTS)$/;"	m	language:Make
 unit_test_client_SOURCES	tests/Makefile	/^unit_test_client_SOURCES = unit-test-client.c unit-test.h$/;"	m	language:Make
-unit_test_server_DEPENDENCIES	tests/Makefile	/^unit_test_server_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+unit_test_server_DEPENDENCIES	tests/Makefile	/^unit_test_server_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 unit_test_server_LDADD	tests/Makefile	/^unit_test_server_LDADD = $(common_ldflags)$/;"	m	language:Make
 unit_test_server_OBJECTS	tests/Makefile	/^unit_test_server_OBJECTS = $(am_unit_test_server_OBJECTS)$/;"	m	language:Make
 unit_test_server_SOURCES	tests/Makefile	/^unit_test_server_SOURCES = unit-test-server.c unit-test.h$/;"	m	language:Make
@@ -1810,7 +1849,7 @@ usage_error	build-aux/test-driver	/^usage_error ()$/;"	f	language:Sh
 verMajor	src/win32/configure.js	/^var verMajor;$/;"	v	language:JavaScript
 verMicro	src/win32/configure.js	/^var verMicro;$/;"	v	language:JavaScript
 verMinor	src/win32/configure.js	/^var verMinor;$/;"	v	language:JavaScript
-version_DEPENDENCIES	tests/Makefile	/^version_DEPENDENCIES = $(common_ldflags)$/;"	m	language:Make
+version_DEPENDENCIES	tests/Makefile	/^version_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m	language:Make
 version_LDADD	tests/Makefile	/^version_LDADD = $(common_ldflags)$/;"	m	language:Make
 version_OBJECTS	tests/Makefile	/^version_OBJECTS = $(am_version_OBJECTS)$/;"	m	language:Make
 version_SOURCES	tests/Makefile	/^version_SOURCES = version.c$/;"	m	language:Make

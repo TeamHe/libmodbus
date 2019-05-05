@@ -1345,8 +1345,6 @@ int modbus_write_bits(modbus_t *ctx, int addr, int nb, const uint8_t *src)
 
         rc = check_confirmation(ctx, req, rsp, rc);
     }
-
-
     return rc;
 }
 
@@ -1576,6 +1574,7 @@ void _modbus_init_common(modbus_t *ctx)
 
     ctx->indication_timeout.tv_sec = 0;
     ctx->indication_timeout.tv_usec = 0;
+	ctx->context = NULL;
 }
 
 /* Define the slave number */

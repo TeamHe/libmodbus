@@ -149,6 +149,7 @@ static int _modbus_tcp_build_response_basis(sft_t *sft, uint8_t *rsp)
 
 static int _modbus_tcp_prepare_response_tid(const uint8_t *req, int *req_length)
 {
+	*req_length = *req_length;
     return (req[0] << 8) + req[1];
 }
 
@@ -182,12 +183,15 @@ static ssize_t _modbus_tcp_recv(modbus_t *ctx, uint8_t *rsp, int rsp_length) {
 
 static int _modbus_tcp_check_integrity(modbus_t *ctx, uint8_t *msg, const int msg_length)
 {
+	ctx = ctx;
+	msg = msg;
     return msg_length;
 }
 
 static int _modbus_tcp_pre_check_confirmation(modbus_t *ctx, const uint8_t *req,
                                               const uint8_t *rsp, int rsp_length)
 {
+	rsp_length = rsp_length;
     /* Check transaction ID */
     if (req[0] != rsp[0] || req[1] != rsp[1]) {
         if (ctx->debug) {
@@ -718,6 +722,7 @@ int modbus_tcp_pi_accept(modbus_t *ctx, int *s)
 static int _modbus_tcp_select(modbus_t *ctx, fd_set *rset, struct timeval *tv, int length_to_read)
 {
     int s_rc;
+	length_to_read = length_to_read;
     while ((s_rc = select(ctx->s+1, rset, NULL, NULL, tv)) == -1) {
         if (errno == EINTR) {
             if (ctx->debug) {

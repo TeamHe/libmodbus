@@ -147,6 +147,7 @@ static uint16_t crc16(uint8_t *buffer, uint16_t buffer_length)
 
 static int _modbus_rtu_prepare_response_tid(const uint8_t *req, int *req_length)
 {
+	req = req;
     (*req_length) -= _MODBUS_RTU_CHECKSUM_LENGTH;
     /* No TID */
     return 0;
@@ -340,6 +341,7 @@ static int _modbus_rtu_flush(modbus_t *);
 static int _modbus_rtu_pre_check_confirmation(modbus_t *ctx, const uint8_t *req,
                                               const uint8_t *rsp, int rsp_length)
 {
+	rsp_length = rsp_length;
     /* Check responding slave is the slave we requested (except for broacast
      * request) */
     if (req[0] != rsp[0] && req[0] != MODBUS_BROADCAST_ADDRESS) {
@@ -1154,6 +1156,7 @@ static int _modbus_rtu_select(modbus_t *ctx, fd_set *rset,
                               struct timeval *tv, int length_to_read)
 {
     int s_rc;
+	length_to_read = length_to_read;
 #if defined(_WIN32)
     s_rc = win32_ser_select(&((modbus_rtu_t *)ctx->backend_data)->w_ser,
                             length_to_read, tv);
