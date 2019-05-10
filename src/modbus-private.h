@@ -96,13 +96,12 @@ struct _modbus {
     int s;
     int debug;
     int error_recovery;
-	void *context;
     struct timeval response_timeout;
     struct timeval byte_timeout;
     struct timeval indication_timeout;
     modbus_backend_t *backend;
     void *backend_data;
-	
+	void *context;
 };
 
 void _modbus_init_common(modbus_t *ctx);

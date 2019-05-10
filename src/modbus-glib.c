@@ -24,18 +24,6 @@ typedef int (*sr_receive_data_callback)(modbus_t *ctx, int revents, void *cb_dat
  * @see https://developer.gnome.org/glib/stable/glib-The-Main-Event-Loop.html
  * @internal
  */
-struct fd_source {
-	GSource base;
-
-	int64_t timeout_us;
-	int64_t due_us;
-
-	/* Meta-data needed to keep track of installed sources */
-	modbus_t *ctx;
-	void *key;
-
-	GPollFD pollfd;
-};
 
 /** FD event source prepare() method.
  * This is called immediately before poll().
@@ -297,7 +285,7 @@ static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data)
 		error = TRUE;
 		errno = EBADF;
 	}		
-	if(error && ctx->error_recovery & MODBUS_ERROR_RECOVERY_LINK){
+	if(error && (ctx->error_recovery & MODBUS_ERROR_RECOVERY_LINK)){
     	if (errno == ETIMEDOUT) {
     	    _sleep_response_timeout(ctx);
     	    modbus_flush(ctx);
@@ -365,16 +353,17 @@ static gboolean _read_msg_cb(modbus_t *ctx,GIOCondition condition,gpointer data)
     		    break;
    		}
 
-        if (para->length_to_read > 0 &&
-            (ctx->byte_timeout.tv_sec > 0 || ctx->byte_timeout.tv_usec > 0)) 
-		{
-			int64_t timeout_us = ctx->byte_timeout.tv_sec * 1000 *1000 +
-				ctx->byte_timeout.tv_usec;
-			GSource *source = g_main_current_source();
-			fd_source_set_timeout(source,timeout_us);
-			return TRUE;
-        }
+	}
+    if (para->length_to_read > 0 &&
+        (ctx->byte_timeout.tv_sec > 0 || ctx->byte_timeout.tv_usec > 0)) 
+	{
+		int64_t timeout_us = ctx->byte_timeout.tv_sec * 1000 *1000 +
+			ctx->byte_timeout.tv_usec;
+		GSource *source = g_main_current_source();
+		fd_source_set_timeout(source,timeout_us);
+		return TRUE;
     }
+
 
 	if(ctx->debug){
         printf("\n");

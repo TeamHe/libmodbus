@@ -1,6 +1,10 @@
 # !/bin/sh
 
-./configure 
+./configure  									\
+	--prefix=/home/linux/wkdir/board 			\
+	--host=arm-linux-gnueabihf 					\
+	CC=arm-linux-gnueabihf-gcc 	
+
 	
 make
 
